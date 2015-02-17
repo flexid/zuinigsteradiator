@@ -1,0 +1,15 @@
+@include keyframes(simulator-step) {
+    0% {height:4px; width: 0;}
+    100% {height:4px; width: 100%;}
+}
+
+@include keyframes(simulator-step-first) {
+    0% {height:100%; width: 100%;}
+    100% {height:100%; width: 100%;}
+}
+
+@include keyframes(simulator-step-last) {
+    0% {height:4px; width: 0;}
+    50% {height:4px; width: 100%;}
+    100% {height:100%; width: 100%;}
+}

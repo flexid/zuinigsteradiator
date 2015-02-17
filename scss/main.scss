@@ -1,0 +1,24 @@
+// Foundation
+@import "foundation.scss";
+@import "normalize.scss";
+
+// Variables and mixins
+@import "partials/base";
+@import "partials/sprite";
+@import "partials/mixins";
+@import "partials/fonts";
+@import "partials/animations";
+@import "partials/flexslider";
+@import "partials/storelocator";
+
+// Website //
+html, body {
+    color: $text-color;
+}
+
+// Foundation //
+.row { max-width: $site-width + 30px; }
+.top-bar-section li:not(.has-form) a:not(.button) { background: none; }
+
+// Piksel
+@import "piksel.scss";

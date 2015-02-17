@@ -1,0 +1,22 @@
+// Website width
+//$site-width: 994px;
+$site-width: 1110px;
+
+// Colors
+$primary-color: #BF0C0C;
+$secondary-color: #669933;
+$tertiary-color: #000;
+$text-color: #333;
+
+// Selection //
+*::selection {
+    background: $primary-color;
+    color: #fff;
+}
+*::-moz-selection {
+    background: $primary-color;
+    color: #fff;
+}
+
+// iOS rotation zoom fix //
+@media screen and (max-width: 40em) { body { -webkit-text-size-adjust: 100%; } }

@@ -1,0 +1,60 @@
+/*
+ * Retina Sprites for Compass
+ * by:              Gaya Kessler
+ * modified by:     Patrick Leijser & Cas Cornelissen
+ * last update:     02/07/2014
+ *
+ * Usage:
+ * 1. Create two folders in your image directory (in this case 'sprite' and 'sprite@2x').
+ * 2. Adjust the foldernames defined below if you use different names.
+ * 3. Create sprite images for pixel ratio 1 screens and put them in the first folder.
+ * 4. Create sprite images for pixel ratio 2 screens and put them in the second folder, use the same filename.
+ * 5. Use the sprite-image in your Sass/Scss using: '@include sprite($sprite-name, [$center], [$prevent-request])'
+ *
+ * Hovers:
+ * Name your images that will act as hovers: <sprite-name>-hover.png.
+ * This will remove the background-image property which will prevent the flash while (unnecessarily) re-downloading the spritemap.
+ */
+ 
+$icons: sprite-map("sprite/*.png", $layout: horizontal, $spacing: 20px);
+$icons-2x: sprite-map("sprite@2x/*.png", $layout: horizontal, $spacing: 20px);
+ 
+@mixin sprite($sprite, $center: false, $prevent-request: false) {
+    // Prevent background-image leaking (1px) in Webkit browsers
+    @include webkit-pixelshift-fix();
+
+    // Files ending in -hover (e.g. image-hover.png) shouldn't trigger a request
+    @if ( str-slice($sprite, -6) == '-hover' ) { $prevent-request: true; }
+
+    // Ability to prevent an extra request (e.g. because the file is in cache already)
+    @if ( $prevent-request == false ) { background-image: sprite-url($icons); }
+
+    // Required properties 
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: inline-block;
+    height: image-height(sprite-file($icons, $sprite));
+    width: image-width(sprite-file($icons, $sprite));
+    background-position: sprite-position($icons, $sprite);
+
+    // Optional centering of the image (make sure the parent element has the correct position value)
+    @if ( $center ) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -(image-height(sprite-file($icons, $sprite)) / 2);
+        margin-left: -(image-width(sprite-file($icons, $sprite)) / 2);
+    }
+ 
+    // Retina version if a retina version of the sprite exists
+    @if ( file_exists('img/sprite@2x/#{$sprite}.png') ) {
+        @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3/2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+            @if ( $prevent-request == false ) { background-image: sprite-url($icons-2x); }
+
+            background-size: (image-width(sprite-path($icons-2x)) / 2) (image-height(sprite-path($icons-2x)) / 2);
+            background-position: round(nth(sprite-position($icons-2x, $sprite), 1) / 2) round(nth(sprite-position($icons-2x, $sprite), 2) / 2);
+            height: image-height(sprite-file($icons-2x, $sprite)) / 2;
+            width: image-width(sprite-file($icons-2x, $sprite)) / 2;
+        }
+    }
+}
