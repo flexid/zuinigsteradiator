@@ -1,6 +1,6 @@
 // Init vars simulator
 
-var CONTEST_URL             = 'http://dushi.local:3000/batibouw_contest';
+var CONTEST_URL             = 'http://staging-2015.theradiatorfactory.com/batibouw_contest';
 
 var type_woning             = '';
 var type_verwarming         = '';
