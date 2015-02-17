@@ -118,7 +118,28 @@ if(in_array($adress, $domains['fr'])) {
                 
                 <a href="#<?= $general['anker2']; ?>" class="scroll"><?= $zuinigsteRadiator['scroll']; ?></a>
             </section>
+
             
+            <section id="batibouw" class="text-center">
+                
+                <p>
+                    <a href="#<?= $general['anker7']; ?>">
+                        <img src="img/actie_batibouw_bottom_<?=$lang?>.png">
+                    </a>
+                </p>
+    
+                <p>
+                    <br>
+                    <br>
+                    <a href="#<?= $general['anker7']; ?>">
+                        <img src="img/jantrakteert.jpg" alt="Jan Kriekels">
+                    </a>
+                    <br>
+                    <br>
+                </p>
+            </section>
+
+
             <a name="<?= $general['anker2']; ?>"></a>
             <section id="zuinigsteradiator" data-magellan-destination="zuinigsteradiator">
                 <div class="dark">
@@ -863,13 +884,40 @@ if(in_array($adress, $domains['fr'])) {
                                         <div class="saving">
                                             <div class="before step1">
                                                 <p><?= $simulator['intro']; ?></p>
+                                                <div style="opacity: 0.8;">
+                                                    <hr>
+                                                    <p><small><?= $simulator['win_bati']; ?></small></p>
+                                                    <p><small><?= $simulator['win_bati_2']; ?></small></p>
+                                                </div>
                                             </div>
                                             <div class="before step2">
                                                 <p><?= $simulator['text7']; ?></p>
+                                                <div style="opacity: 0.8;">
+                                                    <hr>
+                                                    <p><small><?= $simulator['win_bati']; ?></small></p>
+                                                    <p><small><?= $simulator['win_bati_2']; ?></small></p>
+                                                </div>
                                             </div>
                                             <div class="before step3">
                                                 <p><?= $simulator['text2']; ?></p>
                                                 <a href="#<?= $general['anker6']; ?>"><?= $simulator['text3']; ?></a>
+                                                <div style="opacity: 0.8;">
+                                                    <hr>
+                                                    <p><small><?= $simulator['win_bati']; ?></small></p>
+                                                    <p><small><?= $simulator['win_bati_2']; ?></small></p>
+                                                </div>
+                                            </div>
+                                            <div class="before step4">
+                                                <p class="ajaxloader">
+                                                    <img src="img/ajax-loader.gif" style="display:none; width: 32px !important;">
+                                                </p>
+                                                <p><?= $simulator['text11']; ?></p>
+                                                <a href="<?= $simulator['link1']; ?>" target="_blank"><?= $simulator['text12']; ?></a>
+                                                <div style="opacity: 0.8;">
+                                                    <hr>
+                                                    <p><small><?= $simulator['win_bati']; ?></small></p>
+                                                    <p><small><?= $simulator['win_bati_2']; ?></small></p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -881,6 +929,7 @@ if(in_array($adress, $domains['fr'])) {
                                                 <li class="active"><span><?= $simulator['step']; ?> 1</span></li>
                                                 <li><span><?= $simulator['step']; ?> 2</span></li>
                                                 <li><span><?= $simulator['step']; ?> 3</span></li>
+                                                <li><span><?= $simulator['step']; ?> 4</span></li>
                                             </ul>
                                         </div>
                                         <div class="flexslider slider">
@@ -1048,7 +1097,91 @@ if(in_array($adress, $domains['fr'])) {
                                                         </div>
                                                     </div>
                                                 </li>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="medium-12 columns">
+                                                            <h3><?= $simulator['subtitle4']; ?></h3>
+                                                        </div>
+                                                        <div class="large-12 columns">
+                                                            
+                                                            <style type="text/css">
+                                                                .contest p {
+                                                                    width: 40%;
+                                                                    float: left;
+                                                                    padding-right: 12px;
+                                                                }
+                                                                .contest input {
+                                                                    margin: 0 !important;
+                                                                }
+                                                                .contest-participate p {
+                                                                    width: auto !important;
+                                                                    float: none !important;
+                                                                }
+                                                                .contest-thanks {
+                                                                    display: none;
+                                                                }
+                                                            </style>
+
+                                                            <div class="contest-thanks">
+                                                                <div class="medium-12 columns">
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    <h4><em><?= $simulator['thanks']; ?></em></h4>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="contest">
+
+                                                                <div class="contest-form">
+                                                                    <p>
+                                                                        <span><?= $simulator['labelTitle11']; ?></span>
+                                                                        <input type="text" name="name" id="name">
+                                                                    </p>
+                                                                    <p>
+                                                                        <span><?= $simulator['labelTitle12']; ?></span>
+                                                                        <input type="text" name="address" id="address">
+                                                                    </p>
+                                                                    <p>
+                                                                        <span><?= $simulator['labelTitle17']; ?></span>
+                                                                        <input type="text" name="postcode" id="postcode">
+                                                                    </p>
+                                                                    <p>
+                                                                        <span><?= $simulator['labelTitle18']; ?></span>
+                                                                        <input type="text" name="city" id="city">
+                                                                    </p>
+                                                                    <p>
+                                                                        <span><?= $simulator['labelTitle13']; ?></span>
+                                                                        <input type="text" name="email" id="email">
+                                                                    </p>
+                                                                    <p>
+                                                                        <span><?= $simulator['labelTitle16']; ?></span>
+                                                                        <input type="text" name="phone" id="phone">
+                                                                    </p>
+                                                                </div>
+
+                                                                <br clear="all" />
+                                                                
+                                                                <div class="contest-participate">
+                                                                    <p>
+                                                                        <br>
+                                                                        <span><?= $simulator['labelTitle14']; ?></span>
+                                                                        <br>
+                                                                        <input type="text" name="question" id="question" class="medium">
+                                                                    </p>
+                                                                    <p>
+                                                                        <a class="readonly medium" id="participate" href="javascript:void();" style="color: #cc0000;"><?= $simulator['labelTitle15']; ?></a>
+                                                                    </p>                                                                    
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </li>
                                             </ul>
+
                                             <div class="button-bar">
                                                 <a class="grey-button prev" style="display: none;"></a>
                                                 <a class="grey-button next"><?= $simulator['step']; ?> 2 ></a>

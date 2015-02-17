@@ -343,7 +343,7 @@ $collectie = array(
 
 $simulator = array(
     'title'         => 'Profit simulator',
-    'intro'         => 'Bereken in 3 eenvoudige stappen uw besparingen als u kiest voor een Jaga Low-H<span class="h2o">2</span>O radiator',
+    'intro'         => 'Bereken in 4 eenvoudige stappen uw besparingen als u kiest voor een Jaga Low-H<span class="h2o">2</span>O radiator',
     'text1'         => 'Uw besparing op 30 jaar',
     'text2'         => 'Contacteer <br>uw Jaga dealer',
     'text3'         => 'Ga naar dealer locator',
@@ -385,7 +385,22 @@ $simulator = array(
     'question4'     => 'De beschrijving van de woning is bewust zeer summier gehouden. De uitkomst kan daardoor zowel in negatieve als positieve zin beïnvloed worden door allerlei factoren zoals juiste isolatiewaarde, bewonersgedrag, type installatie, type regeling enz. Maar zij geeft u wel een idee van wat mogelijk is door enkel de radiatoren te vervangen.',
     'question5'     => 'De besparingen die u verkrijgt door een verwachte inflatie in te vullen zijn niet persé de beste indicatie van de reeële koopkracht met dat bedrag. Alles is dan immers duurder geworden. Als u wil weten wat uw besparingen juist waard zijn probeer dan ook eens met de inflatie op 0 te houden.',
     'question6'     => '30 jaar garantie op de LOW-H2O warmtewisselaar ! Daarmee weet u meteen waarom de Profit Simulator tot 30 jaar in de toekomst rekent. Maar we weten zeker dat uw radiator nog veel langer zal meegaan vermits de warmtewisselaar uit koper, aluminium en messing gemaakt is en dus nooit zal roesten. Net als al zijn voorlopers sinds 1962. Daarom betrachten we ook altijd een aantrekkelijk tijdloos design. Zodat hij niet alleen uw huis blijft verwarmen en energie blijft besparen, maar ook goed blijft uitzien !',
-    'question7'     => 'Over hoeveel CO2 een boom nu precies opneemt bestaan een pak cijfers. Uit verschillende bronnen (o.a. VBV, K.U.Leuven, UGent, …) kunnen wij opmaken dat een volwassen boom in onze klimaatgordel gemiddeld 24 kg CO2 per jaar opneemt. Zo heeft u  een concrete indicatie wat de met LOW-H2O bespaarde CO2 betekent voor het milieu.'
+    'question7'     => 'Over hoeveel CO2 een boom nu precies opneemt bestaan een pak cijfers. Uit verschillende bronnen (o.a. VBV, K.U.Leuven, UGent, …) kunnen wij opmaken dat een volwassen boom in onze klimaatgordel gemiddeld 24 kg CO2 per jaar opneemt. Zo heeft u  een concrete indicatie wat de met LOW-H2O bespaarde CO2 betekent voor het milieu.',
+    'subtitle4'     => 'Stap 4: Vul je gegevens in en win',
+    'labelTitle11'  => 'Naam en voornaam',
+    'labelTitle12'  => 'Adres en huisnummer',
+    'labelTitle13'  => 'E-mailadres',
+    'labelTitle14'  => 'Hoeveel mensen zullen er aan deze wedstrijd deelnemen?',
+    'labelTitle15'  => 'Deelnemen!',
+    'labelTitle16'  => 'Telefoonnummer',
+    'text11'        => 'Doe mee & win',
+    'win_bati'      => 'Jaga geeft Low-H2O radiatoren voor je hele huis weg! Deelnemen is simpel.',
+    'win_bati_2'    => 'Gebruik deze Profit Simulator om je besparing te berekenen. Vul bij de laatste stap je deelname in en maak kans op gratis radiatoren!',
+    'text12'        => 'Download de voorwaarden',
+    'link1'         => 'http://eco.theradiatorfactory.com/downloads/Batibouw2015_NL.pdf',
+    'labelTitle17'  => 'Postcode',
+    'labelTitle18'  => 'Gemeente',
+    'thanks'        => 'Bedankt voor je deelname!<br>We zullen je contacteren als je gewonnen hebt.'
 );
 
 $dealers = array(

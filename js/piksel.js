@@ -1,4 +1,7 @@
 // Init vars simulator
+
+var CONTEST_URL             = 'http://dushi.local:3000/batibouw_contest';
+
 var type_woning             = '';
 var type_verwarming         = '';
 var type_brandstof          = '';
@@ -173,6 +176,61 @@ $(function(){
         stijging_energieprijs = $('*[name=stijging_energieprijs]').val();
         stijging_energieprijs = stijging_energieprijs.replace(',', '.');
         updateBesparing();
+    });
+
+
+    // Contest
+
+    $("#participate").click(function(e) {
+        e.preventDefault();
+
+        $('.ajaxloader').show();
+
+        var c_name              = $('#name').val();
+        var c_address           = $('#address').val();
+        var c_postcode          = $('#postcode').val();
+        var c_city              = $('#city').val();
+        var c_email             = $('#email').val();
+        var c_phone             = $('#phone').val();
+        var c_question          = $('#question').val();
+ 
+        var c_total_savings     = $('.besparing_30_jaar').html();
+        var c_total_co2         = $('.co2_final').html();
+
+
+        if(c_name == '' || c_address == '' || c_postcode == '' || c_city == '' || c_email == '' || c_phone == '' || c_question == '') {
+
+            if(getLang() == 'fr') {
+                alert('Veuillez remplir tous les champs!')
+            } else {
+                alert('Gelieve alle velden in te vullen!')
+            }
+            $('.ajaxloader').hide();
+
+        } else {
+    
+            $.post(CONTEST_URL, {
+
+                contest_entry: {
+                    name:           c_name,
+                    address:        c_address,
+                    postcode:       c_postcode,
+                    city:           c_city,
+                    email:          c_email,
+                    phone:          c_phone,
+                    question:       c_question,
+                    total_savings:  c_total_savings,
+                    total_co2:      c_total_co2
+                }
+
+            }, function(){
+
+                $('.contest, .ajaxloader, .grey-button').hide();
+                $('.contest-thanks').fadeIn();
+                
+            });
+            
+        }
     });
     
     /*
@@ -428,6 +486,7 @@ $(window).load(function() {
     }
     
     $('.grey-button.prev').click(function(e) {
+        console.log(currentStep);
         e.preventDefault();
         if(slideComplete) {
             currentStep--;
@@ -450,14 +509,22 @@ $(window).load(function() {
                 $('.saving .step1').show();
                 $('.saving .step2').hide();
                 $('.saving .step3').hide();
+                $('.saving .step4').hide();
             } else if(currentStep === 1) {
                 $('.saving .step1').hide();
                 $('.saving .step2').show();
                 $('.saving .step3').hide();
+                $('.saving .step4').hide();
             } else if(currentStep === 2) {
                 $('.saving .step1').hide();
                 $('.saving .step2').hide();
                 $('.saving .step3').show();
+                $('.saving .step4').hide();
+            } else if(currentStep === 3) {
+                $('.saving .step1').hide();
+                $('.saving .step2').hide();
+                $('.saving .step3').hide();
+                $('.saving .step4').show();
             }
             
             if(currentStep == 0) {
@@ -468,6 +535,9 @@ $(window).load(function() {
                 $('.button-bar .next').html(stepName + ' 3 >').fadeIn();
             } else if (currentStep == 2) {
                 $('.button-bar .prev').html('< ' + stepName + ' 2').fadeIn();
+                $('.button-bar .next').html(stepName + ' 4 >').fadeIn();
+            } else if (currentStep == 3) {
+                $('.button-bar .prev').html('< ' + stepName + ' 3').fadeIn();
                 $('.button-bar .next').fadeOut();
             }
             
@@ -508,14 +578,22 @@ $(window).load(function() {
                 $('.saving .step1').show();
                 $('.saving .step2').hide();
                 $('.saving .step3').hide();
+                $('.saving .step4').hide();
             } else if(currentStep === 1) {
                 $('.saving .step1').hide();
                 $('.saving .step2').show();
                 $('.saving .step3').hide();
+                $('.saving .step4').hide();
             } else if(currentStep === 2) {
                 $('.saving .step1').hide();
                 $('.saving .step2').hide();
                 $('.saving .step3').show();
+                $('.saving .step4').hide();
+            } else if(currentStep === 3) {
+                $('.saving .step1').hide();
+                $('.saving .step2').hide();
+                $('.saving .step3').hide();
+                $('.saving .step4').show();
             }
             
             if(currentStep == 0) {
@@ -526,6 +604,9 @@ $(window).load(function() {
                 $('.button-bar .next').html(stepName + ' 3 >').fadeIn();
             } else if (currentStep == 2) {
                 $('.button-bar .prev').html('< ' + stepName + ' 2').fadeIn();
+                $('.button-bar .next').html(stepName + ' 4 >').fadeIn();
+            } else if (currentStep == 3) {
+                $('.button-bar .prev').html('< ' + stepName + ' 3').fadeIn();
                 $('.button-bar .next').fadeOut();
             }
             
@@ -711,4 +792,3 @@ function validateEmail(email) {
     var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
 } 
-
