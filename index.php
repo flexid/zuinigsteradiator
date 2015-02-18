@@ -127,7 +127,7 @@ if(in_array($adress, $domains['fr'])) {
                         <img src="img/actie_batibouw_bottom_<?=$lang?>.png">
                     </a>
                 </p>
-    
+                <? if($lang == 'nl') { ?>
                 <p>
                     <br>
                     <br>
@@ -137,6 +137,7 @@ if(in_array($adress, $domains['fr'])) {
                     <br>
                     <br>
                 </p>
+                <? } ?>
             </section>
 
 
@@ -908,8 +909,8 @@ if(in_array($adress, $domains['fr'])) {
                                                 </div>
                                             </div>
                                             <div class="before step4">
-                                                <p class="ajaxloader">
-                                                    <img src="img/ajax-loader.gif" style="display:none; width: 32px !important;">
+                                                <p class="ajaxloader" style="display:none; ">
+                                                    <img src="img/ajax-loader.gif" style="width: 32px !important;">
                                                 </p>
                                                 <p><?= $simulator['text11']; ?></p>
                                                 <a href="<?= $simulator['link1']; ?>" target="_blank"><?= $simulator['text12']; ?></a>

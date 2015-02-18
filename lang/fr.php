@@ -383,7 +383,22 @@ $simulator = array(
     'question4'     => 'La description de l’habitation est délibérément très sommaire. Le résultat peut de ce fait être influencé négativement ou positivement par toutes sortes de facteurs comme la bonne valeur d’isolation, le comportement de l’habitant, le type d’installation, le type de réglage, etc. Mais elle vous donne une idée de ce qui est possible rien qu’en remplaçant les radiateurs.',
     'question5'     => 'Les économies obtenues en fonction d¹une inflation attendue ne constituent pas forcément la meilleure indication du pouvoir d¹achat réel de ce montant. Tout est en effet plus cher. Si vous voulez connaître précisément le montant de vos économies, essayez en maintenant l¹inflation à 0.',
     'question6'     => '30 ans de garantie sur l¹échangeur de chaleur LOW-H2O! Vous savez ainsi d¹emblée pourquoi le Simulateur de Profit fait le calcul jusqu¹à 30 ans dans le futur. Mais nous sommes certains que votre radiateur vous accompagnera bien plus longtemps encore car l¹échangeur de chaleur est réalisé en cuivre, aluminium et laiton et ne va donc jamais rouiller. Comme tous ses prédécesseurs depuis 1962. C¹est pourquoi nous nous efforçons toujours de développer un design attrayant et intemporel. Ainsi, non seulement il chauffe votre maison et économise l¹énergie, mais reste aussi esthétique!',
-    'question7'     => 'Il existe un tas de chiffres sur la quantité de CO2 absorbée précisément par un arbre. Différentes sources (e.a. VBV, K.U.Leuven, UGent, Š) nous permettent de conclure qu¹un arbre adulte absorbe en moyenne 24 kg de CO2 par an. Vous avez ainsi une indication concrète de ce que représente pour l¹environnement le CO2 épargné avec le LOW-H2O!'
+    'question7'     => 'Il existe un tas de chiffres sur la quantité de CO2 absorbée précisément par un arbre. Différentes sources (e.a. VBV, K.U.Leuven, UGent, Š) nous permettent de conclure qu¹un arbre adulte absorbe en moyenne 24 kg de CO2 par an. Vous avez ainsi une indication concrète de ce que représente pour l¹environnement le CO2 épargné avec le LOW-H2O!',
+    'subtitle4'     => 'Etape 4: Remplissez vos coordonnées et gagnez',
+    'labelTitle11'  => 'Nom et prénom',
+    'labelTitle12'  => 'Adresse d\'adresses',
+    'labelTitle13'  => 'E-mail',
+    'labelTitle14'  => 'Combien de personnes vont participer à ce concours?',
+    'labelTitle15'  => 'Participez!',
+    'labelTitle16'  => 'Numéro de téléphone',
+    'text11'        => 'Participez et gagnez',
+    'win_bati'      => 'Jaga donne radiateurs Low-H2O pour toute votre maison loin! Participer est facile.',
+    'win_bati_2'    => 'Profit Simulator Utilisez cette fonction pour calculer vos économies. Remplissez la dernière étape, vous participer et gagnez radiateurs libres!',
+    'text12'        => 'Téléchargez les conditions',
+    'link1'         => 'http://eco.theradiatorfactory.com/downloads/Batibouw2015_FR.pdf',
+    'labelTitle17'  => 'Code postal',
+    'labelTitle18'  => 'Ville',
+    'thanks'        => 'Merci pour votre participation!'
 );
 
 $dealers = array(
