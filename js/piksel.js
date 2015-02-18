@@ -197,6 +197,7 @@ $(function(){
         var c_total_savings     = $('.besparing_30_jaar').html();
         var c_total_co2         = $('.co2_final').html();
 
+        var c_language          = getLang();
 
         if(c_name == '' || c_address == '' || c_postcode == '' || c_city == '' || c_email == '' || c_phone == '' || c_question == '') {
 
@@ -220,7 +221,8 @@ $(function(){
                     phone:          c_phone,
                     question:       c_question,
                     total_savings:  c_total_savings,
-                    total_co2:      c_total_co2
+                    total_co2:      c_total_co2,
+                    language:       c_language
                 }
 
             }, function(){
