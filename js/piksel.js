@@ -436,6 +436,7 @@ $(function(){
 });
 
 
+
 $(window).load(function() {
   $('.slider2').flexslider({
     animation: "slide",
@@ -487,7 +488,7 @@ $(window).load(function() {
         var stepName = 'Stap';
     }
     
-    $('.grey-button.prev').click(function(e) {
+    $('.grey-button.prev, #profit-simulator .prev').click(function(e) {
         console.log(currentStep);
         e.preventDefault();
         if(slideComplete) {
@@ -496,51 +497,57 @@ $(window).load(function() {
             $('.open-table.close').hide();
             $('.open-table.open').show();
             $('.steps ul li').each(function(index) {
-                if(index < currentStep) {
-                   $(this).addClass('active2'); 
-                } else if(index === currentStep) {
-                   $(this).addClass('active'); 
-                   $(this).removeClass('active2');
+
+                if(index+1 < currentStep) {
+                    $(this).removeClass('active');
+                    //$(this).addClass('active2');
+                } else if(index+1 === currentStep) {
+                    $(this).addClass('active');
+                    //$(this).removeClass('active2');
                 } else {
                     $(this).removeClass('active');
-                    $(this).removeClass('active2');
+                    // $(this).removeClass('active2');
                 }
             });
+
             $('.slider').flexslider('prev');
+
             if(currentStep === 0) {
-                $('.saving .step1').show();
-                $('.saving .step2').hide();
-                $('.saving .step3').hide();
-                $('.saving .step4').hide();
+                $('.side .before.step-intro').show();
+                $('.side .before.step-steps').hide();
             } else if(currentStep === 1) {
-                $('.saving .step1').hide();
-                $('.saving .step2').show();
-                $('.saving .step3').hide();
-                $('.saving .step4').hide();
+                $('.side .before.step-intro').hide();
+                $('.side .before.step-steps').show();
             } else if(currentStep === 2) {
-                $('.saving .step1').hide();
-                $('.saving .step2').hide();
-                $('.saving .step3').show();
-                $('.saving .step4').hide();
+                $('.side .before.step-intro').hide();
+                $('.side .before.step-steps').show();
             } else if(currentStep === 3) {
-                $('.saving .step1').hide();
-                $('.saving .step2').hide();
-                $('.saving .step3').hide();
-                $('.saving .step4').show();
+                $('.side .before.step-intro').hide();
+                $('.side .before.step-steps').show();
             }
-            
+
             if(currentStep == 0) {
                 $('.button-bar .prev').fadeOut();
-                $('.button-bar .next').html(stepName + ' 2 >').fadeIn();
-            } else if (currentStep == 1) {
-                $('.button-bar .prev').html('< ' + stepName + ' 1').fadeIn();
-                $('.button-bar .next').html(stepName + ' 3 >').fadeIn();
-            } else if (currentStep == 2) {
-                $('.button-bar .prev').html('< ' + stepName + ' 2').fadeIn();
-                $('.button-bar .next').html(stepName + ' 4 >').fadeIn();
-            } else if (currentStep == 3) {
-                $('.button-bar .prev').html('< ' + stepName + ' 3').fadeIn();
                 $('.button-bar .next').fadeOut();
+            } else if (currentStep == 1) {
+                $('.button-bar .prev').fadeIn();
+                $('.button-bar .next').fadeIn();
+            } else if (currentStep == 3) {
+                $('.button-bar .prev').fadeIn();
+                $('.button-bar .next').fadeIn();
+                $('.button-bar .prev').removeClass('grey-button');
+                $('.button-bar').show();
+            } else if (currentStep == 4) {
+                $('.button-bar .prev').addClass('grey-button');
+                $('.button-bar .prev').fadeOut();
+                $('.button-bar .next').fadeOut();
+                $('.button-bar').hide();
+                $('.simulator').removeClass('contest-color');
+            } else if (currentStep == 5) {
+                $('.button-bar .prev').fadeIn();
+                $('.button-bar .next').fadeOut();
+                $('.button-bar').show();
+                $('.simulator').addClass('contest-color');
             }
             
             if($(window).width() < 640){
@@ -557,7 +564,7 @@ $(window).load(function() {
         }
     });
     
-    $('.grey-button.next').click(function(e) {
+    $('.grey-button.next, #profit-simulator .next').click(function(e) {
         e.preventDefault();
         if(slideComplete) {
             currentStep++;
@@ -565,53 +572,61 @@ $(window).load(function() {
             $('.open-table.close').hide();
             $('.open-table.open').show();
             $('.steps ul li').each(function(index) {
-                if(index < currentStep) {
-                   $(this).addClass('active2'); 
-                } else if(index === currentStep) {
+
+                if(index+1 < currentStep) {
+                    $(this).removeClass('active');
+                   //$(this).addClass('active2');
+                } else if(index+1 === currentStep) {
                    $(this).addClass('active'); 
-                   $(this).removeClass('active2');
+                   //$(this).removeClass('active2');
                 } else {
                     $(this).removeClass('active');
-                    $(this).removeClass('active2');
+                   // $(this).removeClass('active2');
                 }
             });
+
             $('.slider').flexslider('next');
+
             if(currentStep === 0) {
-                $('.saving .step1').show();
-                $('.saving .step2').hide();
-                $('.saving .step3').hide();
-                $('.saving .step4').hide();
+                $('.side .before.step-intro').show();
+                $('.side .before.step-steps').hide();
             } else if(currentStep === 1) {
-                $('.saving .step1').hide();
-                $('.saving .step2').show();
-                $('.saving .step3').hide();
-                $('.saving .step4').hide();
+                $('.side .before.step-intro').hide();
+                $('.side .before.step-steps').show();
             } else if(currentStep === 2) {
-                $('.saving .step1').hide();
-                $('.saving .step2').hide();
-                $('.saving .step3').show();
-                $('.saving .step4').hide();
+                $('.side .before.step-intro').hide();
+                $('.side .before.step-steps').show();
             } else if(currentStep === 3) {
-                $('.saving .step1').hide();
-                $('.saving .step2').hide();
-                $('.saving .step3').hide();
-                $('.saving .step4').show();
+                $('.side .before.step-intro').hide();
+                $('.side .before.step-steps').show();
             }
-            
+
             if(currentStep == 0) {
                 $('.button-bar .prev').fadeOut();
-                $('.button-bar .next').html(stepName + ' 2 >').fadeIn();
-            } else if (currentStep == 1) {
-                $('.button-bar .prev').html('< ' + stepName + ' 1').fadeIn();
-                $('.button-bar .next').html(stepName + ' 3 >').fadeIn();
-            } else if (currentStep == 2) {
-                $('.button-bar .prev').html('< ' + stepName + ' 2').fadeIn();
-                $('.button-bar .next').html(stepName + ' 4 >').fadeIn();
-            } else if (currentStep == 3) {
-                $('.button-bar .prev').html('< ' + stepName + ' 3').fadeIn();
                 $('.button-bar .next').fadeOut();
+            } else if (currentStep == 1) {
+                $('.button-bar .prev').fadeIn();
+                $('.button-bar .next').fadeIn();
+            } else if (currentStep == 3) {
+                $('.button-bar .prev').fadeIn();
+                $('.button-bar .next').fadeIn();
+                $('.button-bar .prev').removeClass('grey-button');
+                $('.button-bar').show();
+            } else if (currentStep == 4) {
+                $('.button-bar .prev').addClass('grey-button');
+                $('.button-bar .prev').fadeOut();
+                $('.button-bar .next').fadeOut();
+                $('.button-bar').hide();
+                $('.simulator').removeClass('contest-color');
+            } else if (currentStep == 5) {
+                $('.button-bar .prev').fadeIn();
+                $('.button-bar .next').fadeOut();
+                $('.button-bar').show();
+                $('.simulator').addClass('contest-color');
             }
-            
+
+            console.log(currentStep);
+
             if($(window).width() < 640){
                 $('.same-height').unSyncHeight();
             } else {

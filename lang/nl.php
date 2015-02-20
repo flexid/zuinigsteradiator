@@ -28,11 +28,27 @@ $menu = array(
     'item8'         => 'Profit simulator'
 );
 
+$batibouw = array(
+    'heading'       => 'SPECIALE LOW-H<span class="h2o">2</span>O ACTIE',
+    'heading2'      => 'Maak kans op deze besparing',
+    'heading3'      => 'Deelname formulier',
+    'intro'         => 'Bereken je energie- en CO<span class="h2o">2</span> besparing met onze Profit Simulator en win Jaga Low-H<span class="h2o">2</span>O radiatoren voor je hele huis!*',
+    'intro2'        => 'Jaga geeft gratis Low-H<span class="h2o">2</span>O radiatoren voor je hele huis weg.',
+    'intro3'        => 'Maak kans op Jaga radiatoren en ontvang uw profit simulator resultaten per email.',
+    'button'        => 'Klik hier om mee te doen',
+    'batibouw'      => 'Bezoek ons op Batibouw, Hal 12.',
+    'maak_kans'     => '<br>Maak kans op <span>gratis</span> <br>Jaga Low-H<span class="h2o">2</span>O radiatoren <br>voor je hele huis.',
+    'button2'       => 'Doe mee &amp; win',
+    'button3'       => 'Bereken uw besparing nu',
+    'button4'       => 'KLIK HIER VOOR DEELNAME'
+);
+
 $zuinigsteRadiator = array(
     'scroll'        => '',
     'featured'      => 'Jaga Low-H2O verkozen tot zuinigste radiator',
     'button1'       => 'Bereken uw besparing',
     'button2'       => 'Bekijk de radiatoren',
+    'button3'       => 'Vind een dealer',
     'ribbon1'       => 'Energie besparing 9 tot 16%',
     'ribbon2'       => 'Optimale E-Peil Reductie',
     'title'         => 'Jaga Low-H<span class="h2o">2</span>O verkozen tot zuinigste radiator',
@@ -343,11 +359,12 @@ $collectie = array(
 
 $simulator = array(
     'title'         => 'Profit simulator',
-    'intro'         => 'Bereken in 4 eenvoudige stappen uw besparingen als u kiest voor een Jaga Low-H<span class="h2o">2</span>O radiator',
+    'intro'         => 'Jaga Low-H<span class="h2o">2</span>O is opnieuw verkozen tot zuinigste radiator. En dat vieren we!',
     'text1'         => 'Uw besparing op 30 jaar',
     'text2'         => 'Contacteer <br>uw Jaga dealer',
     'text3'         => 'Ga naar dealer locator',
-    'step'          => 'Stap',
+    'step_prev'     => 'stap terug',
+    'step_next'     => 'volgende stap',
     'subtitle1'     => 'Stap 1: Beschrijf uw woning',
     'labelTitle1'   => 'Ik woon in een',
     'labelChoice1'  => 'Nieuwbouw woning',
@@ -377,7 +394,7 @@ $simulator = array(
     'labelTitle9'   => 'Geschatte jaarlijkse rente',
     'labelTitle10'  => 'Geschatte jaarlijkse stijging energieprijs',
     'question3'     => 'Zeker is dat energie alsmaar duurder zal worden. Inflatie en rente zijn veel moeilijker te voorspellen op lange termijn. Vul uw eigen voorspellingen in en maak zoveel simulaties als u wil.',
-    'text8'         => 'Op 30 jaar bespaart u',
+    'text8'         => 'Met JAGA LOW-H<span class="h2o">2</span>O bespaard u op 30 jaar: ',
     'openTable'     => 'Klik hier om de jaarlijkse besparing te bekijken',
     'closeTable'    => 'Sluit venster',
     'text9'         => 'Per jaar',
@@ -391,7 +408,7 @@ $simulator = array(
     'labelTitle12'  => 'Adres en huisnummer',
     'labelTitle13'  => 'E-mailadres',
     'labelTitle14'  => 'Hoeveel mensen zullen er aan deze wedstrijd deelnemen?',
-    'labelTitle15'  => 'Deelnemen!',
+    'labelTitle15'  => 'Verstuur mijn deelname',
     'labelTitle16'  => 'Telefoonnummer',
     'text11'        => 'Doe mee & win',
     'win_bati'      => 'Jaga geeft Low-H2O radiatoren voor je hele huis weg! Deelnemen is simpel.',

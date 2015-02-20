@@ -229,9 +229,10 @@ body {
 #content {
     
     #homepage {
-        padding: 75px 0 150px 0;
+        padding: 75px 0 0px 0;
         position: relative;
-        
+        margin-bottom: -200px;
+
         @include mq(small) {
             .ribbon {
                 left: 30px !important;
@@ -245,16 +246,26 @@ body {
                 margin-top: 30px;
             }
         }
+
+        @include mq(medium) {
+            margin-bottom: 0px;
+        }
         
         .animation-box {
             position: relative;
-            
+            z-index: 99;
+            top: -40px;
+
             .hearths {
                 position: absolute;
                 top: 0;
                 left: 0;
                 width: 100%;
                 height: 100%;
+            }
+
+            img {
+                @include transform(scale(0.9));
             }
         }
         
@@ -284,8 +295,9 @@ body {
             display: block;
             margin-bottom: 40px;
             @include mq(small) {
-                 @include transform(scale(0.7));
-                 margin-left: -50px;
+                @include transform(scale(0.7));
+                margin-left: auto;
+                margin-right: auto;
             }
             
             &.fr {
@@ -294,13 +306,65 @@ body {
                 display: block;
             }
         }
+
+        .dark {
+            position: relative;
+            top: -200px;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 40px 0;
+
+            h2 {
+                @extend .font-medium;
+                font-size: 32px;
+                color: #fff;
+
+                span {
+                    border-bottom: 2px solid #fff;
+
+                    &.h2o {
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            .win-btn {
+                @include sprite(win_btn);
+                @include hide-text();
+                position: absolute;
+                right: 80px;
+                top: 40px;
+                z-index: 99;
+                @include transition(all 250ms);
+
+                &.fr {
+                    @include sprite(win_btn_fr);
+                }
+
+                &:hover {
+                    @include transform(scale(1.25) rotate(-6deg));
+                }
+
+                @include mq(medium) {
+                    top: -100px;
+                }
+
+                @include mq(small) {
+                    display: none;
+                }
+            }
+
+            @include mq(medium) {
+                top: 0;
+            }
+        }
         
         .ribbon {
             @include sprite(ribbon);
             @include hide-text();
             position: absolute;
-            top: 125px;
-            left: 105px;
+            top: -20px;
+            right: 60px;
+            z-index: 99;
             @include transition(all 250ms);
             @include transform(scale(0.7) rotate(4deg));
             
@@ -318,8 +382,9 @@ body {
             @include sprite(ribbon2);
             @include hide-text();
             position: absolute;
-            top: 200px;
-            left: 195px;
+            top: 60px;
+            right: 0px;
+            z-index: 99;
             @include transition(all 250ms);
             @include transform(scale(0.7) rotate(4deg));
             
@@ -336,21 +401,25 @@ body {
         .button {
             @extend .font-bold;
             @include border-radius(10px);
-            background: #fff;
-            color: $primary-color;
+            border: 2px solid #fff;
+            background: none;
+            color: #fff;
             display: inline-block;
-            padding: 15px 25px;
-            margin: 0 0 10px 0;
+            padding: 10px 25px;
+            margin: 0 0 20px 0;
             text-transform: uppercase;
-            
+            min-width: 272px;
+
             &:hover {
-                background: darken(#fff, 10);
+                background: #fff;
+                color: $primary-color;
             }
             
             &.green {
                 background: $secondary-color;
                 color: #fff;
-                
+                border: none;
+
                 &:hover {
                     background: darken($secondary-color, 5);
                 }
@@ -388,13 +457,129 @@ body {
             }
         }
     }
+
+    #batibouw {
+        position: relative;
+        background: #fff;
+        padding-top: 40px;
+        padding-bottom: 60px;
+
+        &:before {
+            content: "";
+            display: block;
+            background: url(../img/divider_pattern_bottom.png) repeat;
+            @include background-size(30.5px 15.5px);
+            width: 100%;
+            height: 15.5px;
+            position: absolute;
+            top: -15.5px;
+        }
+
+        img.featured-image {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .trophy {
+            @extend .font-bold;
+            font-size: 14px;
+            color: $primary-color;
+            display: inline-block;
+            margin-top: 15px;
+
+            &:before {
+                content: "";
+                //@include sprite(trophy_red);
+                display: block;
+                margin: 0 auto;
+                position: relative;
+                top: -15px;
+            }
+        }
+
+        .dark {
+            position: relative;
+            background: $primary-color;
+
+            p {
+                position: relative;
+                top: 10px;
+                right: 10px;
+            }
+        }
+
+        p {
+            @extend .font-regular;
+            font-size: 16px;
+            color: #fff;
+
+            &.intro {
+                color: #fff;
+                text-align: center;
+                font-size: 24px;
+                margin-bottom: 40px;
+                margin-top: 20px;
+                display: inline-block;
+                padding: 0 80px;
+            }
+        }
+
+        .batibouw {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+
+            p {
+                float: right;
+            }
+            img {
+                float: right;
+            }
+
+            @include mq(medium) {
+                bottom: 3px;
+            }
+
+            @include mq(small) {
+                display: none;
+            }
+        }
+
+        .button {
+            @extend .font-bold;
+            @include border-radius(10px);
+            border: 2px solid #fff;
+            background: none;
+            color: #fff;
+            display: inline-block;
+            padding: 10px 25px;
+            margin: 0 0 40px 0;
+            text-transform: uppercase;
+            min-width: 272px;
+
+            &:hover {
+                background: #fff;
+                color: $primary-color;
+            }
+
+            &.green {
+                background: $secondary-color;
+                color: #fff;
+                border: none;
+
+                &:hover {
+                    background: darken($secondary-color, 5);
+                }
+            }
+        }
+    }
     
     #zuinigsteradiator {
         position: relative;
-        background: rgba(0,0,0,0.5);
+        //background: rgba(0,0,0,0.5);
         padding: 65px 0 90px 0;
 
-        &:before {
+        /*&:before {
             content: "";
             display: block;
             background: url(../img/divider_pattern.png) repeat;
@@ -403,7 +588,7 @@ body {
             height: 15.5px;
             position: absolute;
             top: -15.5px;
-        }
+        }*/
 
         h2 {
             @extend .font-bold;
@@ -1696,7 +1881,24 @@ body {
                 padding: 0;
             }
         }
-        
+
+        .button {
+            @extend .font-bold;
+            @include border-radius(10px);
+            background: #fff;
+            color: #4D4D4D;
+            display: inline-block;
+            padding: 10px 25px;
+            margin: 20px 0 20px 0;
+            text-transform: uppercase;
+            min-width: 272px;
+
+            &:hover {
+                background: $secondary-color;
+                color: #fff;
+            }
+        }
+
         .simulator {
             background: $secondary-color;
             @include box-shadow(0 1px 15px rgba(0,0,0,0.3));
@@ -1710,7 +1912,43 @@ body {
                     }
                 }
             }
-            
+
+            &.contest-color {
+                background: #4C6B27;
+            }
+
+            .win-btn {
+                @include sprite(win_btn);
+                @include hide-text();
+                @include transition(all 250ms);
+                margin-top: 40px;
+
+                &.fr {
+                    @include sprite(win_btn_fr);
+                }
+
+                &:hover {
+                    @include transform(scale(1.25) rotate(-6deg));
+                }
+            }
+
+            .trophy {
+                @extend .font-bold;
+                font-size: 14px;
+                color: #fff;
+                display: inline-block;
+                margin-top: 15px;
+
+                &:before {
+                    content: "";
+                    @include sprite(trophy);
+                    display: block;
+                    margin: 0 auto;
+                    position: relative;
+                    top: -15px;
+                }
+            }
+
             h2 {
                 @extend .font-bold;
                 font-size: 40px;
@@ -1762,14 +2000,14 @@ body {
                 min-height: 100%;
                 
                 .saving {
-                    background: #545454;
-                    padding: 20px 30px 20px 0;
-                    margin: 40px 0 0 0;
+                    //background: #545454;
+                    //padding: 20px 30px 20px 0;
+                    //margin: 40px 0 0 0;
                     width: 100%;
                     display: inline-block;
                     position: relative;
                     
-                    @include mq(small) {
+                    /*@include mq(small) {
                         display: none;
                     }
                     
@@ -1793,16 +2031,55 @@ body {
                         bottom: -23px;
                         left: -40px;
                         @include transform(rotate(-45deg));
-                    }
+                    }*/
                     
                     .before {
                         display: none;
                         
-                        &.step1 {
+                        &.step-intro {
                             display: block;
                         }
+
+                        .steps {
+                            ul {
+                                list-style: none;
+                                margin: 0;
+
+                                li {
+                                    margin: 10px 0;
+                                    padding: 10px;
+                                    position: relative;
+                                    display: block;
+                                    margin-right: 46px;
+
+                                    &.active {
+                                        background: #fff;
+
+                                        &:after {
+                                            content: "";
+                                            width: 0;
+                                            height: 0;
+                                            border-top: 23px solid transparent;
+                                            border-bottom: 23px solid transparent;
+                                            border-left: 23px solid #fff;
+                                            position: absolute;
+                                            top: 50%;
+                                            right: -23px;
+                                            margin-top: -23px;
+                                            margin-left: -23px;
+                                        }
+                                    }
+
+                                    span {
+                                        @extend .font-medium;
+                                        font-size: 16px;
+                                        color: #999999;
+                                    }
+                                }
+                            }
+                        }
                         
-                        p {
+                        /*p {
                             @extend .font-bold;
                             font-size: 21px;
                             line-height: 26px;
@@ -1825,7 +2102,7 @@ body {
                                 font-size: 12px;
                                 line-height: 14px;
                             }
-                        }
+                        }*/
 
                         /*span {
                             @extend .font-bold;
@@ -1891,7 +2168,7 @@ body {
                     padding-left: 30px;
                 }
                 
-                .steps {
+                /*.steps {
                     margin-left: -30px;
                     background: #4D6F25;
                     
@@ -1942,14 +2219,63 @@ body {
                             }
                         }
                     }
-                }
+                }*/
                 
                 .slider {
                     margin-top: 30px;
                     padding-right: 30px;
                     position: relative;
                     height: 100%;
-                    
+
+                    li {
+                        pointer-events: none;
+
+                        &.flex-active-slide {
+                            pointer-events: auto;
+                        }
+
+                        .dark {
+                            background: #4C6B27;
+                            position: relative;
+
+                            h3 {
+                                margin-top: 30px;
+                            }
+                            p {
+                                margin-top: 5px;
+                                color: #fff;
+                            }
+
+                            a.big-btn {
+                                font-size: 20px;
+                                width: auto;
+                                display: inline-block;
+                            }
+
+                            &:before {
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                top: 0;
+                                left: -30px;
+                                width: 30px;
+                                height: 100%;
+                                background: #4C6B27;
+                            }
+
+                            &:after {
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                top: 0;
+                                right: -30px;
+                                width: 30px;
+                                height: 100%;
+                                background: #4C6B27;
+                            }
+                        }
+                    }
+
                     .row.whitespace {
                         margin-bottom: 20px;
                     }
@@ -1958,6 +2284,7 @@ body {
                         @include sprite(icon_question);
                         
                         &.dark {
+                            background: none;
                             @include sprite(icon_question_dark);
                         }
                         
@@ -1973,6 +2300,29 @@ body {
                        color: #fff;
                        text-transform: uppercase;
                        margin-bottom: 0px;
+
+                        &.headliner {
+                            text-transform: none;
+                            font-size: 40px;
+                            @extend .font-medium;
+                            margin-top: 70px;
+
+                            span {
+                                text-transform: none;
+                                font-size: 40px;
+                                @extend .font-medium;
+                                border-bottom: 2px solid #fff;
+
+                                &.h2o {
+                                    border-bottom: none;
+                                }
+                            }
+                        }
+
+                        &.white-box-title {
+                            text-transform: none;
+                            margin-top: 40px;
+                        }
                     }
                     
                     h4 {
@@ -2086,19 +2436,40 @@ body {
                             font-size: 38px;
                         }
                     }
+
+                    a.big-btn {
+                        border: 1px solid #fff;
+                        padding: 20px 20px;
+                        @include border-radius(15px);
+                        margin-bottom: 30px;
+                        margin-top: 40px;
+                        width: 100%;
+                        display: block;
+                        text-align: center;
+                        font-size: 30px;
+                        @extend .font-bold;
+                        color: #fff;
+                        @include transition(background 250ms);
+
+                        &:hover {
+                            color: $primary-color;
+                            background: #fff;
+                        }
+                    }
                     
                     .white-box {
                         background: #fff;
                         padding: 5px 8px 10px 8px;
                         @include border-radius(15px);
                         margin-bottom: 30px;
-                        
+                        margin-top: 40px;
+
                         h3 {
                             color: $secondary-color;
                         }
                         
                         .open-table {
-                            color: #A0A0A0;
+                            color: $primary-color;
                             background: #EFEAE9;
                             width: 100%;
                             display: block;
@@ -2214,23 +2585,28 @@ body {
                     
                     .button-bar {
                         min-height: 75px;
-                        
-                        .grey-button {
+
+                        .prev, .next {
+                            float: right;
+                            margin-right: 30px;
                             @extend .font-medium;
-                            font-size: 18px;
-                            text-transform: uppercase;
-                            @include text-shadow(0 1px 0 rgba(0,0,0,0.6));
+                            font-size: 14px;
+                            display: none;
+                        }
+
+                        a {
+                            color: rgba(255,255,255,0.8);
+                            padding: 6px 15px;
+                        }
+
+                        .grey-button {
                             @include border-radius(5px);
-                            border-bottom: 2px solid #333333;
                             background: #575757;
                             color: #fff;
-                            display: inline-block;
                             width: auto;
-                            padding: 10px 80px;
-                            position: absolute;
                             
                             @include mq(880) {
-                                padding: 10px 30px;
+                                //padding: 10px 30px;
                             }
                             
                             &:active {
@@ -2238,13 +2614,7 @@ body {
                                 border-bottom: none;
                             }
 
-                            &.next {
-                                right: 30px;
-                            }
 
-                            &.prev {
-                                left: 0px;
-                            }
                         }
                     }
                 }

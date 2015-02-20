@@ -28,11 +28,27 @@ $menu = array(
     'item8'         => 'SIMULATEUR DE PROFIT'
 );
 
+$batibouw = array(
+    'heading'       => 'ACTION SPÉCIALE LOW-H<span class="h2o">2</span>O',
+    'heading2'      => 'Tentez de gagner ces économies d’énergie',
+    'heading3'      => 'Formulaire de participation',
+    'intro'         => 'Calculez vos économies d’énergie et d’émissions de CO<span class="h2o">2</span> avec notre simulateur de profit et tentez de gagner des radiateurs Jaga Low-H<span class="h2o">2</span>O pour toute votre habitation !',
+    'intro2'        => 'Gagnez des radiateurs Jaga Low-H<span class="h2o">2</span>O gratuits pour toute votre habitation !',
+    'intro3'        => 'Tentez de gagner des radiateurs Jaga et recevez les resultats de notre simulateur de profit par email.',
+    'button'        => 'CLIQUEZ ICI POUR PARTICIPER',
+    'batibouw'      => 'Rendez-nous visite à Batibouw, Palais 12.',
+    'maak_kans'     => 'Tentez de gagner des radiateurs <br>Jaga Low-H<span class="h2o">2</span>O <span>gratuits</span> <br>pour toute votre habitation !',
+    'button2'       => 'PARTICIPEZ & GAGNEZ',
+    'button3'       => 'Calculez vos économies d’énergie',
+    'button4'       => 'CLIQUEZ ICI POUR PARTICIPER'
+);
+
 $zuinigsteRadiator = array(
     'scroll'        => '',
     'featured'      => 'JAGA Low-H2O ELU LE PLUS ECONOMIQUE',
     'button1'       => 'CALCULEZ VOTRE PROFIT',
     'button2'       => 'VOIR RADIATEURS',
+    'button3'       => 'trouver votre distributeur',
     'ribbon1'       => 'ECONOMIE ÉNERGÉTIQUE PROUVÉE DE À 16%',
     'ribbon2'       => 'RÉDUCTION NIVEAU Ew OPTIMALE',
     'title'         => 'JAGA Low-H<span class="h2o">2</span>O DE NOUVEAU ÉLU RADIATEUR LE PLUS ECONOMIQUE!',
@@ -345,7 +361,8 @@ $simulator = array(
     'text1'         => 'VOTRE ECONOMIE SUR 30 ANS',
     'text2'         => 'Contactez <br>votre revendeur Jaga',
     'text3'         => 'Allez vers distributeurs JAGA',
-    'step'          => 'Etape',
+    'step_prev'     => 'Etape précédente',
+    'step_next'     => 'Etape suivante',
     'subtitle1'     => 'ETAPE 1 : votre habitation ',
     'labelTitle1'   => 'J\'habite dans un(e)',
     'labelChoice1'  => 'Bâtiment neuf',
