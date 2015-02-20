@@ -229,6 +229,7 @@ $(function(){
 
                 $('.contest, .ajaxloader, .grey-button').hide();
                 $('.contest-thanks').fadeIn();
+                $('.heading-thanks').html($('.heading-thanks').attr('data-thanks'));
                 
             });
             

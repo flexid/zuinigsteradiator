@@ -110,7 +110,7 @@ if(in_array($adress, $domains['fr'])) {
                 <div class="row">
                     <div class="medium-12 columns text-center">
                         <div class="dark">
-                            <p class="intro"><?= $batibouw['intro']; ?></p>
+                            <p class="intro"><?= $batibouw['intro']; ?><br><small><a href="<?= $simulator['link1']; ?>" style="color:#fff;text-decoration:underline;"><?= $simulator['text12']; ?></a><small></p>
 
                         </div>
                     </div>
@@ -938,6 +938,9 @@ if(in_array($adress, $domains['fr'])) {
                                                             <span class="trophy"><?= $batibouw['heading']; ?></span>
                                                             <h3 class="headliner"><?= $batibouw['intro']; ?></h3>
                                                             <a class="win-btn next <?= $general['lang']; ?>"><?= $batibouw['button2']; ?></a>
+                                                            <br>
+                                                            <br>
+                                                            <small><a href="<?= $simulator['link1']; ?>" style="color:#fff;text-decoration:underline;"><?= $simulator['text12']; ?></a></small>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -1134,7 +1137,7 @@ if(in_array($adress, $domains['fr'])) {
                                                 <li>
                                                     <div class="row">
                                                         <div class="medium-12 columns">
-                                                            <h3><?= $batibouw['heading3']; ?></h3>
+                                                            <h3 data-thanks="<?= $batibouw['heading4']; ?>" class="heading-thanks"><?= $batibouw['heading3']; ?></h3>
                                                             <hr>
                                                         </div>
                                                     </div>

@@ -32,6 +32,7 @@ $batibouw = array(
     'heading'       => 'SPECIALE LOW-H<span class="h2o">2</span>O ACTIE',
     'heading2'      => 'Maak kans op deze besparing',
     'heading3'      => 'Deelname formulier',
+    'heading4'      => 'Deelname ontvangen!',
     'intro'         => 'Bereken je energie- en CO<span class="h2o">2</span> besparing met onze Profit Simulator en win Jaga Low-H<span class="h2o">2</span>O radiatoren voor je hele huis!',
     'intro2'        => 'Jaga geeft gratis Low-H<span class="h2o">2</span>O radiatoren voor je hele huis weg.',
     'intro3'        => 'Maak kans op Jaga radiatoren en ontvang uw profit simulator resultaten per email.',

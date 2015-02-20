@@ -32,6 +32,7 @@ $batibouw = array(
     'heading'       => 'ACTION SPÉCIALE LOW-H<span class="h2o">2</span>O',
     'heading2'      => 'Tentez de gagner ces économies d’énergie',
     'heading3'      => 'Formulaire de participation',
+    'heading4'      => 'Merci pour participation',
     'intro'         => 'Calculez vos économies d’énergie et d’émissions de CO<span class="h2o">2</span> avec notre simulateur de profit et tentez de gagner des radiateurs Jaga Low-H<span class="h2o">2</span>O pour toute votre habitation !',
     'intro2'        => 'Gagnez des radiateurs Jaga Low-H<span class="h2o">2</span>O gratuits pour toute votre habitation !',
     'intro3'        => 'Tentez de gagner des radiateurs Jaga et recevez les resultats de notre simulateur de profit par email.',
