@@ -36,8 +36,8 @@ if(in_array($adress, $domains['fr'])) {
     require_once('lang/nl.php');
     $lang = 'nl';
 } else {
-    require_once('lang/fr.php');
-    $lang = 'fr';
+    require_once('lang/nl.php');
+    $lang = 'nl';
 }
 
 ?>

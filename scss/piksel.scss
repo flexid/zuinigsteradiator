@@ -609,6 +609,8 @@ body {
             text-transform: uppercase;
             min-width: 272px;
             transform: translateY(-50%);
+            position: relative;
+            z-index: 99;
 
             @include mq(small) {
                 margin-top: 75px;

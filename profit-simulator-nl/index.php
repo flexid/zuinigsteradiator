@@ -230,8 +230,8 @@
                                                 <li>
                                                     <div class="row">
                                                         <div class="medium-12 columns">
-                                                            <h3><?= $simulator['subtitle4']; ?></h3>
-                                                            <hr>
+                                                            <!--<h3><?= $simulator['subtitle4']; ?></h3>
+                                                            <hr>-->
                                                         </div>
                                                     </div>
                                                     <div class="print-container">
