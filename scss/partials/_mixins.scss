@@ -42,6 +42,14 @@
     -webkit-perspective: 1000;
 }
 
+/*
+ *  CSS3 calc mixin
+ *  Examples:
+ *      @include calc(width, "100% - 80px");
+ *      @include calc(width, "100% - #{$variable}"); // If you want to use Sass variables
+ *
+ *  Note that older browsers are supported via the calc-polyfill (js/polyfill/calc.min.js) by Robert Weber (https://github.com/closingtag/calc-polyfill)
+ */
 @mixin calc($property, $expression) { 
     #{$property}: -webkit-calc(#{$expression});
     #{$property}: -moz-calc(#{$expression});

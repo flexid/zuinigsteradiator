@@ -229,7 +229,6 @@ $(function(){
 
                 $('.contest, .ajaxloader, .grey-button').hide();
                 $('.contest-thanks').fadeIn();
-                $('.heading-thanks').html($('.heading-thanks').attr('data-thanks'));
                 
             });
             
@@ -371,7 +370,7 @@ $(function(){
         var windowHeight = $(window).height();
         
         // Parallax body background
-        $('body').css('background-position-y', $st/1.3);
+        //$('body').css('background-position-y', $st/1.3);
         
         // Earth parralax
         /*var $earth = $('#earth');
@@ -488,157 +487,43 @@ $(window).load(function() {
     } else {
         var stepName = 'Stap';
     }
-    
+
+    // Simulator prev btn
     $('.grey-button.prev, #profit-simulator .prev').click(function(e) {
-        console.log(currentStep);
         e.preventDefault();
+
         if(slideComplete) {
             currentStep--;
-            $('.toggle-table').hide();
-            $('.open-table.close').hide();
-            $('.open-table.open').show();
-            $('.steps ul li').each(function(index) {
-
-                if(index+1 < currentStep) {
-                    $(this).removeClass('active');
-                    //$(this).addClass('active2');
-                } else if(index+1 === currentStep) {
-                    $(this).addClass('active');
-                    //$(this).removeClass('active2');
-                } else {
-                    $(this).removeClass('active');
-                    // $(this).removeClass('active2');
-                }
-            });
-
             $('.slider').flexslider('prev');
-
-            if(currentStep === 0) {
-                $('.side .before.step-intro').show();
-                $('.side .before.step-steps').hide();
-            } else if(currentStep === 1) {
-                $('.side .before.step-intro').hide();
-                $('.side .before.step-steps').show();
-            } else if(currentStep === 2) {
-                $('.side .before.step-intro').hide();
-                $('.side .before.step-steps').show();
-            } else if(currentStep === 3) {
-                $('.side .before.step-intro').hide();
-                $('.side .before.step-steps').show();
-            }
-
-            if(currentStep == 0) {
-                $('.button-bar .prev').fadeOut();
-                $('.button-bar .next').fadeOut();
-            } else if (currentStep == 1) {
-                $('.button-bar .prev').fadeIn();
-                $('.button-bar .next').fadeIn();
-            } else if (currentStep == 3) {
-                $('.button-bar .prev').fadeIn();
-                $('.button-bar .next').fadeIn();
-                $('.button-bar .prev').removeClass('grey-button');
-                $('.button-bar').show();
-            } else if (currentStep == 4) {
-                $('.button-bar .prev').addClass('grey-button');
-                $('.button-bar .prev').fadeOut();
-                $('.button-bar .next').fadeOut();
-                $('.button-bar').hide();
-                $('.simulator').removeClass('contest-color');
-            } else if (currentStep == 5) {
-                $('.button-bar .prev').fadeIn();
-                $('.button-bar .next').fadeOut();
-                $('.button-bar').show();
-                $('.simulator').addClass('contest-color');
-            }
-            
-            if($(window).width() < 640){
-                $('.same-height').unSyncHeight();
-            } else {
-                $('.same-height').syncHeight({ 'updateOnResize': true});
-            }
-            
-            $('html, body').stop().animate({
-                'scrollTop': $('#profit-simulator').offset().top - 40
-            }, 900, 'swing', function () {
-                // nothing
-            });
+            changeStep(currentStep);
         }
     });
-    
+
+    // Simulator next btn
     $('.grey-button.next, #profit-simulator .next').click(function(e) {
         e.preventDefault();
+
         if(slideComplete) {
             currentStep++;
-            $('.toggle-table').hide();
-            $('.open-table.close').hide();
-            $('.open-table.open').show();
-            $('.steps ul li').each(function(index) {
-
-                if(index+1 < currentStep) {
-                    $(this).removeClass('active');
-                   //$(this).addClass('active2');
-                } else if(index+1 === currentStep) {
-                   $(this).addClass('active'); 
-                   //$(this).removeClass('active2');
-                } else {
-                    $(this).removeClass('active');
-                   // $(this).removeClass('active2');
-                }
-            });
-
             $('.slider').flexslider('next');
+            changeStep(currentStep);
+        }
+    });
 
-            if(currentStep === 0) {
-                $('.side .before.step-intro').show();
-                $('.side .before.step-steps').hide();
-            } else if(currentStep === 1) {
-                $('.side .before.step-intro').hide();
-                $('.side .before.step-steps').show();
-            } else if(currentStep === 2) {
-                $('.side .before.step-intro').hide();
-                $('.side .before.step-steps').show();
-            } else if(currentStep === 3) {
-                $('.side .before.step-intro').hide();
-                $('.side .before.step-steps').show();
-            }
+    // Simulator step btn
+    $('.steps li').click(function(e) {
+        e.preventDefault();
 
-            if(currentStep == 0) {
-                $('.button-bar .prev').fadeOut();
-                $('.button-bar .next').fadeOut();
-            } else if (currentStep == 1) {
-                $('.button-bar .prev').fadeIn();
-                $('.button-bar .next').fadeIn();
-            } else if (currentStep == 3) {
-                $('.button-bar .prev').fadeIn();
-                $('.button-bar .next').fadeIn();
-                $('.button-bar .prev').removeClass('grey-button');
-                $('.button-bar').show();
-            } else if (currentStep == 4) {
-                $('.button-bar .prev').addClass('grey-button');
-                $('.button-bar .prev').fadeOut();
-                $('.button-bar .next').fadeOut();
-                $('.button-bar').hide();
-                $('.simulator').removeClass('contest-color');
-            } else if (currentStep == 5) {
-                $('.button-bar .prev').fadeIn();
-                $('.button-bar .next').fadeOut();
-                $('.button-bar').show();
-                $('.simulator').addClass('contest-color');
-            }
+        index = $(this).index() + 1;
 
-            console.log(currentStep);
+        if(index >= currentStep) {
+            return false;
+        }
 
-            if($(window).width() < 640){
-                $('.same-height').unSyncHeight();
-            } else {
-                $('.same-height').syncHeight({ 'updateOnResize': true});
-            }
-            
-            $('html, body').stop().animate({
-                'scrollTop': $('#profit-simulator').offset().top - 40
-            }, 900, 'swing', function () {
-                // nothing
-            });
+        if(slideComplete) {
+            currentStep = index;
+            $('.slider').flexslider(currentStep);
+            changeStep(currentStep);
         }
     });
   
@@ -665,6 +550,101 @@ $(window).resize(function() {
     }
     
 });
+
+
+function changeStep(currentStep) {
+
+    // Always hide table when switching slides
+    $('.toggle-table').hide();
+    $('.open-table.close').hide();
+    $('.open-table.open').show();
+
+    // Set step active/inactive
+    $('.steps ul li').each(function(index) {
+        if(index+1 < currentStep) {
+            $(this).removeClass('active');
+        } else if(index+1 === currentStep) {
+            $(this).addClass('active');
+        } else {
+            $(this).removeClass('active');
+        }
+    });
+
+    // Set things visible/not visible on each step
+    if(currentStep === 0) {
+        $('.side .before.step-intro').show();
+        $('.side .before.step-steps').hide();
+        $('.side .before.step-last').fadeOut();
+
+        $('.button-bar .prev').fadeOut();
+        $('.button-bar .next').fadeOut();
+
+        $('.simulator').removeClass('contest-color');
+        $('.button-bar .prev').removeClass('grey-button');
+    } else if(currentStep === 1) {
+        $('.side .before.step-intro').hide();
+        $('.side .before.step-steps').show();
+        $('.side .before.step-last').fadeOut();
+
+        $('.button-bar .prev').fadeIn();
+        $('.button-bar .next').fadeIn();
+
+        $('.simulator').removeClass('contest-color');
+        $('.button-bar .prev').removeClass('grey-button');
+    } else if(currentStep === 2) {
+        $('.side .before.step-intro').hide();
+        $('.side .before.step-steps').show();
+        $('.side .before.step-last').fadeOut();
+
+        $('.button-bar .prev').fadeIn();
+        $('.button-bar .next').fadeIn();
+
+        $('.simulator').removeClass('contest-color');
+        $('.button-bar .prev').removeClass('grey-button');
+    } else if(currentStep === 3) {
+        $('.side .before.step-intro').hide();
+        $('.side .before.step-steps').show();
+        $('.side .before.step-last').fadeOut();
+
+        $('.button-bar .prev').fadeIn();
+        $('.button-bar .next').fadeIn();
+
+        $('.simulator').removeClass('contest-color');
+        $('.button-bar .prev').removeClass('grey-button');
+    } else if(currentStep === 4) {
+        $('.side .before.step-intro').hide();
+        $('.side .before.step-steps').show();
+        $('.side .before.step-last').fadeIn();
+
+        $('.button-bar .prev').fadeIn();
+        $('.button-bar .next').fadeIn();
+
+        $('.simulator').removeClass('contest-color');
+        $('.button-bar .prev').removeClass('grey-button');
+    } else if(currentStep === 5) {
+        $('.side .before.step-intro').hide();
+        $('.side .before.step-steps').show();
+        $('.side .before.step-last').fadeIn();
+
+        $('.button-bar .prev').fadeIn();
+        $('.button-bar .next').fadeOut();
+
+        $('.simulator').addClass('contest-color');
+        $('.button-bar .prev').addClass('grey-button');
+    }
+
+    if($(window).width() < 640){
+        $('.same-height').unSyncHeight();
+    } else {
+        $('.same-height').syncHeight({ 'updateOnResize': true});
+    }
+
+    $('html, body').stop().animate({
+        'scrollTop': $('#profit-simulator').offset().top - 40
+    }, 900, 'swing', function () {
+        // nothing
+    });
+}
 
 function getGridSize() {
     if(window.innerWidth < 640) {
@@ -756,16 +736,16 @@ function updateBesparing() {
         } else {
             besparing[i] = besparing_geld_jaar;
         }
-        $('.table .inner-content').append('<div class="row"><div class="small-3 columns text-center"><span>' + jaar + ' ' + i + '</span></div><div class="small-3 columns"><span>&euro;' + besparing_geld_jaar.toFixed() + '</span></div><div class="small-3 columns"><span>&euro;' + besparing[i].toFixed() + '</span></div><div class="small-3 columns"><span>' + co2.toFixed() + ' kg CO<span class="h2o">2</span></span></div></div>');
-        co2_final = number_format(co2, 2, ',', '.');
+        $('.table .inner-content').append('<div class="row"><div class="small-3 columns text-center"><span>' + jaar + ' ' + i + '</span></div><div class="small-3 columns"><span>&euro;' + number_format(besparing_geld_jaar, 0, ',', '.') + '</span></div><div class="small-3 columns"><span>&euro;' + number_format(besparing[i], 0, ',', '.') + '</span></div><div class="small-3 columns"><span>' + number_format(co2, 0, ',', '.') + ' kg CO<span class="h2o">2</span></span></div></div>');
+        co2_final = number_format(co2, 0, ',', '.');
     }
     
     $('.besparing_percentage').html(besparing_percentage + '%');
     $('.besparing_jaar').html(besparing_jaar);
-    $('.besparing_geld_jaar').html(number_format(besparing[1], 2, ',', '.'));
-    $('.besparing_30_jaar').html(number_format(besparing[30], 2, ',', '.'));
+    $('.besparing_geld_jaar').html(number_format(besparing[1], 0, ',', '.'));
+    $('.besparing_30_jaar').html(number_format(besparing[30], 0, ',', '.'));
     
-    besparing_30_jaar_split = number_format(besparing[30], 2, ',', '.');
+    besparing_30_jaar_split = number_format(besparing[30], 0, ',', '.');
     besparing_30_jaar_split = besparing_30_jaar_split.split(',');
     $('.besparing_30_jaar_first').html(besparing_30_jaar_split[0]);
     $('.besparing_30_jaar_last').html(',' + besparing_30_jaar_split[1]);
@@ -773,7 +753,6 @@ function updateBesparing() {
 }
 
 function number_format(number, decimals, dec_point, thousands_sep) {
-  thousands_sep = ''; // Geen punt bij duizendtallen
   
   number = (number + '')
     .replace(/[^0-9+\-Ee.]/g, '');

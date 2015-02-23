@@ -33,15 +33,16 @@ $batibouw = array(
     'heading2'      => 'Maak kans op deze besparing',
     'heading3'      => 'Deelname formulier',
     'heading4'      => 'Deelname ontvangen!',
-    'intro'         => 'Bereken je energie- en CO<span class="h2o">2</span> besparing met onze Profit Simulator en win Jaga Low-H<span class="h2o">2</span>O radiatoren voor je hele huis!',
+    'intro'         => 'Bereken je energie- en CO<span class="h2o">2</span> besparing met onze Profit Simulator en win Jaga Low-H<span class="h2o">2</span>O radiatoren voor je hele huis!*',
     'intro2'        => 'Jaga geeft gratis Low-H<span class="h2o">2</span>O radiatoren voor je hele huis weg.',
     'intro3'        => 'Maak kans op Jaga radiatoren en ontvang uw profit simulator resultaten per email.',
     'button'        => 'Klik hier om mee te doen',
     'batibouw'      => 'Bezoek ons op Batibouw, Hal 12.',
-    'maak_kans'     => '<br>Maak kans op <span>gratis</span> <br>Jaga Low-H<span class="h2o">2</span>O radiatoren <br>voor je hele huis.',
+    'maak_kans'     => 'Maak kans op <span>gratis</span> <br>Jaga Low-H<span class="h2o">2</span>O radiatoren <br>voor je hele huis.',
     'button2'       => 'Doe mee &amp; win',
     'button3'       => 'Bereken uw besparing nu',
-    'button4'       => 'KLIK HIER VOOR DEELNAME'
+    'button4'       => 'KLIK HIER VOOR DEELNAME',
+    'agreements'    => '(*) wedstrijd voorwaarden'
 );
 
 $zuinigsteRadiator = array(
@@ -418,7 +419,12 @@ $simulator = array(
     'link1'         => 'http://eco.theradiatorfactory.com/downloads/Batibouw2015_NL.pdf',
     'labelTitle17'  => 'Postcode',
     'labelTitle18'  => 'Gemeente',
-    'thanks'        => 'Bedankt voor je deelname!<br>We zullen je contacteren als je gewonnen hebt.'
+    'thanks'        => 'Bedankt voor je deelname. <br>Eind maart ontvang je een nieuwsbrief waarin de winnaars bekend gemaakt worden',
+    'step_intro'    => 'Vul alle gevraagde gegevens in',
+    'step1'         => '<strong>Stap 1:</strong> Uw woning',
+    'step2'         => '<strong>Stap 2:</strong> Energieverbruik',
+    'step3'         => '<strong>Stap 3:</strong> Profit Simulator op 30 jaar',
+    'step4'         => '<strong>Stap 4:</strong> Uw besparing'
 );
 
 $dealers = array(

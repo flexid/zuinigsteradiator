@@ -33,7 +33,7 @@ $batibouw = array(
     'heading2'      => 'Tentez de gagner ces économies d’énergie',
     'heading3'      => 'Formulaire de participation',
     'heading4'      => 'Merci pour participation',
-    'intro'         => 'Calculez vos économies d’énergie et d’émissions de CO<span class="h2o">2</span> avec notre simulateur de profit et tentez de gagner des radiateurs Jaga Low-H<span class="h2o">2</span>O pour toute votre habitation !',
+    'intro'         => 'Calculez vos économies d’énergie et d’émissions de CO<span class="h2o">2</span> avec notre simulateur de profit et tentez de gagner des radiateurs Jaga Low-H<span class="h2o">2</span>O pour toute votre habitation!*',
     'intro2'        => 'Gagnez des radiateurs Jaga Low-H<span class="h2o">2</span>O gratuits pour toute votre habitation !',
     'intro3'        => 'Tentez de gagner des radiateurs Jaga et recevez les resultats de notre simulateur de profit par email.',
     'button'        => 'CLIQUEZ ICI POUR PARTICIPER',
@@ -41,7 +41,8 @@ $batibouw = array(
     'maak_kans'     => 'Tentez de gagner des radiateurs <br>Jaga Low-H<span class="h2o">2</span>O <span>gratuits</span> <br>pour toute votre habitation !',
     'button2'       => 'PARTICIPEZ & GAGNEZ',
     'button3'       => 'Calculez vos économies d’énergie',
-    'button4'       => 'CLIQUEZ ICI POUR PARTICIPER'
+    'button4'       => 'CLIQUEZ ICI POUR PARTICIPER',
+    'agreements'    => '(*) les conditions'
 );
 
 $zuinigsteRadiator = array(
@@ -416,7 +417,12 @@ $simulator = array(
     'link1'         => 'http://eco.theradiatorfactory.com/downloads/Batibouw2015_FR.pdf',
     'labelTitle17'  => 'Code postal',
     'labelTitle18'  => 'Ville',
-    'thanks'        => 'Merci pour votre participation!'
+    'thanks'        => 'Merci pour votre participation!',
+    'step_intro'    => 'Vul alle gevraagde gegevens in',
+    'step1'         => '<strong>Etape 1:</strong> <br>Votre habitation ',
+    'step2'         => '<strong>Etape 2:</strong> <br>Votre consommation d\'énergie   ',
+    'step3'         => '<strong>Etape 3:</strong> <br>Votre profit simulator',
+    'step4'         => '<strong>Etape 4:</strong> <br>Remplissez vos coordonnées et gagnez'
 );
 
 $dealers = array(

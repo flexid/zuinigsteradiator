@@ -49,6 +49,24 @@ if(in_array($adress, $domains['fr'])) {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/main.css" rel="stylesheet" type="text/css">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="img/favicons/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="img/favicons/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="img/favicons/manifest.json">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="img/favicons/mstile-144x144.png">
+        <meta name="theme-color" content="#ffffff">
     </head>
     <body data-lang="<?= $lang; ?>">
         
@@ -87,20 +105,10 @@ if(in_array($adress, $domains['fr'])) {
         
         <main id="content">
 
-            <section id="batibouw" class="text-center">
-
-                <div class="row">
-                    <div class="medium-12 columns text-center">
-                        <a class="button" href="#<?= $general['anker7']; ?>" style="color: #cc0000">
-                            <img src="img/batibouw.png"><br><br>
-                            <span><?= $batibouw['batibouw']; ?><br></span>
-                            <small>~ <?= $batibouw['button']; ?> ~</small>
-                        </a>
-                    </div>
-                </div>
+            <section id="batibouw">
 						
                 <div class="row">
-                    <div class="medium-12 columns text-center">
+                    <div class="medium-12 columns">
 						<? if ($lang == "nl") { ?>
                  	       <img class="featured-image" src="img/jantrakteert.jpg" alt="Jan Kriekels">
 						<? } ?>
@@ -108,10 +116,22 @@ if(in_array($adress, $domains['fr'])) {
                 </div>
 
                 <div class="row">
-                    <div class="medium-12 columns text-center">
+                    <div class="medium-12 columns">
                         <div class="dark">
-                            <p class="intro"><?= $batibouw['intro']; ?><br><small><a href="<?= $simulator['link1']; ?>" style="color:#fff;text-decoration:underline;"><?= $simulator['text12']; ?></a><small></p>
+                            <p class="intro"><?= $batibouw['intro']; ?></p>
+                            <a target="_blank" href="<?= $simulator['link1']; ?>"><?= $batibouw['agreements']; ?></a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="row">
+                    <div class="medium-12 columns">
+                        <div class="black">
+                            <a class="button" href="#<?= $general['anker7']; ?>"><?= $batibouw['button']; ?></a>
+                            <p><?= $batibouw['batibouw']; ?></p>
+                            <div class="batibouw-img">
+                                <img src="img/batibouw.png">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -126,7 +146,7 @@ if(in_array($adress, $domains['fr'])) {
                     </div>
                     <div class="medium-7 large-8 columns">
                         <div class="animation-box">
-                            <img src="img/zuinigste_radiator@2x.png">
+                            <img src="img/zuinigste_radiator.png">
                             <img class="hearths" src="img/love.gif">
                         </div>
                         <a href="#<?= $general['anker3']; ?>" class="ribbon <?= $general['lang']; ?>"><?= $zuinigsteRadiator['ribbon1']; ?></a>
@@ -137,14 +157,10 @@ if(in_array($adress, $domains['fr'])) {
                 <div class="dark">
 
                     <div class="row">
-                        <div class="medium-5 large-4 columns">
+                        <div class="medium-12 large-12 columns">
+                            <h2><?= $batibouw['maak_kans']; ?></h2>
                             <a class="button green" href="#<?= $general['anker7']; ?>"><?= $zuinigsteRadiator['button1']; ?></a>
                             <a class="button" href="#<?= $general['anker5']; ?>"><?= $zuinigsteRadiator['button2']; ?></a>
-                            <a class="button" href="#<?= $general['anker6']; ?>"><?= $zuinigsteRadiator['button3']; ?></a>
-                        </div>
-                        <div class="medium-7 large-8 columns">
-                            <h2><?= $batibouw['maak_kans']; ?></h2>
-                            <a href="#<?= $general['anker7']; ?>" class="win-btn <?= $general['lang']; ?>"><?= $batibouw['button2']; ?></a>
                         </div>
                     </div>
 
@@ -287,25 +303,27 @@ if(in_array($adress, $domains['fr'])) {
                         </div>
                     </div>
                 </div>
-                
-                <div class="row">
-                    <div class="medium-12 columns">
-                        <h2><?= $kenmerken['title2']; ?></h2>
+
+                <div class="reasons-box">
+                    <div class="row">
+                        <div class="medium-12 columns">
+                            <h2><?= $kenmerken['title2']; ?></h2>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="medium-12 columns">
-                        <div class="reasons">
-                            <ul class="small-block-grid-1 medium-block-grid-4 large-block-grid-4">
-                                <li class="pig"><?= $kenmerken['reason1']; ?> <a class="close">X</a></li>
-                                <li class="hand"><?= $kenmerken['reason2']; ?> <a class="close">X</a></li>
-                                <li class="recycle"><?= $kenmerken['reason3']; ?> <a class="close">X</a></li>
-                                <li class="investment"><?= $kenmerken['reason4']; ?> <a class="close">X</a></li>
-                                <li class="one"><?= $kenmerken['reason5']; ?> <a class="close">X</a></li>
-                                <li class="meter"><?= $kenmerken['reason6']; ?> <a class="close">X</a></li>
-                                <li class="temp"><?= $kenmerken['reason7']; ?> <a class="close">X</a></li>
-                                <li class="warranty <?= $general['lang']; ?>"><?= $kenmerken['reason8']; ?> <a class="close">X</a></li>
-                            </ul>
+                    <div class="row">
+                        <div class="medium-12 columns">
+                            <div class="reasons">
+                                <ul class="small-block-grid-1 medium-block-grid-4 large-block-grid-4">
+                                    <li class="pig"><?= $kenmerken['reason1']; ?> <a class="close">X</a></li>
+                                    <li class="hand"><?= $kenmerken['reason2']; ?> <a class="close">X</a></li>
+                                    <li class="recycle"><?= $kenmerken['reason3']; ?> <a class="close">X</a></li>
+                                    <li class="investment"><?= $kenmerken['reason4']; ?> <a class="close">X</a></li>
+                                    <li class="one"><?= $kenmerken['reason5']; ?> <a class="close">X</a></li>
+                                    <li class="meter"><?= $kenmerken['reason6']; ?> <a class="close">X</a></li>
+                                    <li class="temp"><?= $kenmerken['reason7']; ?> <a class="close">X</a></li>
+                                    <li class="warranty <?= $general['lang']; ?>"><?= $kenmerken['reason8']; ?> <a class="close">X</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -917,13 +935,19 @@ if(in_array($adress, $domains['fr'])) {
 
                                             <div class="before step-steps">
                                                 <div class="steps">
+                                                    <p><?= $simulator['step_intro']; ?></p>
                                                     <ul>
-                                                        <li class="active"><span><?= $simulator['subtitle1']; ?></span></li>
-                                                        <li><span><?= $simulator['subtitle2']; ?></span></li>
-                                                        <li><span><?= $simulator['subtitle3']; ?></span></li>
-                                                        <li><span><?= $simulator['subtitle4']; ?></span></li>
+                                                        <li class="active"><a unselectable="on"><span><?= $simulator['step1']; ?></span></a></li>
+                                                        <li><a unselectable="on"><span><?= $simulator['step2']; ?></span></a></li>
+                                                        <li><a unselectable="on"><span><?= $simulator['step3']; ?></span></a></li>
+                                                        <li><a unselectable="on"><span><?= $simulator['step4']; ?></span></a></li>
                                                     </ul>
                                                 </div>
+                                            </div>
+
+                                            <div class="before step-last">
+                                                <p><?= $simulator['text2']; ?></p>
+                                                <a href="#<?= $general['anker6']; ?>"><?= $simulator['text3']; ?></a>
                                             </div>
                                         </div>
                                     </div>
@@ -936,11 +960,11 @@ if(in_array($adress, $domains['fr'])) {
                                                     <div class="row">
                                                         <div class="medium-12 columns text-center">
                                                             <span class="trophy"><?= $batibouw['heading']; ?></span>
-                                                            <h3 class="headliner"><?= $batibouw['intro']; ?></h3>
+                                                            <h3 class="headliner"><?= $batibouw['maak_kans']; ?></h3>
                                                             <a class="win-btn next <?= $general['lang']; ?>"><?= $batibouw['button2']; ?></a>
                                                             <br>
                                                             <br>
-                                                            <small><a href="<?= $simulator['link1']; ?>" style="color:#fff;text-decoration:underline;"><?= $simulator['text12']; ?></a></small>
+                                                            <small><a target="_blank" href="<?= $simulator['link1']; ?>" style="color:#fff;text-decoration:underline;"><?= $simulator['text12']; ?></a></small>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -1087,35 +1111,37 @@ if(in_array($adress, $domains['fr'])) {
                                                             <hr>
                                                         </div>
                                                     </div>
-                                                    <div class="row text-center">
-                                                        <div class="medium-12 columns">
-                                                            <h3 class="white-box-title"><?= $simulator['text8']; ?> <a class="question dark popup white" title="<?= $simulator['question6']; ?>"></a></h3>
-                                                        </div>
-                                                    </div>
-                                                    <div class="white-box">
+                                                    <div class="print-container">
                                                         <div class="row text-center">
                                                             <div class="medium-12 columns">
-                                                                <div class="readonly big">&euro; <span class="besparing_30_jaar"></span> <small>= <span class="co2_final"></span> kg CO<span class="h2o">2</span> <a class="question dark popup white" title="<?= $simulator['question7']; ?>"></a></small></div>
+                                                                <h3 class="white-box-title"><?= $simulator['text8']; ?> <a class="question dark popup white" title="<?= $simulator['question6']; ?>"></a></h3>
                                                             </div>
                                                         </div>
-                                                        <div class="row whitespace text-center">
-                                                            <div class="medium-12 columns">
-                                                                <a class="open-table open"><?= $simulator['openTable']; ?></a>
-                                                                <a class="open-table close"><?= $simulator['closeTable']; ?></a>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="table toggle-table">
-                                                            <div class="row">
-                                                                <div class="small-3 small-offset-3 columns">
-                                                                    <span><?= $simulator['text9']; ?></span>
-                                                                </div>
-                                                                <div class="small-3 columns end">
-                                                                    <span><?= $simulator['text10']; ?></span>
+                                                        <div class="white-box">
+                                                            <div class="row text-center">
+                                                                <div class="medium-12 columns">
+                                                                    <div class="readonly big">&euro; <span class="besparing_30_jaar"></span> <small>= <span class="co2_final"></span> kg CO<span class="h2o">2</span> <a class="question dark popup white" title="<?= $simulator['question7']; ?>"></a></small></div>
                                                                 </div>
                                                             </div>
-                                                            <div class="inner-content">
+                                                            <div class="row text-center">
+                                                                <div class="medium-12 columns">
+                                                                    <a class="open-table open"><?= $simulator['openTable']; ?></a>
+                                                                    <a class="open-table close"><?= $simulator['closeTable']; ?></a>
+                                                                </div>
+                                                            </div>
 
+                                                            <div class="table toggle-table">
+                                                                <div class="row">
+                                                                    <div class="small-3 small-offset-3 columns">
+                                                                        <span><?= $simulator['text9']; ?></span>
+                                                                    </div>
+                                                                    <div class="small-3 columns end">
+                                                                        <span><?= $simulator['text10']; ?></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="inner-content">
+
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1124,7 +1150,6 @@ if(in_array($adress, $domains['fr'])) {
                                                         <div class="row">
                                                             <div class="medium-12 columns">
                                                                 <h3 style="margin-top: 20px;"><?= $batibouw['heading2']; ?></h3>
-                                                                <p><?= $batibouw['intro2']; ?></p>
                                                             </div>
                                                         </div>
                                                         <div class="row">
@@ -1143,7 +1168,7 @@ if(in_array($adress, $domains['fr'])) {
                                                     </div>
                                                     <div class="row">
                                                         <div class="large-12 columns">
-                                                            <p style="color: #fff; width: 100%;"><?= $batibouw['intro3']; ?></p>
+                                                            <p style="color: #fff; width: 100%; margin:0;"><?= $batibouw['intro3']; ?></p>
                                                             <style type="text/css">
                                                                 .contest p {
                                                                     width: 40%;
@@ -1205,13 +1230,12 @@ if(in_array($adress, $domains['fr'])) {
                                                                 
                                                                 <div class="contest-participate">
                                                                     <p>
-                                                                        <br>
                                                                         <span><?= $simulator['labelTitle14']; ?></span>
                                                                         <br>
                                                                         <input type="text" name="question" id="question" class="medium">
                                                                     </p>
                                                                     <p>
-                                                                        <a class="big-btn" id="participate" href="javascript:void();" style="text-transform: uppercase; font-size: 20px;"><?= $simulator['labelTitle15']; ?></a>
+                                                                        <a class="big-btn" id="participate" href="javascript:void();" style="text-transform: uppercase; font-size: 20px; margin:0;"><?= $simulator['labelTitle15']; ?></a>
                                                                     </p>                                                                    
                                                                 </div>
 
