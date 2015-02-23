@@ -362,6 +362,7 @@ $collectie = array(
 $simulator = array(
     'title'         => 'Profit simulator',
     'start'         => 'Start Profit Simulator',
+    'print'         => 'Print je besparing',
     'intro'         => 'Jaga Low-H<span class="h2o">2</span>O is opnieuw verkozen tot zuinigste radiator. En dat vieren we!',
     'text1'         => 'Uw besparing op 30 jaar',
     'text2'         => 'Contacteer <br>uw Jaga dealer',

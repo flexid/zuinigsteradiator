@@ -178,6 +178,19 @@ $(function(){
         updateBesparing();
     });
 
+    // Print button
+    $(".print-btn").click(function() {
+        $('body').addClass('print-simulator');
+        $('.clone-table').empty();
+        $('.print-container').clone().appendTo('.clone-table');
+        window.print();
+
+
+        // Remove printing class from body
+        setTimeout(function() {
+            $('body').removeClass('print-simulator');
+        }, 2000)
+    });
 
     // Contest
 

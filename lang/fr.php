@@ -360,6 +360,7 @@ $collectie = array(
 $simulator = array(
     'title'         => 'Simulateur de Profit',
     'start'         => 'Demarrez',
+    'print'         => 'Imprimer vos économies',
     'intro'         => 'Simulez en 3 étapes simples les économies que vous pouvez réaliser avec les radiateurs Low-H<span class="h2o">2</span>O.',
     'text1'         => 'VOTRE ECONOMIE SUR 30 ANS',
     'text2'         => 'Contactez <br>votre revendeur Jaga',

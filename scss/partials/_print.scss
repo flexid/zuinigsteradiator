@@ -1,15 +1,19 @@
 @media print {
 
-    /*body.print-simulator {
+    body.print-simulator {
 
-        * {
-            display: none;
+        .hide-print {
+            display: none !important;
         }
 
-        .print-container {
+        .clone-table {
             display: block !important;
+
+            .table.toggle-table {
+                display: block !important;
+            }
         }
 
-    }*/
+    }
 
 }

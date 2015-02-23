@@ -71,7 +71,7 @@ if(in_array($adress, $domains['fr'])) {
     <body data-lang="<?= $lang; ?>">
         
         <a name="<?= $general['anker1']; ?>"></a>
-        <header id="header" data-magellan-destination="home">
+        <header id="header" data-magellan-destination="home" class="hide-print">
             <div class="sub-menu">
                 <div class="row">
                     <div class="medium-12 columns">
@@ -105,7 +105,7 @@ if(in_array($adress, $domains['fr'])) {
         
         <main id="content">
 
-            <section id="batibouw">
+            <section id="batibouw" class="hide-print">
 						
                 <div class="row">
                     <div class="medium-12 columns">
@@ -136,7 +136,7 @@ if(in_array($adress, $domains['fr'])) {
                 </div>
             </section>
 
-            <section id="homepage">
+            <section id="homepage" class="hide-print">
                 <div class="row">
                     <div class="medium-5 large-4 columns">
                         <div class="featured <?= $general['lang']; ?>">
@@ -180,7 +180,7 @@ if(in_array($adress, $domains['fr'])) {
 
 
             <a name="<?= $general['anker2']; ?>"></a>
-            <section id="zuinigsteradiator" data-magellan-destination="zuinigsteradiator">
+            <section id="zuinigsteradiator" data-magellan-destination="zuinigsteradiator" class="hide-print">
                 <div class="dark">
                     <div class="row">
                         <div class="medium-12 columns">
@@ -233,7 +233,7 @@ if(in_array($adress, $domains['fr'])) {
             </section>
             
             <a name="<?= $general['anker3']; ?>"></a>
-            <section id="kenmerken" data-magellan-destination="kenmerken">
+            <section id="kenmerken" data-magellan-destination="kenmerken" class="hide-print">
                 <div class="white">
                     <div class="row">
                         <div class="medium-8 medium-offset-2 columns">
@@ -329,7 +329,7 @@ if(in_array($adress, $domains['fr'])) {
             </section>
             
             <a name="<?= $general['anker4']; ?>"></a>
-            <section id="technologie" data-magellan-destination="technologie">
+            <section id="technologie" data-magellan-destination="technologie" class="hide-print">
                 <div class="row">
                     <div class="medium-12 columns">
                         <h2><?= $technolie['title']; ?></h2>
@@ -380,7 +380,7 @@ if(in_array($adress, $domains['fr'])) {
             </section>
             
             <a name="<?= $general['anker10']; ?>"></a>
-            <section id="earth">
+            <section id="earth" class="hide-print">
                 <div class="row">
                     <div class="medium-12 columns">
                         <div class="right text-center">
@@ -394,7 +394,7 @@ if(in_array($adress, $domains['fr'])) {
             </section>
            
             <a name="<?= $general['anker11']; ?>"></a>
-            <section id="vergelijking">
+            <section id="vergelijking" class="hide-print">
                 <div class="row">
                     <div class="medium-12 columns">
                         <h2><?= $vergelijking['title']; ?></h2>
@@ -853,7 +853,7 @@ if(in_array($adress, $domains['fr'])) {
             </section>
             
             <a name="<?= $general['anker5']; ?>"></a>
-            <section id="collectie" data-magellan-destination="collectie">
+            <section id="collectie" data-magellan-destination="collectie" class="hide-print">
                 <div class="row">
                         <div class="medium-12 columns">
                             <h2><?= $collectie['title']; ?></h2>
@@ -914,7 +914,7 @@ if(in_array($adress, $domains['fr'])) {
             </section>
             
             <a name="<?= $general['anker7']; ?>"></a>
-            <section id="profit-simulator" data-magellan-destination="profit-simulator">
+            <section id="profit-simulator" data-magellan-destination="profit-simulator" class="hide-print">
                 <div class="row">
                     <div class="medium-12 columns">
                         <div class="simulator">
@@ -1122,7 +1122,7 @@ if(in_array($adress, $domains['fr'])) {
                                                                     <div class="readonly big">&euro; <span class="besparing_30_jaar"></span> <small>= <span class="co2_final"></span> kg CO<span class="h2o">2</span> <a class="question dark popup white" title="<?= $simulator['question7']; ?>"></a></small></div>
                                                                 </div>
                                                             </div>
-                                                            <div class="row text-center">
+                                                            <div class="row text-center hide-print">
                                                                 <div class="medium-12 columns">
                                                                     <a class="open-table open"><?= $simulator['openTable']; ?></a>
                                                                     <a class="open-table close"><?= $simulator['closeTable']; ?></a>
@@ -1142,6 +1142,9 @@ if(in_array($adress, $domains['fr'])) {
 
                                                                 </div>
                                                             </div>
+                                                        </div>
+                                                        <div class="print-btn-container">
+                                                            <a class="print-btn hide-print"><?= $simulator['print']; ?></a>
                                                         </div>
                                                     </div>
 
@@ -1259,7 +1262,7 @@ if(in_array($adress, $domains['fr'])) {
             </section>
             
             <a name="<?= $general['anker6']; ?>"></a>
-            <section id="dealers" data-magellan-destination="dealers">
+            <section id="dealers" data-magellan-destination="dealers" class="hide-print">
                 <div class="row">
                     <div class="medium-12 columns text-center">
                         <h2><?= $dealers['title']; ?></h2>
@@ -1292,7 +1295,7 @@ if(in_array($adress, $domains['fr'])) {
             </section>
             
             <a name="<?= $general['anker8']; ?>"></a>
-            <section id="downloads">
+            <section id="downloads" class="hide-print">
                 <div class="row">
                     <div class="medium-12">
                         <h2><?= $downloads['title']; ?></h2>
@@ -1318,7 +1321,7 @@ if(in_array($adress, $domains['fr'])) {
             </section>
             
             <a name="<?= $general['anker9']; ?>"></a>
-            <section id="contact">
+            <section id="contact" class="hide-print">
                 <div class="row">
                     <div class="medium-12 columns">
                         <h2><?= $contact['title']; ?></h2>
@@ -1395,9 +1398,13 @@ if(in_array($adress, $domains['fr'])) {
             </section>
             
         </main>
-        
-        <footer id="footer">
-            <p>Copyright &copy; 2014 Jaga NV. - <a href="http://theradiatorfactory.com/legal.aspx" target="_blank">Legal notice</a></p>
+
+        <div class="clone-table">
+
+        </div>
+
+        <footer id="footer" class="hide-print">
+            <p>Copyright &copy; 2015 Jaga NV. - <a href="http://theradiatorfactory.com/legal.aspx" target="_blank" class="hide-print">Legal notice</a></p>
         </footer>
         
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqtiofyAeLeenBHqVcPt7995DALlDogtU"></script>

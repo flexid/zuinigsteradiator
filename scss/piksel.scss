@@ -11,6 +11,10 @@ body {
     text-transform: lowercase !important;
 }
 
+.clone-table {
+    display: none;
+}
+
 .tooltipsy
 {
     max-width: 550px;
@@ -2624,7 +2628,25 @@ body {
                             }
                         }
                     }
-                    
+
+                    .print-btn-container {
+                        position: relative;
+                        height: 25px;
+
+                        .print-btn {
+                            @extend .font-bold;
+                            font-size: 16px;
+                            color: #fff;
+                            position: absolute;
+                            top: -10px;
+                            right: 15px;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+
                     .eenheid, .eenheid_prijs {
                         text-transform: uppercase;
                     }
@@ -3155,5 +3177,166 @@ body {
     a {
         color: #666666;
         text-decoration: underline;
+    }
+}
+
+.clone-table {
+
+    h3 {
+        @extend .font-bold;
+        font-size: 28px;
+        color: #fff;
+        text-transform: uppercase;
+        margin-bottom: 0px;
+
+        &.headliner {
+            text-transform: none;
+            font-size: 40px;
+            @extend .font-medium;
+            margin-top: 70px;
+
+            span {
+                text-transform: none;
+                font-size: 40px;
+                @extend .font-medium;
+                border-bottom: 2px solid #fff;
+
+                &.h2o {
+                    border-bottom: none;
+                }
+            }
+        }
+
+        &.white-box-title {
+            text-transform: none;
+            margin-top: 15px;
+        }
+    }
+
+    .readonly {
+        @extend .font-medium;
+        font-size: 24px;
+        background: #fff;
+        display: inline;
+        padding: 5px 8px;
+        color: $secondary-color;
+        @include border-radius(5px);
+
+        &.big {
+            @extend .font-bold;
+            font-size: 60px;
+            padding: 5px 15px;
+            color: #333;
+
+            small {
+                font-size: 30px;
+                color: #A0A0A0;
+
+                @include mq(880) {
+                    display: block;
+                }
+
+                span {
+                    font-size: 30px;
+                    color: #A0A0A0;
+                }
+            }
+        }
+        &.big span {
+            @extend .font-bold;
+            font-size: 60px;
+            color: #333;
+        }
+
+        &.medium {
+            font-size: 38px;
+        }
+    }
+
+    .white-box {
+        background: #fff;
+        padding: 5px 8px 10px 8px;
+        @include border-radius(15px);
+        margin-bottom: 30px;
+        margin-top: 30px;
+
+        h3 {
+            color: $secondary-color;
+        }
+
+        .open-table {
+            color: $primary-color;
+            background: #EFEAE9;
+            width: 100%;
+            display: block;
+            padding: 8px 0;
+            text-decoration: underline;
+            @extend .font-medium;
+            font-size: 12px;
+            position: relative;
+
+            &.open {
+
+                &:after {
+                    content: "";
+                    @include sprite(open);
+                    position: absolute;
+                    top: 8px;
+                    right: 30px;
+                }
+            }
+            &.close {
+                &:after {
+                    content: "";
+                    @include sprite(close);
+                    position: absolute;
+                    top: 8px;
+                    right: 30px;
+                }
+            }
+        }
+
+        .table {
+            display: none;
+            margin: 0 7px;
+
+            span {
+                color: #565656;
+                @extend .font-black;
+                text-transform: uppercase;
+
+                @include mq(small) {
+                    font-size: 12px;
+                }
+            }
+
+            .small-3 {
+                width: 50%;
+            }
+
+            .inner-content {
+                .small-3 {
+                    width: 25%;
+                }
+                &> .row:nth-child(odd) {
+                    background: #eee !important;
+                }
+
+                &> .row:nth-child(even) {
+                    background: #fff;
+                }
+
+                span {
+                    @extend .font-bold;
+                    text-transform:none;
+                }
+
+                .row .columns:last-child {
+                    span {
+                        @extend .font-regular;
+                    }
+                }
+            }
+        }
     }
 }
