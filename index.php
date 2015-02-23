@@ -36,8 +36,8 @@ if(in_array($adress, $domains['fr'])) {
     require_once('lang/nl.php');
     $lang = 'nl';
 } else {
-    require_once('lang/nl.php');
-    $lang = 'nl';
+    require_once('lang/fr.php');
+    $lang = 'fr';
 }
 
 ?>
@@ -119,7 +119,6 @@ if(in_array($adress, $domains['fr'])) {
                     <div class="medium-12 columns">
                         <div class="dark">
                             <p class="intro"><?= $batibouw['intro']; ?></p>
-                            <a target="_blank" href="<?= $simulator['link1']; ?>"><?= $batibouw['agreements']; ?></a>
                         </div>
                     </div>
                 </div>
@@ -930,7 +929,7 @@ if(in_array($adress, $domains['fr'])) {
                                                     <p><small><?= $simulator['win_bati']; ?></small></p>
                                                     <p><small><?= $simulator['win_bati_2']; ?></small></p>
                                                 </div>
-                                                <a class="button next">Start Profit Simulator</a>
+                                                <a class="button next"><?= $simulator['start']; ?></a>
                                             </div>
 
                                             <div class="before step-steps">
@@ -1107,8 +1106,8 @@ if(in_array($adress, $domains['fr'])) {
                                                 <li>
                                                     <div class="row">
                                                         <div class="medium-12 columns">
-                                                            <h3><?= $simulator['subtitle4']; ?></h3>
-                                                            <hr>
+                                                            <!--<h3><?= $simulator['subtitle4']; ?></h3>
+                                                            <hr>-->
                                                         </div>
                                                     </div>
                                                     <div class="print-container">

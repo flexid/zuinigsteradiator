@@ -33,7 +33,7 @@ $batibouw = array(
     'heading2'      => 'Tentez de gagner ces économies d’énergie',
     'heading3'      => 'Formulaire de participation',
     'heading4'      => 'Merci pour participation',
-    'intro'         => 'Calculez vos économies d’énergie et d’émissions de CO<span class="h2o">2</span> avec notre simulateur de profit et tentez de gagner des radiateurs Jaga Low-H<span class="h2o">2</span>O pour toute votre habitation!*',
+    'intro'         => 'Tentez de gagner des radiateurs Jaga Low-H<span class="h2o">2</span>O pour toute votre habitation!',
     'intro2'        => 'Gagnez des radiateurs Jaga Low-H<span class="h2o">2</span>O gratuits pour toute votre habitation !',
     'intro3'        => 'Tentez de gagner des radiateurs Jaga et recevez les resultats de notre simulateur de profit par email.',
     'button'        => 'CLIQUEZ ICI POUR PARTICIPER',
@@ -42,7 +42,7 @@ $batibouw = array(
     'button2'       => 'PARTICIPEZ & GAGNEZ',
     'button3'       => 'Calculez vos économies d’énergie',
     'button4'       => 'CLIQUEZ ICI POUR PARTICIPER',
-    'agreements'    => '(*) les conditions'
+    'agreements'    => 'les conditions'
 );
 
 $zuinigsteRadiator = array(
@@ -117,7 +117,7 @@ $technolie = array(
 );
 
 $earth = array(
-    'title'         => 'JAGA LOW-H2O ET LA FORET AMAZONIENNE',
+    'title'         => 'JAGA LOW-H<span class="h2o">2</span>O ET LA FORET AMAZONIENNE',
     'text'          => 'Sur cette photo de la forêt amazonienne, prise par la navette Messenger, la longueur d’onde pour la lumière infrarouge est remplacée par le bleu. Ceci donne une image plus claire et plus précise que la version originale, mais les plantes ont de ce fait des reflets rouges au lieu de vert. Suite à cette effet secondaire, la photo gagne en pertinence, car le rouge est la couleur du danger ! La forêt amazonienne représente 50 % de la superficie totale des forêts équatoriales. Elle absorbe près de 20% des 38 billions de tonnes de CO<span class="h2o">2</span> produites chaque année par l’humanité et représente ainsi notre arme principale contre les effets de la pollution par les CO<span class="h2o">2</span>. Pourtant, 10.000 km2 de cette superficie sont détruits chaque année par la déforestation. <br> <br> Si nous voulons obtenir une amélioration importante au niveau du cycle de pollution par les CO<span class="h2o">2</span>, de la vitesse et de la gravité des changements climatiques futures, une protection globale de la forêt amazonienne et autres ressources forestières et une baisse substantielle des émissions de CO<span class="h2o">2</span> sont absolument nécessaires! Dans une habitation moyenne de 140 m<sup>2</sup>, avec les radiateurs Low-H<span class="h2o">2</span>O de Jaga on peut économiser 141 m<sup>3</sup> de gaz par an, ce qui represente une diminution des emissions de CO<span class="h2o">2</span> de 293 kg/an. Une quantité significative lorsque l’on sait qu’une voiture moyenne peut rouler 2000 km pour la même emission de CO<span class="h2o">2</span>!',
     'button'        => 'Découvrez plus'
 );
@@ -359,6 +359,7 @@ $collectie = array(
 
 $simulator = array(
     'title'         => 'Simulateur de Profit',
+    'start'         => 'Demarrez',
     'intro'         => 'Simulez en 3 étapes simples les économies que vous pouvez réaliser avec les radiateurs Low-H<span class="h2o">2</span>O.',
     'text1'         => 'VOTRE ECONOMIE SUR 30 ANS',
     'text2'         => 'Contactez <br>votre revendeur Jaga',
@@ -387,7 +388,7 @@ $simulator = array(
     'text5'         => 'Economie d\'énergie selon la déclaration Kiwa',
     'text6'         => 'ou',
     'text7'         => 'En un an, votre économie ne sera peut-être pas encore très élevée, mais rendez-vous vite à l\'étape 3…',
-    'subtitle3'     => 'Etape 3 : votre profit simulator',
+    'subtitle3'     => 'Etape 3 : votre profit',
     'labelTitle7'   => 'Prix de l\'énergie',
     'question2'     => 'Le prix de l\'énergie indiqué est la moyenne entre les tarifs minimum et maximum des fournisseurs belges en 2014. Vous pouvez les modifier et compléter par le tarif correct. Veillez à ce que tous les coûts soient pris en compte, y compris les coûts du gestionnaire de réseau et les taxes. Ce n\'est pas aussi simple qu\'il n\'y paraît !',
     'labelTitle8'   => 'Inflation annuelle estimée',
@@ -401,7 +402,7 @@ $simulator = array(
     'text10'        => 'Total',
     'question4'     => 'La description de l’habitation est délibérément très sommaire. Le résultat peut de ce fait être influencé négativement ou positivement par toutes sortes de facteurs comme la bonne valeur d’isolation, le comportement de l’habitant, le type d’installation, le type de réglage, etc. Mais elle vous donne une idée de ce qui est possible rien qu’en remplaçant les radiateurs.',
     'question5'     => 'Les économies obtenues en fonction d¹une inflation attendue ne constituent pas forcément la meilleure indication du pouvoir d¹achat réel de ce montant. Tout est en effet plus cher. Si vous voulez connaître précisément le montant de vos économies, essayez en maintenant l¹inflation à 0.',
-    'question6'     => '30 ans de garantie sur l¹échangeur de chaleur LOW-H2O! Vous savez ainsi d¹emblée pourquoi le Simulateur de Profit fait le calcul jusqu¹à 30 ans dans le futur. Mais nous sommes certains que votre radiateur vous accompagnera bien plus longtemps encore car l¹échangeur de chaleur est réalisé en cuivre, aluminium et laiton et ne va donc jamais rouiller. Comme tous ses prédécesseurs depuis 1962. C¹est pourquoi nous nous efforçons toujours de développer un design attrayant et intemporel. Ainsi, non seulement il chauffe votre maison et économise l¹énergie, mais reste aussi esthétique!',
+    'question6'     => '30 ans de garantie sur l¹échangeur de chaleur LOW-H<span class="h2o">2</span>O! Vous savez ainsi d¹emblée pourquoi le Simulateur de Profit fait le calcul jusqu¹à 30 ans dans le futur. Mais nous sommes certains que votre radiateur vous accompagnera bien plus longtemps encore car l¹échangeur de chaleur est réalisé en cuivre, aluminium et laiton et ne va donc jamais rouiller. Comme tous ses prédécesseurs depuis 1962. C¹est pourquoi nous nous efforçons toujours de développer un design attrayant et intemporel. Ainsi, non seulement il chauffe votre maison et économise l¹énergie, mais reste aussi esthétique!',
     'question7'     => 'Il existe un tas de chiffres sur la quantité de CO2 absorbée précisément par un arbre. Différentes sources (e.a. VBV, K.U.Leuven, UGent, Š) nous permettent de conclure qu¹un arbre adulte absorbe en moyenne 24 kg de CO2 par an. Vous avez ainsi une indication concrète de ce que représente pour l¹environnement le CO2 épargné avec le LOW-H2O!',
     'subtitle4'     => 'Etape 4: Remplissez vos coordonnées et gagnez',
     'labelTitle11'  => 'Nom et prénom',
@@ -411,18 +412,18 @@ $simulator = array(
     'labelTitle15'  => 'Participez!',
     'labelTitle16'  => 'Numéro de téléphone',
     'text11'        => 'Participez et gagnez',
-    'win_bati'      => 'Jaga donne radiateurs Low-H2O pour toute votre maison loin! Participer est facile.',
-    'win_bati_2'    => 'Profit Simulator Utilisez cette fonction pour calculer vos économies. Remplissez la dernière étape, vous participer et gagnez radiateurs libres!',
+    'win_bati'      => 'Jaga donne radiateurs Low-H<span class="h2o">2</span>O pour toute votre maison loin! Participer est facile.',
+    'win_bati_2'    => 'Simulateur de profit Utilisez cette fonction pour calculer vos économies. Remplissez la dernière étape, vous participer et gagnez radiateurs libres!',
     'text12'        => 'Téléchargez les conditions',
     'link1'         => 'http://eco.theradiatorfactory.com/downloads/Batibouw2015_FR.pdf',
     'labelTitle17'  => 'Code postal',
     'labelTitle18'  => 'Ville',
     'thanks'        => 'Merci pour votre participation!',
-    'step_intro'    => 'Vul alle gevraagde gegevens in',
-    'step1'         => '<strong>Etape 1:</strong> <br>Votre habitation ',
-    'step2'         => '<strong>Etape 2:</strong> <br>Votre consommation d\'énergie   ',
-    'step3'         => '<strong>Etape 3:</strong> <br>Votre profit simulator',
-    'step4'         => '<strong>Etape 4:</strong> <br>Remplissez vos coordonnées et gagnez'
+    'step_intro'    => 'Remplissez les donnéés',
+    'step1'         => '<strong>Etape 1:</strong> Votre habitation ',
+    'step2'         => '<strong>Etape 2:</strong> Votre consommation d\'énergie   ',
+    'step3'         => '<strong>Etape 3:</strong> Votre profit',
+    'step4'         => 'Tentez de gagner des radiateurs Jaga'
 );
 
 $dealers = array(
