@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d7955ec-f765-45a0-96ef-81025dde15e4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/jantrakteert.jpg" afterPath="$PROJECT_DIR$/img/jantrakteert.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.codekit" afterPath="$PROJECT_DIR$/config.codekit" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/min/main-min.js" afterPath="$PROJECT_DIR$/js/min/main-min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/piksel.js" afterPath="$PROJECT_DIR$/js/piksel.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/piksel.scss" afterPath="$PROJECT_DIR$/scss/piksel.scss" />
@@ -34,21 +30,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.083334" vertical-offset="1420" max-vertical-offset="21525">
-              <caret line="122" column="26" selection-start-line="122" selection-start-column="26" selection-end-line="122" selection-end-column="26" />
+            <state vertical-scroll-proportion="14.91573" vertical-offset="7965" max-vertical-offset="21525">
+              <caret line="1416" column="8" selection-start-line="1416" selection-start-column="8" selection-end-line="1416" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="piksel.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="piksel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/piksel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5328227" vertical-offset="5903" max-vertical-offset="12765">
-              <caret line="426" column="10" selection-start-line="426" selection-start-column="10" selection-end-line="426" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="12765">
+              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -57,8 +53,8 @@
       <file leaf-file-name="piksel.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/piksel.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.58" vertical-offset="6921" max-vertical-offset="50640">
-              <caret line="490" column="25" selection-start-line="490" selection-start-column="25" selection-end-line="490" selection-end-column="25" />
+            <state vertical-scroll-proportion="-8.28" vertical-offset="8916" max-vertical-offset="50700">
+              <caret line="622" column="29" selection-start-line="622" selection-start-column="29" selection-end-line="622" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -84,9 +80,9 @@
         <option value="$PROJECT_DIR$/scss/partials/_print.scss" />
         <option value="$PROJECT_DIR$/lang/fr.php" />
         <option value="$PROJECT_DIR$/lang/nl.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/scss/piksel.scss" />
         <option value="$PROJECT_DIR$/js/piksel.js" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -170,6 +166,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dezuinigsteradiator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dezuinigsteradiator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -670,24 +680,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/piksel.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.58" vertical-offset="6921" max-vertical-offset="50640">
-          <caret line="490" column="25" selection-start-line="490" selection-start-column="25" selection-end-line="490" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.083334" vertical-offset="1420" max-vertical-offset="21525">
-          <caret line="122" column="26" selection-start-line="122" selection-start-column="26" selection-end-line="122" selection-end-column="26" />
+        <state vertical-scroll-proportion="-8.28" vertical-offset="8916" max-vertical-offset="50700">
+          <caret line="622" column="29" selection-start-line="622" selection-start-column="29" selection-end-line="622" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/piksel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5328227" vertical-offset="5903" max-vertical-offset="12765">
-          <caret line="426" column="10" selection-start-line="426" selection-start-column="10" selection-end-line="426" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="12765">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="14.91573" vertical-offset="7965" max-vertical-offset="21525">
+          <caret line="1416" column="8" selection-start-line="1416" selection-start-column="8" selection-end-line="1416" selection-end-column="8" />
           <folding />
         </state>
       </provider>

@@ -506,6 +506,8 @@ body {
                 top: -40px;
                 left: 80px;
                 transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
             }
         }
 
@@ -642,6 +644,8 @@ body {
             text-transform: uppercase;
             min-width: 272px;
             transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
             position: relative;
             z-index: 99;
 

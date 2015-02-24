@@ -8,7 +8,7 @@ var type_brandstof          = '';
 var type_temperatuur        = '';
 var oppervlakte             = '';
 var energieverbruik         = '';
-var energie_coefficient     = '';  
+var energie_coefficient     = '';
 var besparing_jaar          = '';
 var inflatie                = '';
 var rente                   = '';
@@ -54,19 +54,19 @@ $(function(){
           fixed_top: 0, // top distance in pixels assigned to the fixed element on scroll
         }
     });
-    
+
     $('a[href^="#"]').on('click',function (e) {
         e.preventDefault();
 
         hash = this.hash.split('#').join(''),
         target = $("a[name='"+hash+"']");
-        
+
         if (target.length === 0) {
             target = $('#'+hash);
         }
-        
+
         var scroll_top = target.offset().top
-        
+
         if(target == '#earth') {
             $('html, body').stop().animate({
                 'scrollTop': scroll_top - (120)
@@ -101,10 +101,10 @@ $(function(){
         $batibouw.css('min-height', $window.height());
         $batibouw.find('.actie').addClass('f');
     }
-    
-    
-    
-    
+
+
+
+
     // Set start values (values entered in HTML)
     type_woning             = $('*[name=type_woning]:checked').val();
     type_verwarming         = $('*[name=type_verwarming]:checked').val();
@@ -114,10 +114,10 @@ $(function(){
     inflatie                = $('*[name=inflatie]').val();
     rente                   = $('*[name=rente]').val();
     stijging_energieprijs   = $('*[name=stijging_energieprijs]').val();
-    
+
     updateEnergieverbruik();
     updateBesparing();
-    
+
     // Check if changes are made
     $('*[name=type_woning]').change(function() {
         type_woning = $('*[name=type_woning]:checked').val();
@@ -215,7 +215,7 @@ $(function(){
         var c_email             = $('#email').val();
         var c_phone             = $('#phone').val();
         var c_question          = $('#question').val();
- 
+
         var c_total_savings     = $('.besparing_30_jaar').html();
         var c_total_co2         = $('.co2_final').html();
 
@@ -231,7 +231,7 @@ $(function(){
             $('.ajaxloader').hide();
 
         } else {
-    
+
             $.post(CONTEST_URL, {
 
                 contest_entry: {
@@ -251,28 +251,28 @@ $(function(){
 
                 $('.contest, .ajaxloader, .grey-button').hide();
                 $('.contest-thanks').fadeIn();
-                
+
             });
-            
+
         }
     });
-    
+
     /*
      * END SIMULATOR
      */
-    
+
     $('.products .product').click(function(e) {
         e.preventDefault();
-        
+
         var $lightbox = $(this).next('.lightbox');
         $lightbox.addClass('active');
         $('body').css('overflow', 'hidden');
-        
+
         $lightbox.find('.close').click(function() {
             $lightbox.removeClass('active');
             $('body').css('overflow', 'visible');
         });
-        
+
         $lightbox.click(function(e) {
             if (e.target !== this) return;
             $lightbox.removeClass('active');
@@ -281,7 +281,7 @@ $(function(){
     });
 
     var isDraggable = $(document).width() > 640 ? true : false;
-    
+
     $('#map-container').storeLocator({
         'infowindowTemplatePath'   : 'js/plugins/storeLocator/templates/infowindow-description.html',
         'listTemplatePath'         : 'js/plugins/storeLocator/templates/location-list-description.html',
@@ -307,9 +307,9 @@ $(function(){
                 draggable: isDraggable
         }
     });
-    
+
     $('.open-table.close').hide();
-    
+
     $('.open-table').click(function(e) {
         e.preventDefault();
         $('.toggle-table').toggle();
@@ -322,22 +322,22 @@ $(function(){
             $('.same-height').syncHeight({ 'updateOnResize': true});
         }
     });
-    
+
     $('.hamburger-menu').click(function(e) {
         e.preventDefault();
         $('.main-menu').toggle();
     });
-    
+
     $('.earthToggle').click(function() {
-       $('#earth').find('p').slideDown(); 
+       $('#earth').find('p').slideDown();
        $('#earth').find('a.button').fadeOut();
        $('#earth').find('.right').stop().animate({
            'margin-top' : 0
        }, 400);
-       $('#earth').find('a.close').fadeIn().css("display","block");; 
-       
+       $('#earth').find('a.close').fadeIn().css("display","block");;
+
         $('#earth').find('a.close').click(function() {
-            $('#earth').find('p').slideUp(); 
+            $('#earth').find('p').slideUp();
             $('#earth').find('a.close').fadeOut();
             $('#earth').find('.right').stop().animate({
                 'margin-top' : 100
@@ -345,16 +345,16 @@ $(function(){
             $('#earth').find('a.button').fadeIn();
         });
     });
-    
+
     $('.popup.white').tooltipsy({
         offset: [0, -15]
     });
-    
+
     $('.popup.red').tooltipsy({
        offset: [0, -15],
        className: 'tooltipsy2'
     });
-    
+
     $('body').bind('touchmove',function(e){
         $('.popup.white').each(function() {
             $(this).data('tooltipsy').hide();
@@ -372,7 +372,7 @@ $(function(){
             $(this).data('tooltipsy').hide();
         });
     });
-    
+
     $('body').bind('touchstart',function(e){
         $('.popup.white').each(function() {
             $(this).data('tooltipsy').hide();
@@ -381,26 +381,26 @@ $(function(){
             $(this).data('tooltipsy').hide();
         });
     });
-    
+
     $('.reasons li').click(function() {
        $(this).find('p').slideToggle();
        $(this).find('a.close').slideToggle();
     });
-    
+
     $(window).scroll(function() {
         var $st = $(window).scrollTop();
         var windowHeight = $(window).height();
-        
+
         // Parallax body background
         //$('body').css('background-position-y', $st/1.3);
-        
+
         // Earth parralax
         /*var $earth = $('#earth');
         var $begin = $earth.offset().top + $earth.height() - windowHeight;
         var $end = $earth.offset().top;
         var $difference = 500 - $earth.height();
         var $step = $difference / (windowHeight - $earth.height()) * ($st - $begin);
-        
+
         if($st >= $begin && $st <= $end) {
             $earth.css('background-position-y', -$step);
         }*/
@@ -408,7 +408,7 @@ $(function(){
         // Kenmerken animation
         var $kenmerken = $('#kenmerken');
         if(($st + (windowHeight / 3)) > $kenmerken.offset().top) {
-            
+
             $('#kenmerken .reasons ul').find('li').each(function (i) {
                 var reason = $(this);
                 setTimeout(function () {
@@ -449,9 +449,9 @@ $(function(){
         }
 
     });
-    
+
     $('#submit').click(function(e) {
-        e.preventDefault(); 
+        e.preventDefault();
 
         var name = $("#name").val();
         var email = $("#email").val();
@@ -459,14 +459,14 @@ $(function(){
         var subject = $("#subject").val();
         var message = $("#message").val();
         var hello = $("#hello").val();
-        $("#returnmessage").empty(); 
-        
+        $("#returnmessage").empty();
+
         if (name == '' || email == '' || subject == '' || message == '') {
             $("#returnmessage").append('Please fill in all fields.');
         } else if(!validateEmail(email)) {
             $("#returnmessage").append('Your e-mail is incorrect.');
         } else {
-            
+
             $.post("contact.php", {
                 name: name,
                 email: email,
@@ -477,15 +477,15 @@ $(function(){
             }, function(data) {
                 if (data == true) {
                     $("#returnmessage").append('Your message has been successfully sent.');
-                    $("#form")[0].reset(); 
+                    $("#form")[0].reset();
                 } else {
                     $("#returnmessage").append('Oops, something went wrong.');
                 }
             });
         }
     });
-    
-    
+
+
 
 });
 
@@ -503,12 +503,12 @@ $(window).load(function() {
     useCSS: false,
     slideshow: false
   });
-  
-  
+
+
   $('.flexslider-next').click(function() {
       $('.slider2').flexslider('next');
   });
-  
+
   var slideComplete = true;
   // profit simulator
   $('.slider').flexslider({
@@ -534,7 +534,7 @@ $(window).load(function() {
         slideComplete = true;
     }
   });
-  
+
   var currentStep = 0;
    if(getLang() == 'fr') {
         var stepName = 'Etape';
@@ -580,8 +580,8 @@ $(window).load(function() {
             changeStep(currentStep);
         }
     });
-  
-  
+
+
   // Same height
   if($(window).width() < 640){
         $('.same-height').unSyncHeight();
@@ -595,7 +595,7 @@ $(window).resize(function() {
     $('.slider2').data('flexslider').vars.itemWidth = $('#vergelijking .table .green').width();
     $('.slider2').data('flexslider').vars.maxItems = getGridSize();
     $('.slider2').data('flexslider').doMath();
-    
+
     // Same height
     if($(window).width() < 640){
         $('.same-height').unSyncHeight();
@@ -603,7 +603,7 @@ $(window).resize(function() {
         $('.same-height').syncHeight({ 'updateOnResize': true});
     }
 
-    
+
 });
 
 
@@ -710,7 +710,7 @@ function getGridSize() {
         return 3;
     }
 }
-  
+
 function updateEnergieverbruik() {
     if(type_woning == 1) {
         if(type_temperatuur == 1) {
@@ -720,7 +720,7 @@ function updateEnergieverbruik() {
                 energie_coefficient = 98;
             } else {
                 energie_coefficient = 102;
-            } 
+            }
         }
     } else if(type_woning == 2) {
         if(type_temperatuur == 1) {
@@ -735,17 +735,17 @@ function updateEnergieverbruik() {
     }
 
     energieverbruik = oppervlakte * energie_coefficient;
-    
+
     if(type_brandstof == 1 || type_brandstof == 2) {
         energieverbruik = energieverbruik / brandstof[type_brandstof].omzetting;
     } else if (type_brandstof == 3) {
         energieverbruik = energieverbruik * brandstof[type_brandstof].omzetting;
     }
-    
+
     energieverbruik = Math.round(energieverbruik);
-    
+
     $('*[name=energieverbruik]').val(energieverbruik);
-   
+
     if(getLang() == 'fr') {
         $('.eenheid').html(brandstof[type_brandstof].eenheid_fr);
     } else {
@@ -774,13 +774,13 @@ function updateBesparing() {
     } else if(type_verwarming == 2) {
         var besparing_percentage = 5;
     }
-    
+
     besparing_jaar = energieverbruik * (besparing_percentage / 100);
     besparing_jaar = Math.round(besparing_jaar);
-    
+
     inflatiesom = (parseFloat(inflatie) + parseFloat(rente) + parseFloat(stijging_energieprijs)) / 100;
     co2_final = '';
-    
+
     $('.table .inner-content').empty();
     jaar = getLang() == 'fr' ? 'An' : 'Jaar';
     for(i=1;i<=30;i++) {
@@ -794,12 +794,12 @@ function updateBesparing() {
         $('.table .inner-content').append('<div class="row"><div class="small-3 columns text-center"><span>' + jaar + ' ' + i + '</span></div><div class="small-3 columns"><span>&euro;' + number_format(besparing_geld_jaar, 0, ',', '.') + '</span></div><div class="small-3 columns"><span>&euro;' + number_format(besparing[i], 0, ',', '.') + '</span></div><div class="small-3 columns"><span>' + number_format(co2, 0, ',', '.') + ' kg CO<span class="h2o">2</span></span></div></div>');
         co2_final = number_format(co2, 0, ',', '.');
     }
-    
+
     $('.besparing_percentage').html(besparing_percentage + '%');
     $('.besparing_jaar').html(besparing_jaar);
     $('.besparing_geld_jaar').html(number_format(besparing[1], 0, ',', '.'));
     $('.besparing_30_jaar').html(number_format(besparing[30], 0, ',', '.'));
-    
+
     besparing_30_jaar_split = number_format(besparing[30], 0, ',', '.');
     besparing_30_jaar_split = besparing_30_jaar_split.split(',');
     $('.besparing_30_jaar_first').html(besparing_30_jaar_split[0]);
@@ -808,7 +808,7 @@ function updateBesparing() {
 }
 
 function number_format(number, decimals, dec_point, thousands_sep) {
-  
+
   number = (number + '')
     .replace(/[^0-9+\-Ee.]/g, '');
   var n = !isFinite(+number) ? 0 : +number,
@@ -840,7 +840,7 @@ function getLang() {
     return $( "body" ).data( "lang" );
 }
 
-function validateEmail(email) { 
+function validateEmail(email) {
     var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
-} 
+}
