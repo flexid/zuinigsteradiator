@@ -471,6 +471,7 @@ body {
         position: relative;
         background: url(../img/black.jpg) repeat;
         padding-top: 40px;
+        min-width: 100%;
 
         &:before {
             content: "";
@@ -483,9 +484,37 @@ body {
             top: -15.5px;
         }
 
+        .actie {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            z-index: 999;
+
+            &.f {
+                position: fixed;
+            }
+            &.a {
+                position: absolute;
+            }
+
+            @include mq(small) {
+                position: relative !important;
+            }
+
+            .jan-text {
+                position: absolute;
+                top: -40px;
+                left: 80px;
+                transform: translateY(-50%);
+            }
+        }
+
         img.featured-image {
             width: 100%;
-            margin-top: 20px;
+
+            @include mq(small) {
+                margin-bottom: 0 !important;
+            }
         }
 
         .trophy {

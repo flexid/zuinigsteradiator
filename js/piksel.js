@@ -91,7 +91,16 @@ $(function(){
             });
         }
     });
-    
+
+    // Batibouw height
+    $batibouw = $('#batibouw');
+    $header = $('#header');
+    $window = $(window);
+
+    if(($batibouw.outerHeight(true) + $header.outerHeight(true)) > $window.height()) {
+        $batibouw.css('min-height', $window.height());
+        $batibouw.find('.actie').addClass('f');
+    }
     
     
     
@@ -395,6 +404,7 @@ $(function(){
         if($st >= $begin && $st <= $end) {
             $earth.css('background-position-y', -$step);
         }*/
+
         // Kenmerken animation
         var $kenmerken = $('#kenmerken');
         if(($st + (windowHeight / 3)) > $kenmerken.offset().top) {
@@ -406,7 +416,38 @@ $(function(){
                 }, i*250);
             });
         }
-        
+
+        // Batibouw actie fixed to absolute
+        $batibouw = $('#batibouw');
+        $header = $('#header');
+        $window = $(window);
+
+        var batiBouwHeight = $header.height() + 40 + $batibouw.find('img').height() + $batibouw.find('.actie').height();
+
+        //console.log(($st + windowHeight) + " - " + batiBouwHeight + " = " + $header.height() + " - " + $batibouw.find('img').height() + " - " + $batibouw.find('.actie').height());
+
+        if(($st + windowHeight) > (batiBouwHeight)) {
+            $batibouw.find('.actie').removeClass('f');
+            $batibouw.find('.actie').removeClass('a');
+            $batibouw.find('img').css('margin-bottom', 0);
+
+            if((batiBouwHeight - $header.height() - 40) > $window.height()) {
+                $batibouw.css('min-height', $window.height());
+                $batibouw.find('.actie').addClass('a');
+                $batibouw.find('img').css('margin-bottom', $batibouw.find('.actie').height());
+            }
+        } else {
+            $batibouw.find('.actie').removeClass('f');
+            $batibouw.find('.actie').removeClass('a');
+            $batibouw.find('img').css('margin-bottom', 0);
+
+            if((batiBouwHeight - 40) > $window.height()) {
+                $batibouw.css('min-height', $window.height());
+                $batibouw.find('.actie').addClass('f');
+                $batibouw.find('img').css('margin-bottom', $batibouw.find('.actie').height());
+            }
+        }
+
     });
     
     $('#submit').click(function(e) {
@@ -561,6 +602,7 @@ $(window).resize(function() {
     } else {
         $('.same-height').syncHeight({ 'updateOnResize': true});
     }
+
     
 });
 

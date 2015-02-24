@@ -115,21 +115,28 @@ if(in_array($adress, $domains['fr'])) {
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="medium-12 columns">
-                        <div class="dark">
-                            <p class="intro"><?= $batibouw['intro']; ?></p>
+                <div class="actie">
+                    <div class="row">
+                        <div class="medium-12 columns">
+                            <img class="jan-text" src="img/jantrakteert-text.png">
                         </div>
                     </div>
-                </div>
+                    <div class="row">
+                        <div class="medium-12 columns">
+                            <div class="dark">
+                                <p class="intro"><?= $batibouw['intro']; ?></p>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="row">
-                    <div class="medium-12 columns">
-                        <div class="black">
-                            <a class="button" href="#<?= $general['anker7']; ?>"><?= $batibouw['button']; ?></a>
-                            <p><?= $batibouw['batibouw']; ?></p>
-                            <div class="batibouw-img">
-                                <img src="img/batibouw.png">
+                    <div class="row">
+                        <div class="medium-12 columns">
+                            <div class="black">
+                                <a class="button" href="#<?= $general['anker7']; ?>"><?= $batibouw['button']; ?></a>
+                                <p><?= $batibouw['batibouw']; ?></p>
+                                <div class="batibouw-img">
+                                    <img src="img/batibouw.png">
+                                </div>
                             </div>
                         </div>
                     </div>

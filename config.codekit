@@ -694,6 +694,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/jantrakteert-text.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 22764,
+		"inputAbbreviatedPath": "\/img\/jantrakteert-text.png",
+		"outputAbbreviatedPath": "\/img\/jantrakteert-text.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/jantrakteert.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -701,6 +712,17 @@
 		"initialSize": 186477,
 		"inputAbbreviatedPath": "\/img\/jantrakteert.jpg",
 		"outputAbbreviatedPath": "\/img\/jantrakteert.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/jantrakteert2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 280981,
+		"inputAbbreviatedPath": "\/img\/jantrakteert2.jpg",
+		"outputAbbreviatedPath": "\/img\/jantrakteert2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
