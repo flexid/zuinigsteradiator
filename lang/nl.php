@@ -398,7 +398,7 @@ $simulator = array(
     'labelTitle9'   => 'Geschatte jaarlijkse rente',
     'labelTitle10'  => 'Geschatte jaarlijkse stijging energieprijs',
     'question3'     => 'Zeker is dat energie alsmaar duurder zal worden. Inflatie en rente zijn veel moeilijker te voorspellen op lange termijn. Vul uw eigen voorspellingen in en maak zoveel simulaties als u wil.',
-    'text8'         => 'Met JAGA LOW-H<span class="h2o">2</span>O bespaard u op 30 jaar: ',
+    'text8'         => 'Met JAGA LOW-H<span class="h2o">2</span>O bespaart u op 30 jaar: ',
     'openTable'     => 'Klik hier om de jaarlijkse besparing te bekijken',
     'closeTable'    => 'Sluit venster',
     'text9'         => 'Per jaar',
