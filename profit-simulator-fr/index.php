@@ -1,5 +1,12 @@
 <?php
 
+    /*
+    *
+    * CAUTION: This is a standalone version of the simulator, and is not identical as the website version.
+    * So look out when you edit something.
+    *
+    */
+
     require_once('../lang/fr.php');
     $lang = 'fr';
 
@@ -31,7 +38,7 @@
         <meta name="msapplication-TileImage" content="../img/favicons/mstile-144x144.png">
         <meta name="theme-color" content="#ffffff">
     </head>
-    <body data-lang="<?= $lang; ?>">
+    <body data-lang="<?= $lang; ?>" class="standalone-profit-simulator">
         
 
         
@@ -70,7 +77,7 @@
 
                                             <div class="before step-last">
                                                 <p><?= $simulator['text2']; ?></p>
-                                                <a href="#<?= $general['anker6']; ?>"><?= $simulator['text3']; ?></a>
+                                                <a href="<?= $general['link_dealer']; ?>"><?= $simulator['text3']; ?></a>
                                             </div>
                                         </div>
                                     </div>

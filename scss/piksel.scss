@@ -1,6 +1,20 @@
 
 body {
     //background: $primary-color;
+
+    &.standalone-profit-simulator {
+        background: url(../img/paper_bg.png) #fff no-repeat;
+        background-size: cover;
+
+        #content #profit-simulator {
+            background: none;
+            padding: 20px 0;
+
+            &:before, &:after {
+                display: none;
+            }
+        }
+    }
 }
 
 .h2o {
@@ -560,7 +574,7 @@ body {
 
         .black {
             position: relative;
-            background: #1A1A1A;
+            background: $primary-color;
 
             p {
                 text-align: right;
@@ -643,9 +657,6 @@ body {
             margin: 0 0 0 30px;
             text-transform: uppercase;
             min-width: 272px;
-            transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            -webkit-transform: translateY(-50%);
             position: relative;
             z-index: 99;
 

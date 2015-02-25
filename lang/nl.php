@@ -10,6 +10,7 @@ $general = array(
     'anker4'        => 'technologie',
     'anker5'        => 'collectie',
     'anker6'        => 'dealers',
+    'link_dealer'   => 'http://www.dezuinigsteradiator.be/#dealers',
     'anker7'        => 'profit-simulator',
     'anker8'        => 'downloads',
     'anker9'        => 'contact',

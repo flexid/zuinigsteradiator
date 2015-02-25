@@ -10,6 +10,7 @@ $general = array(
     'anker4'        => 'technologie',
     'anker5'        => 'collection',
     'anker6'        => 'distribiteurs',
+    'link_dealer'   => 'http://www.leradiateurlepluseconomique.be/#distribiteurs',
     'anker7'        => 'simulateur-de-pr',
     'anker8'        => 'téléchargeables',
     'anker9'        => 'contact',
