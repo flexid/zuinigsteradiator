@@ -17,7 +17,7 @@ body {
     }
 
     // Medium padding fix
-    @include mq(medium) {
+    @include mq(1170) {
         .row {
             padding: 0 15px;
 
@@ -60,7 +60,7 @@ body {
     padding: 15px;
     @include box-shadow(2px 2px 6px 1px rgba(0,0,0,0.4));
     position: relative;
-    
+
     &:after {
         content: "";
         width: 0;
@@ -84,7 +84,7 @@ body {
     padding: 15px;
     @include box-shadow(2px 2px 6px 1px rgba(0,0,0,0.4));
     position: relative;
-    
+
     &:after {
         content: "";*
         width: 0;
@@ -105,26 +105,26 @@ body {
         width: 100%;
         z-index: 99;
         position: relative;
-        
+
         ul {
             list-style: none;
             text-align: right;
             margin: 0 0 3px 0;
-            
+
             li {
                 display: inline;
                 padding: 0 12px;
-                
+
                 &:last-child {
                     padding: 0 0 0 12px;
                 }
-                
+
                 a {
                     @extend .font-medium;
                     font-size: 10px;
                     color: #869097;
                     text-transform: uppercase;
-                    
+
                     &:hover {
                         color: darken(#869097, 10);
                     }
@@ -139,13 +139,13 @@ body {
         @include box-shadow(0 0 15px rgba(0,0,0,0.3));
         position: relative;
         z-index: 999999;
-        
+
         &.fixed {
             background: #fff;
         }
-            
+
         @include mq(950) {
-            
+
             .row .columns {
                 padding: 0;
             }
@@ -154,7 +154,7 @@ body {
         &[data-magellan-expedition-clone] {
             visibility: hidden;
         }
-        
+
         .logo {
             @include sprite(logo);
             @include hide-text();
@@ -167,17 +167,17 @@ body {
                 margin-right: auto;
             }
         }
-        
+
         .hamburger-menu {
             display: none;
             position:absolute;
             right: 15px;
             top: 30px;
-            
+
             @include mq(950) {
                 display: block;
             }
-            
+
             span {
                 display: block;
                 margin-top: 5px;
@@ -185,44 +185,44 @@ body {
                 height:5px;
                 background-color:#808080;
                 border-radius:5px;
-                
+
                 &:first-child {
                     margin-top: 0;
                 }
             }
         }
-        
+
         .main-menu {
             @include mq(950) {
                 display: none;
             }
-            
+
             ul {
                 list-style: none;
                 margin: 0;
                 float: right;
-                
+
                 @include mq(950) {
                     float: none;
                     text-align: center;
                 }
-                
+
                 li {
                     float: left;
                     display: block;
                     padding: 0;
                     margin: 0;
-                    
+
                     @include mq(950) {
                         float: none;
                     }
-                    
+
                     &.active {
                         a {
                             color: $primary-color;
                         }
                     }
-                    
+
                     a {
                         display: block;
                         padding: 0 12px;
@@ -232,15 +232,15 @@ body {
                         text-transform: uppercase;
                         line-height: 80px;
                         @include transition(background 250ms);
-                        
+
                         @include mq(950) {
                             line-height: 45px;
                         }
-                    
+
                         &:hover {
                             background: #dddad9;
                         }
-                        
+
                         &.green-button {
                             @extend .font-bold;
                             @include border-radius(10px);
@@ -249,7 +249,7 @@ body {
                             display: inline;
                             padding: 8px 10px;
                             margin: 0 0 0 12px;
-                            
+
                             &:before {
                                 content: "";
                                 @include sprite(leaf_white);
@@ -257,7 +257,7 @@ body {
                                 top: 3px;
                                 margin-right: 8px;
                             }
-                            
+
                             &:hover {
                                 background: darken($secondary-color, 5);
                             }
@@ -270,7 +270,7 @@ body {
 }
 
 #content {
-    
+
     #homepage {
         padding: 75px 0 0px 0;
         position: relative;
@@ -294,7 +294,7 @@ body {
         @include mq(medium) {
             margin-bottom: 0px;
         }
-        
+
         .animation-box {
             position: relative;
             z-index: 99;
@@ -312,7 +312,7 @@ body {
                 @include transform(scale(0.9));
             }
         }
-        
+
         .scroll {
             text-align: center;
             position: absolute;
@@ -322,7 +322,7 @@ body {
             bottom: 80px;
             left: 50%;
             @include transform(translate(-50%, 0));
-            
+
             &:after {
                 content: "";
                 @include sprite(scroll);
@@ -332,7 +332,7 @@ body {
                 margin-left: -7px;
             }
         }
-        
+
         .featured {
             @include sprite(featured);
             @include hide-text();
@@ -343,7 +343,7 @@ body {
                 margin-left: auto;
                 margin-right: auto;
             }
-            
+
             &.fr {
                 @include sprite(featured_fr);
                 @include hide-text();
@@ -401,7 +401,7 @@ body {
                 top: 0;
             }
         }
-        
+
         .ribbon {
             @include sprite(ribbon);
             @include hide-text();
@@ -411,17 +411,17 @@ body {
             z-index: 99;
             @include transition(all 250ms);
             @include transform(scale(0.7) rotate(4deg));
-            
+
             &:hover {
                 @include transform(scale(1) rotate(-5deg));
             }
-            
+
             &.fr {
                 @include sprite(ribbon_fr);
                 @include hide-text();
             }
         }
-        
+
         .ribbon2 {
             @include sprite(ribbon2);
             @include hide-text();
@@ -431,17 +431,17 @@ body {
             z-index: 99;
             @include transition(all 250ms);
             @include transform(scale(0.7) rotate(4deg));
-            
+
             &:hover {
                 @include transform(scale(1) rotate(-5deg));
             }
-            
+
             &.fr {
                 @include sprite(ribbon2_fr);
                 @include hide-text();
             }
         }
-        
+
         .button {
             @extend .font-bold;
             @include border-radius(10px);
@@ -458,7 +458,7 @@ body {
                 background: #fff;
                 color: $primary-color;
             }
-            
+
             &.green {
                 background: $secondary-color;
                 color: #fff;
@@ -469,24 +469,24 @@ body {
                 }
             }
         }
-        
+
         .social {
             position: relative;
-            
+
             ul {
                 list-style: none;
                 margin: 0;
                 position: absolute;
                 right: 0;
                 bottom: -75px;
-                
+
                 li {
                     display: inline;
                     margin-left: 15px;
-                    
+
                     a {
                         @include hide-text();
-                        
+
                         &.facebook {
                             @include sprite(icon_facebook);
                         }
@@ -700,7 +700,7 @@ body {
             }
         }
     }
-    
+
     #zuinigsteradiator {
         position: relative;
         background: url(../img/black.jpg) repeat;
@@ -760,53 +760,53 @@ body {
                     span {
                         @include sprite(bekijk_studie);
                         display: block;
-                        margin: (145 / 2 - 42px) auto 0 auto; 
+                        margin: (145 / 2 - 42px) auto 0 auto;
                     }
-                    
+
                     &.fr span {
                         @include sprite(bekijk_studie_fr);
                         display: block;
-                        margin: (145 / 2 - 42px) auto 0 auto; 
+                        margin: (145 / 2 - 42px) auto 0 auto;
                     }
-                    
+
                 }
 
                 &.kiwa span {
                     @include sprite(logo_kiwa);
                     display: block;
-                    margin: (145 / 2 - 15px) auto 0 auto; 
+                    margin: (145 / 2 - 15px) auto 0 auto;
                 }
                 &.grenelle_environnement span {
                     @include sprite(logo_grenelle_environnement);
                     display: block;
-                    margin: (145 / 2 - 32.5px) auto 0 auto; 
+                    margin: (145 / 2 - 32.5px) auto 0 auto;
                 }
                 &.bre span {
                     @include sprite(logo_bre);
                     display: block;
-                    margin: (145 / 2 - 21px) auto 0 auto; 
+                    margin: (145 / 2 - 21px) auto 0 auto;
                 }
                 &.tu span {
                     @include sprite(logo_tu);
                     display: block;
-                    margin: (145 / 2 - 21px) auto 0 auto; 
+                    margin: (145 / 2 - 21px) auto 0 auto;
                 }
                 &.wtcb {
-                    
+
                     &.fr {
                         span {
                             @include sprite(logo_wtcb_fr);
                             display: block;
-                            margin: (145 / 2 - 22px) auto 0 auto; 
+                            margin: (145 / 2 - 22px) auto 0 auto;
                         }
                     }
-                    
+
                     span {
                         @include sprite(logo_wtcb);
                         display: block;
-                        margin: (145 / 2 - 22px) auto 0 auto; 
+                        margin: (145 / 2 - 22px) auto 0 auto;
                     }
-                    
+
                 }
             }
 
@@ -818,10 +818,10 @@ body {
             }
         }
     }
-    
+
     #kenmerken {
         padding: 0 0 0 0;
-        
+
         h2 {
             @extend .font-bold;
             font-size: 32px;
@@ -829,7 +829,7 @@ body {
             text-transform: uppercase;
             text-align: center;
         }
-        
+
         h3 {
             @extend .font-bold;
             color: $secondary-color;
@@ -837,7 +837,7 @@ body {
             text-transform: uppercase;
             padding-top: 30px;
             position: relative;
-            
+
             span {
                 @extend .font-medium;
                 color: #333;
@@ -871,42 +871,42 @@ body {
                 color: #869097;
             }
         }
-        
+
         table {
             border: none;
             margin-top: 20px;
-            
+
             img {
                 display: block;
                 margin: 0 auto;
             }
-            
+
             thead, tr:nth-of-type(even) {
                 background: #fff;
             }
-            
+
             td {
                 border: 1px solid #DBDBDB;
                 @extend .font-medium;
                 font-size: 14px;
                 text-transform: uppercase;
                 color: #869097;
-                
+
                 @include mq(small) {
                     font-size: 11px;
                 }
             }
         }
-        
+
         .white {
             background: #fff;
             position: relative;
             padding: 60px 0;
-            
+
             h2 {
                 color: #333;
             }
-            
+
             &:before {
                 content: "";
                 display: block;
@@ -918,7 +918,7 @@ body {
                 top: -15.5px;
             }
         }
-        
+
         .light {
             background: #EFEAE9;
             padding: 60px 0;
@@ -928,13 +928,13 @@ body {
             background: url(../img/red.jpg) repeat;
             padding-top: 80px;
         }
-        
+
         .reasons {
            margin-top: 20px;
            margin-bottom: 70px;
-            
+
             ul {
-                
+
                 li {
                     @extend .font-bold;
                     font-size: 16px;
@@ -944,7 +944,7 @@ body {
                     text-align: center;
                     opacity: 0;
                     @include transition(all 250ms);
-                    
+
                     p {
                         display:none;
                         color: #fff;
@@ -953,13 +953,13 @@ body {
                         margin-top: 10px;
                         text-align: left;
                     }
-                    
+
                     a.close {
                         @include sprite(close_white);
                         @include hide-text();
                         display: none;
                     }
-                    
+
                     .button {
                         @extend .font-bold;
                         @include border-radius(10px);
@@ -970,7 +970,7 @@ body {
                         margin: 5px 0 0 0;
                         text-transform: uppercase;
                         font-size: 12px;
-                        
+
                         &:hover {
                             background: darken(#fff, 10);
                         }
@@ -984,7 +984,7 @@ body {
                             }
                         }
                     }
-                    
+
                     &:before {
                         content: "";
                         margin: 0 auto;
@@ -992,23 +992,23 @@ body {
                         @include transform(scale(0.5));
                         @include transition(all 250ms);
                     }
-                    
+
                     &.active {
                         opacity: 1;
-                        
+
                         &:before {
                             @include transform(scale(1));
                         }
                     }
-                    
+
                     &:hover {
                         cursor: pointer;
-                    
+
                         &:before {
                             @include transform(scale(1.2));
                         }
                     }
-                    
+
                     &.pig:before {
                         @include sprite(icon_pig);
                         display: block;
@@ -1049,12 +1049,12 @@ body {
             }
         }
     }
-    
+
     #technologie {
         padding: 80px 0 40px 0;
         background: #fff;
         position: relative;
-       
+
         h2 {
             @extend .font-bold;
             font-size: 32px;
@@ -1095,15 +1095,15 @@ body {
             padding: 5px 20px;
             margin: 0 0 10px 0;
             text-transform: uppercase;
-            
+
             &:hover {
                 background: darken(#fff, 10);
             }
-            
+
             &.green {
                 background: $secondary-color;
                 color: #fff;
-                
+
                 &:hover {
                     background: darken($secondary-color, 5);
                 }
@@ -1115,13 +1115,13 @@ body {
             top: 65%;
             left: 30%;
             position: absolute;
-            
+
             &.fr {
                 @include sprite(icon_warranty_red_fr);
                 @include hide-text();
             }
         }
-        
+
         &:before {
             content: "";
             display: block;
@@ -1132,7 +1132,7 @@ body {
             position: absolute;
             top: -15.5px;
         }
-            
+
         .whitespace {
             margin-top: 60px;
         }
@@ -1146,7 +1146,7 @@ body {
             img {
                 position: absolute;
                 top: -75px;
-                
+
                 @include mq(1180) {
                     position: static;
                 }
@@ -1163,23 +1163,23 @@ body {
                 padding: 8px 20px;
                 top: 255px;
                 left: 140px;
-                
+
                 @include mq(1180) {
                     top: auto;
                     bottom: -30px;
                 }
-                
+
                 @include mq(780) {
                     left: 15px;
                 }
-                
+
                 span {
                     @extend .font-bold;
                     color: #fff;
                     font-size: 14px;
                     text-transform: uppercase;
                 }
-                
+
                 .relative-right {
                     position: absolute;
                     top: 45px;
@@ -1210,11 +1210,11 @@ body {
         .brochure {
             position: relative;
             margin-top: 40px;
-            
+
             @include mq(small) {
                 margin-top: 80px;
             }
-            
+
             h4 {
                 @extend .font-bold;
                 font-size: 16px;
@@ -1239,11 +1239,11 @@ body {
                     @extend .font-medium;
                     font-size: 14px;
                     text-transform: uppercase;
-                    
+
                     a {
                         color: #333
                     }
-                    
+
                     &.preview:before {
                         content: "";
                         @include sprite(icon_preview);
@@ -1258,7 +1258,7 @@ body {
             }
         }
     }
-    
+
     #earth {
         background: url(../img/earth.png);
         @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3/2), (min--moz-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
@@ -1272,24 +1272,24 @@ body {
         position: relative;
         padding: 15px 0;
         min-height: 400px;
-        
+
         .text-center {
             width: 500px;
             margin-top: 100px;
-            
+
             @include mq(small) {
                 width: auto;
                 max-width: 500px;
             }
         }
-        
+
         a.close {
             @include sprite(close_white);
             @include hide-text();
             display: none;
             margin: 0 auto 20px auto;
         }
-                    
+
         h2 {
             @extend .font-bold;
             font-size: 32px;
@@ -1307,12 +1307,12 @@ body {
             font-size: 16px;
             display: inline-block;
             @include transition(all 250ms);
-            
+
             @include mq(750) {
                 color: #fff;
                 border: 1px solid #fff;
             }
-            
+
             &:hover {
                 background: #ccc;
                 color: $primary-color;
@@ -1326,7 +1326,7 @@ body {
             text-align: left;
         }
     }
-    
+
     #vergelijking {
         padding: 80px 0 0 0;
         background: #EFEAE9;
@@ -1349,15 +1349,15 @@ body {
                 font-size: 18px;
             }
         }
-        
+
         .flex-direction-nav {
             position: absolute;
             top: -25px;
             right: 0;
-            
+
             li {
                 float: left;
-                
+
                 a {
                     opacity: 1;
                     left: 0 !important;
@@ -1366,11 +1366,11 @@ body {
                     height: 45px;
                     position: static;
                     text-align: center;
-                    
+
                     &.flex-disabled {
                         opacity: 0.2 !important;
                     }
-                    
+
                     &:before {
                         color: #fff;
                         font-size: 28px;
@@ -1379,10 +1379,10 @@ body {
                 }
             }
         }
-            
+
         .table {
             margin: 40px 0 40px 0;
-            
+
             .no-gutter {
                 padding-right: 15px;
                 padding-left: 15px;
@@ -1396,11 +1396,11 @@ body {
                     }
                 }*/
             }
-            
+
             p {
                 margin-bottom: 0;
             }
-            
+
             .popover {
                 position: absolute;
                 z-index: 99;
@@ -1412,7 +1412,7 @@ body {
                 @extend .font-medium;
                 font-size: 12px;
                 text-transform: uppercase;
-                
+
                 span {
                     @extend .font-bold;
                     color: #fff;
@@ -1442,11 +1442,11 @@ body {
                 .row:first-child {
                     background: #EFEAE9;
                 }
-                
+
                 .row .columns {
                     padding: 0;
                 }
-                
+
                 .box {
                     height: 70px;
                 }
@@ -1461,41 +1461,41 @@ body {
                     top: 50%;
                     @include transform(translate(0, -50%));
                     position: absolute;
-                    
+
                     small {
                         font-size: inherit;
                     }
-                    
+
                     &.br {
                         line-height: 14px;
                         margin-top: 20px;
                         display: block;
                     }
-                    
+
                     strong {
                         @extend .font-medium;
                         font-weight: normal;
                     }
-                    
+
                     @include mq(1020) {
                         font-size: 10px;
                         line-height: 12px;
                     }
-                    
+
                     @include mq(small) {
                         margin-right: 0;
                     }
                 }
-                
-                a { 
-                    
+
+                a {
+
                     &.popup {
                         display: block;
                         position: relative;
                         height: 70px;
                     }
                 }
-                
+
                 .icon {
                     background: #CCCCCC;
                     width: 69px;
@@ -1505,16 +1505,16 @@ body {
                     right: 15px;
                     top: 0;
                     display: block;
-                    
+
                     @include mq(small) {
                         display: none;
                     }
-                    
+
                     span {
                         position: absolute;
                         top: 50%;
                         @include transform(translate(0, -50%));
-                        
+
                         &.afmetingen {
                             @include sprite(afmetingen);
                         }
@@ -1571,7 +1571,7 @@ body {
                     width: 100%;
                     background: #4FA323;
                 }
-                
+
                 .popup {
                     position: absolute;
                     width: 100%;
@@ -1638,7 +1638,7 @@ body {
                         display: block;
                         margin: 0 auto 3px auto;
                     }
-                    
+
                     @include mq(1020) {
                         font-size: 12px;
                     }
@@ -1659,7 +1659,7 @@ body {
                         display: block;
                         margin: 0 auto 3px auto;
                     }
-                    
+
                     @include mq(1020) {
                         font-size: 12px;
                     }
@@ -1680,7 +1680,7 @@ body {
                         display: block;
                         margin: 0 auto 3px auto;
                     }
-                    
+
                     @include mq(1020) {
                         font-size: 12px;
                     }
@@ -1701,7 +1701,7 @@ body {
                         display: block;
                         margin: 0 auto 3px auto;
                     }
-                    
+
                     @include mq(1020) {
                         font-size: 12px;
                     }
@@ -1722,24 +1722,24 @@ body {
                         display: block;
                         margin: 0 auto 3px auto;
                     }
-                    
+
                     @include mq(1020) {
                         font-size: 12px;
                     }
                 }
             }
-            
-            
+
+
             .bar {
                 padding: 0;
                 margin: 35px 0px 0px 0px;
                 position: relative;
-                
+
                 img {
                     top: 0;
                     position: absolute;
                 }
-                
+
                 .arrow {
                     width: 0;
                     height: 0;
@@ -1751,8 +1751,8 @@ body {
                     top: -5px;
                     margin-left: -8px;
                     z-index: 9;
-                    
-                    span { 
+
+                    span {
                         position: absolute;
                         bottom: 5px;
                         color: #fff;
@@ -1765,11 +1765,11 @@ body {
             }
         }
     }
-    
+
     #collectie {
         padding: 80px 0 0 0;
         background: #333;
-        
+
         h2 {
             @extend .font-bold;
             font-size: 32px;
@@ -1790,37 +1790,37 @@ body {
                 font-size: 18px;
             }
         }
-        
+
         .products {
-            
+
             > ul {
                 @include block-grid(4, 0);
-                
+
                 @include mq(medium) {
                     @include block-grid(3, 0);
                 }
                 @include mq(small) {
                     @include block-grid(1, 0);
                 }
-                
+
                 li {
-                    
+
                     .product {
                         width: 100%;
                         height: 100%;
                         position: relative;
                         z-index: 9;
-                        
+
                         &:hover {
                             .overlay {
                                 opacity: 1;
                             }
                         }
-                        
+
                         img {
                             width: 100%;
                         }
-                        
+
                         .overlay {
                             @include transition(all 250ms);
                             display: block;
@@ -1832,14 +1832,14 @@ body {
                             height: 100%;
                             background: rgba(191, 12, 12, 0.8);
                             text-align: center;
-                            
+
                             div {
                                 position: absolute;
                                 width: 100%;
                                 top: 50%;
                                 left: 50%;
                                 @include transform(translate(-50%, -50%));
-                                
+
                                 .zoom {
                                     @include sprite(icon_zoom);
                                     @include hide-text();
@@ -1861,7 +1861,7 @@ body {
                             }
                         }
                     }
-                    
+
                     .lightbox {
                         position: fixed;
                         z-index: 99999999;
@@ -1878,7 +1878,7 @@ body {
                             display: block;
                             opacity: 1;
                         }
-                        
+
                         .box {
                             background: #fff;
                             width: 100%;
@@ -1887,12 +1887,12 @@ body {
                             left: 50%;
                             @include transform(translate(-50%, -50%));
                             padding: 15px 0 15px 25px;
-                            
+
                             @include mq(small) {
                                 width: 100%;
                                 height: 100%;
                                 overflow-y: scroll;
-                                
+
                                 img {
                                     margin-top: 30px;
                                 }
@@ -1904,7 +1904,7 @@ body {
                                 left: 40px;
                                 top: 0;
                             }
-                            
+
                             .close {
                                 @include sprite(icon_close);
                                 @include hide-text();
@@ -1913,14 +1913,14 @@ body {
                                 right: 0;
                                 z-index: 999;
                             }
-                            
+
                             .designaward {
                                 @include sprite(design_award);
                                 @include hide-text();
                                 margin: 15px 0 20px 0;
                                 display: block;
                             }
-                            
+
                             .light-button {
                                 background: #EFEAE9;
                                 @extend .font-medium;
@@ -1934,15 +1934,15 @@ body {
                                 position: relative;
                                 padding-left: 35px;
                                 @include transition(background 250ms);
-                                
+
                                 &:first-of-type {
                                     margin-top: 20px;
                                 }
-                                
+
                                 &:hover {
                                     background: darken(#EFEAE9, 5);
                                 }
-                                
+
                                 &.brochure:before {
                                     content: "";
                                     @include sprite(icon_brochure);
@@ -1958,7 +1958,7 @@ body {
                                     left: 13px;
                                 }
                             }
-                            
+
                             .headline {
                                 @extend .font-bold;
                                 font-size: 12px;
@@ -1967,27 +1967,27 @@ body {
                                 margin-top: 60px;
                                 display: inline-block;
                             }
-                            
+
                             .information {
-                                
+
                                 h3 {
                                     @extend .font-bold;
                                     font-size: 32px;
                                     color: #000000;
                                     text-transform: uppercase;
                                 }
-                                
+
                                 h4 {
                                     @extend .font-medium;
                                     font-size: 14px;
                                     color: #333333;
                                     text-transform: uppercase;
                                 }
-                                
+
                                 ul {
                                     list-style: disc outside none;
                                     margin-top: 10px;
-                                    
+
                                     li {
                                         @extend .font-regular;
                                         font-size: 12px;
@@ -2001,12 +2001,12 @@ body {
             }
         }
     }
-    
+
     #profit-simulator {
         background: url(../img/paper_bg.png) #fff repeat;
         padding: 80px 0 80px 0;
         position: relative;
-        
+
         @include mq(small) {
             & > .row > .medium-12 {
                 padding: 0;
@@ -2033,11 +2033,11 @@ body {
         .simulator {
             background: $secondary-color;
             @include box-shadow(0 1px 15px rgba(0,0,0,0.3));
-            
+
             @include mq(small) {
                 & > .row {
                     margin: 0;
-                    
+
                     & > .columns {
                         padding: 0;
                     }
@@ -2092,12 +2092,12 @@ body {
                 padding-top: 30px;
                 margin-top: 30px;
                 position: relative;
-                
+
                 @include mq(880) {
                     font-size: 28px;
                     line-height: 30px;
                 }
-                
+
                 &:before {
                     content: "";
                     @include sprite(leaf_green_invert);
@@ -2112,14 +2112,14 @@ body {
                 margin: 25px 0 0 0;
                 font-size: 18px;
                 color: #333333;
-                
+
                 &.big {
                    color: $secondary-color;
-                            
+
                     a {
                         color: $secondary-color;
                         text-decoration: underline;
-                    } 
+                    }
                 }
             }
 
@@ -2129,7 +2129,7 @@ body {
                 @include box-shadow(15px 0px 15px -8px rgba(0,0,0,0.3));
                 height: 100%;
                 min-height: 100%;
-                
+
                 .saving {
                     //background: #545454;
                     //padding: 20px 30px 20px 0;
@@ -2137,11 +2137,11 @@ body {
                     width: 100%;
                     display: inline-block;
                     position: relative;
-                    
+
                     /*@include mq(small) {
                         display: none;
                     }
-                    
+
                     &:before {
                         content: "";
                         position: absolute;
@@ -2163,10 +2163,10 @@ body {
                         left: -40px;
                         @include transform(rotate(-45deg));
                     }*/
-                    
+
                     .before {
                         display: none;
-                        
+
                         &.step-intro {
                             display: block;
                         }
@@ -2231,7 +2231,7 @@ body {
                                 }
                             }
                         }
-                        
+
                         /*p {
                             @extend .font-bold;
                             font-size: 21px;
@@ -2239,12 +2239,12 @@ body {
                             color: #fff;
                             text-transform: uppercase;
                             margin: 0 0 20px 0;
-                            
+
                             &.big {
                                 margin: 0;
                             }
                         }
-                        
+
                         a {
                             @extend .font-medium;
                             margin: 25px 0 0 0;
@@ -2265,7 +2265,7 @@ body {
 
                             @include mq(880) {
                                 font-size: 26px;
-                                
+
                                 small {
                                     font-size: 12px !important;
                                 }
@@ -2275,17 +2275,17 @@ body {
                             }
                         }*/
                     }
-                    
+
                     .step-last {
                         display: none;
-                        
+
                         p {
                             margin: 15px 0 0 0;
                             @extend .font-bold;
                             color: #171717;
                             text-transform: uppercase;
                             font-size: 20px;
-                            
+
                             @include mq(880) {
                                 font-size: 18px;
                                 line-height: 20px;
@@ -2313,31 +2313,31 @@ body {
                     }
                 }
             }
-            
+
             .main {
                 padding-top: 20px;
-                
+
                 @include mq(small) {
                     padding-left: 30px;
                 }
-                
+
                 /*.steps {
                     margin-left: -30px;
                     background: #4D6F25;
-                    
+
                     ul {
                         list-style: none;
                         margin: 0 0 0 8px;
                         height: 31px;
                         background: #567C28;
-                        
+
                         li {
                             float: left;
                             position: relative;
                             height: 31px;
                             padding: 0 25px 0 25px;
                             margin-right: 14px;
-                            
+
                             span {
                                 @extend .font-regular;
                                 font-size: 12px;
@@ -2345,25 +2345,25 @@ body {
                                 line-height: 31px;
                                 text-transform: uppercase;
                             }
-                            
+
                             &:after {
                                 content: "";
                                 @include sprite(step_arrow);
                                 position: absolute;
                                 right: -14px;
                             }
-                            
+
                             &.active, &.active2 {
                                 background: #4D6F25;
                             }
-                            
+
                             &.active:after {
                                 content: "";
                                 @include sprite(step_arrow_active);
                                 position: absolute;
                                 right: -14px;
                             }
-                            
+
                             &.active2:after {
                                 content: "";
                                 @include sprite(step_arrow_active_2);
@@ -2373,7 +2373,7 @@ body {
                         }
                     }
                 }*/
-                
+
                 .slider {
                     padding-right: 30px;
                     position: relative;
@@ -2436,21 +2436,21 @@ body {
                     .row.whitespace {
                         margin-bottom: 20px;
                     }
-                    
+
                     .question {
                         @include sprite(icon_question);
-                        
+
                         &.dark {
                             background: none;
                             @include sprite(icon_question_dark);
                         }
-                        
+
                         position: relative;
                         top: 3px;
                         left: 10px;
                         overflow: visible;
                     }
-                    
+
                     h3 {
                        @extend .font-bold;
                        font-size: 28px;
@@ -2481,7 +2481,7 @@ body {
                             margin-top: 15px;
                         }
                     }
-                    
+
                     h4 {
                        @extend .font-bold;
                        font-size: 18px;
@@ -2489,23 +2489,23 @@ body {
                        text-transform: uppercase;
                        margin-bottom: 20px;
                     }
-                    
+
                     p {
                         @extend .font-medium;
                         font-size: 16px;
                         color: #575757;
-                        
+
                         &.small {
                             font-size: 12px;
                             color: #fff;
-                            
+
                             &.smallLabel {
                                 margin: 0 0 10px 0;
                             }
                         }
-                        
+
                     }
-                    
+
                     hr {
                         background: #527728;
                         height: 1px;
@@ -2513,19 +2513,19 @@ body {
                         border: none;
                         margin: 15px 0;
                     }
-                    
+
                     span {
                         @extend .font-medium;
                         font-size: 16px;
                         color: #fff;
-                        
+
                         &.full {
                             width: 100%;
                             display: block;
                             margin-bottom: 15px;
                         }
                     }
-                    
+
                     input {
                         border: none;
                         display: inline;
@@ -2536,21 +2536,21 @@ body {
                         background: #fff;
                         @include border-radius(5px);
                         padding: 5px 15px;
-                        
+
                         &.small {
                             width: 80px;
-                            
+
                             @include mq(880) {
                                 width: 60px;
                                 padding: 5px;
                             }
                         }
-                        
+
                         &.medium {
                             width: 150px;
                         }
                     }
-                    
+
                     .row .row input {
                         margin-bottom: 5px;
                     }
@@ -2562,21 +2562,21 @@ body {
                         padding: 5px 8px;
                         color: $secondary-color;
                         @include border-radius(5px);
-                        
+
                         &.big {
                             @extend .font-bold;
                             font-size: 60px;
                             padding: 5px 15px;
                             color: #333;
-                            
+
                             small {
                                 font-size: 30px;
                                 color: #A0A0A0;
-                                
+
                                 @include mq(880) {
                                     display: block;
                                 }
-                                
+
                                 span {
                                     font-size: 30px;
                                     color: #A0A0A0;
@@ -2588,7 +2588,7 @@ body {
                             font-size: 60px;
                             color: #333;
                         }
-                        
+
                         &.medium {
                             font-size: 38px;
                         }
@@ -2613,7 +2613,7 @@ body {
                             background: #fff;
                         }
                     }
-                    
+
                     .white-box {
                         background: #fff;
                         padding: 5px 8px 10px 8px;
@@ -2624,7 +2624,7 @@ body {
                         h3 {
                             color: $secondary-color;
                         }
-                        
+
                         .open-table {
                             color: $primary-color;
                             background: #EFEAE9;
@@ -2635,9 +2635,9 @@ body {
                             @extend .font-medium;
                             font-size: 12px;
                             position: relative;
-                            
+
                             &.open {
-                                
+
                                 &:after {
                                     content: "";
                                     @include sprite(open);
@@ -2656,21 +2656,21 @@ body {
                                 }
                             }
                         }
-                        
+
                         .table {
                             display: none;
                             margin: 0 7px;
-                            
+
                             span {
                                 color: #565656;
                                 @extend .font-black;
                                 text-transform: uppercase;
-                                
+
                                 @include mq(small) {
                                     font-size: 12px;
                                 }
                             }
-                            
+
                             .inner-content {
                                 &> .row:nth-child(odd) {
                                     background: #eee;
@@ -2679,12 +2679,12 @@ body {
                                 &> .row:nth-child(even) {
                                     background: #fff;
                                 }
-                                
+
                                 span {
                                     @extend .font-bold;
                                     text-transform:none;
                                 }
-                                
+
                                 .row .columns:last-child {
                                     span {
                                         @extend .font-regular;
@@ -2715,14 +2715,14 @@ body {
                     .eenheid, .eenheid_prijs {
                         text-transform: uppercase;
                     }
-                        
+
                     label {
                         display: inline;
                         margin: 0 0 0 10px;
                         @extend .font-medium;
                         font-size: 18px;
                         color: #fff;
-                        
+
                         &.btn {
                             @extend .font-medium;
                             font-size: 16px;
@@ -2732,11 +2732,11 @@ body {
                             padding: 5px 15px;
                             opacity: 0.75;
                             display: inline-block;
-                            
+
                             @include mq(880) {
                                 margin: 10px 0;
                             }
-                            
+
                             .verwarming1 {
                                 @include sprite(icon_verwarming1);
                                 @include hide-text();
@@ -2747,17 +2747,17 @@ body {
                                 @include hide-text();
                                 margin-top: 5px;
                             }
-                            
+
                             &.checked {
                                 opacity: 1;
                             }
                         }
                     }
-                    
+
                     input[type='radio'] {
                         display: none;
                     }
-                    
+
                     .button-bar {
                         min-height: 75px;
 
@@ -2779,11 +2779,11 @@ body {
                             background: #575757;
                             color: #fff;
                             width: auto;
-                            
+
                             @include mq(880) {
                                 //padding: 10px 30px;
                             }
-                            
+
                             &:active {
                                 margin-top: 2px;
                                 border-bottom: none;
@@ -2795,7 +2795,7 @@ body {
                 }
             }
         }
-        
+
         &:before {
             content: "";
             display: block;
@@ -2818,12 +2818,12 @@ body {
             bottom: -15.5px;
         }
     }
-    
+
     #dealers {
         background: #333333;
         padding: 80px 0 0 0;
         position: relative;
-        
+
         h2 {
             @extend .font-bold;
             font-size: 32px;
@@ -2835,17 +2835,17 @@ body {
             font-size: 16px;
             color: #fff;
             margin-bottom: 60px;
-            
+
             &.intro {
                 font-size: 18px;
             }
         }
-        
+
         .bh-sl-container {
             width: 100%;
             margin: 0;
             position: relative;
-            
+
             @include mq(small) {
                 .bh-sl-map {
                     height: 300px !important;
@@ -2853,13 +2853,13 @@ body {
                 .bh-sl-loc-list {
                     width: 100%;
                     position: static !important;
-                    
+
                     .list {
                         height: 225px !important;
                     }
                 }
             }
-            
+
             @include mq(950) {
                 .bh-sl-loc-list {
                     top: 15px !important;
@@ -2870,30 +2870,30 @@ body {
                     height: 450px !important;
                 }
             }
-            
+
             .infowindow {
                 @extend .font-regular;
                 font-size: 12px;
                 color: #333;
-                
+
                 .name {
                     @extend .font-bold;
                 }
-                
+
                 a {
                     color: $primary-color;
                 }
             }
-            
+
             .bh-sl-map {
                 width: 100%;
                 height: 600px;
-                
+
                 img {
                     max-width: none;
                 }
             }
-            
+
             .bh-sl-loc-list {
                 position: absolute;
                 z-index: 99;
@@ -2902,24 +2902,24 @@ body {
                 background: #fff;
                 overflow-x: auto;
                 height: auto;
-                
+
                 .list {
                     height: 325px;
                     overflow-x: auto;
-                    
+
                     li {
                         border: none;
                         border-bottom: 1px solid #E8E7E6;
                         margin: 0;
                         padding: 2px 20px;
                         width: 100%;
-                            
+
                         &.list-focus {
                             border: none;
                             border-bottom: 1px solid #E8E7E6;
                             @include box-shadow(none);
                         }
-                        
+
                         .list-label {
                             background: none;
                         }
@@ -2933,17 +2933,17 @@ body {
                             font-size: 12px;
                             color: #869097;
                             display: inline;
-                            
+
                         }
                     }
                 }
             }
-            
+
             .bh-sl-form-container {
                 margin: 0;
                 background: #333333;
                 padding: 25px 20px;
-                
+
                 button {
                     background: $primary-color;
                     border: none;
@@ -2954,7 +2954,7 @@ body {
                     text-transform: uppercase;
                     float: right;
                 }
-                
+
                 label {
                     @extend .font-regular;
                     font-size: 14px;
@@ -2963,7 +2963,7 @@ body {
                 .form-input {
                     width: 100%;
                     margin-top: 0;
-                    
+
                     input {
                         border: none;
                         background: #fff;
@@ -2978,11 +2978,11 @@ body {
             }
         }
     }
-    
+
     #downloads {
         background: #252525;
         padding: 80px 0 80px 0;
-        
+
         h2 {
             @extend .font-bold;
             font-size: 32px;
@@ -2991,18 +2991,18 @@ body {
             text-align: center;
             margin-bottom: 30px;
         }
-        
+
         h3 {
             @extend .font-bold;
             font-size: 24px;
             text-transform: uppercase;
             color: #fff;
         }
-        
+
         ul {
             list-style: none;
             margin: 0;
-            
+
             &:first-of-type {
                 li {
 
@@ -3025,9 +3025,9 @@ body {
                     }
                 }
             }
-            
+
             li {
-                
+
                 &.beelden:before {
                     content: "";
                     @include sprite(icon_beelden);
@@ -3038,7 +3038,7 @@ body {
                     @include sprite(icon_perstekst);
                     margin-right: 10px;
                 }
-                    
+
                 a {
                     @extend .font-regular;
                     font-size: 12px;
@@ -3046,26 +3046,26 @@ body {
                 }
             }
         }
-        
+
         .left {
             margin-right: 40px;
         }
-        
+
         span {
             @extend .font-bold;
             font-size: 14px;
             text-transform: uppercase;
             color: #666666;
         }
-        
-        
+
+
     }
-    
+
     #contact {
         background: #efeae9;
         padding: 80px 0 80px 0;
         position: relative;
-        
+
         #hello {
             background: transparent;
             border: none;
@@ -3074,14 +3074,14 @@ body {
             pointer-events: none;
             position: absolute;
         }
-        
+
         #returnmessage {
             @extend .font-medium;
             font-size: 16px;
             color: #333;
             margin-left: 15px;
         }
-        
+
         h2 {
             @extend .font-bold;
             font-size: 32px;
@@ -3095,12 +3095,12 @@ body {
             color: #4D4D4D;
             margin-bottom: 60px;
             text-align: center;
-            
+
             &.intro {
                 font-size: 18px;
             }
         }
-        
+
         input, textarea {
             border: 1px solid white;
         }
@@ -3108,11 +3108,11 @@ body {
         ul {
             list-style: none;
             margin: -25px 0 60px 0;
-            
+
             @include mq(small) {
                 margin: 30px 0 60px 0;
             }
-            
+
             li {
                 @extend .font-bold;
                 font-size: 16px;
@@ -3122,19 +3122,19 @@ body {
                 height: 50px;
                 margin-bottom: 15px;
                 margin-left: 50px;
-                
+
                 &:before {
                     position: absolute;
                     top: 0px;
                     left: -50px;
                 }
-                
+
                 span {
                     position: absolute;
                     top: 50%;
                     @include transform(translate(0, -50%));
                 }
-                
+
                 &.mail:before {
                     content: "";
                     @include sprite(mail);
@@ -3159,7 +3159,7 @@ body {
                 }
             }
         }
-        
+
         h3 {
             @extend .font-bold;
             font-size: 24px;
@@ -3208,14 +3208,14 @@ body {
         }
 
         :-moz-placeholder { /* Firefox 18- */
-            color: #5a6065;  
+            color: #5a6065;
         }
 
         ::-moz-placeholder {  /* Firefox 19+ */
-            color: #5a6065;  
+            color: #5a6065;
         }
 
-        :-ms-input-placeholder {  
+        :-ms-input-placeholder {
             color: #5a6065;
         }
 
@@ -3231,14 +3231,14 @@ body {
     background: #1A1A1A;
     padding: 15px 0;
     text-align: center;
-    
+
     p {
         margin: 0;
         @extend .font-regular;
         font-size: 10px;
         color: #666666;
     }
-    
+
     a {
         color: #666666;
         text-decoration: underline;
