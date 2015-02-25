@@ -588,6 +588,9 @@ $(window).load(function() {
     } else {
         $('.same-height').syncHeight({ 'updateOnResize': true});
     }
+
+    // Resize on load
+    $(window).resize();
 });
 
 $(window).resize(function() {

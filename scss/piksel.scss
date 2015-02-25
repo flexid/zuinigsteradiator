@@ -15,6 +15,27 @@ body {
             }
         }
     }
+
+    // Medium padding fix
+    @include mq(medium) {
+        .row {
+            padding: 0 15px;
+
+            .row {
+                padding: 0;
+
+                .row {
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    @include mq(small) {
+        .row {
+            padding: 0;
+        }
+    }
 }
 
 .h2o {
