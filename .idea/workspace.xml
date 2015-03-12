@@ -2,45 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d7955ec-f765-45a0-96ef-81025dde15e4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/bar.png" afterPath="$PROJECT_DIR$/img/bar.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/brochure.png" afterPath="$PROJECT_DIR$/img/brochure.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/brochure_red.png" afterPath="$PROJECT_DIR$/img/brochure_red.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/brochure_red_fr.png" afterPath="$PROJECT_DIR$/img/brochure_red_fr.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/divider_pattern.png" afterPath="$PROJECT_DIR$/img/divider_pattern.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/divider_pattern_bottom.png" afterPath="$PROJECT_DIR$/img/divider_pattern_bottom.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/divider_pattern_bottom_grey.png" afterPath="$PROJECT_DIR$/img/divider_pattern_bottom_grey.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/divider_pattern_top.png" afterPath="$PROJECT_DIR$/img/divider_pattern_top.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/divider_pattern_top_grey.png" afterPath="$PROJECT_DIR$/img/divider_pattern_top_grey.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/earth.png" afterPath="$PROJECT_DIR$/img/earth.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/earth@2x.png" afterPath="$PROJECT_DIR$/img/earth@2x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/epb.png" afterPath="$PROJECT_DIR$/img/epb.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/example_product.png" afterPath="$PROJECT_DIR$/img/example_product.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/example_product_large.png" afterPath="$PROJECT_DIR$/img/example_product_large.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/sprite/featured.png" afterPath="$PROJECT_DIR$/img/sprite/featured.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/sprite@2x/featured.png" afterPath="$PROJECT_DIR$/img/sprite@2x/featured.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/sprite/featured_fr.png" afterPath="$PROJECT_DIR$/img/sprite/featured_fr.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/sprite@2x/featured_fr.png" afterPath="$PROJECT_DIR$/img/sprite@2x/featured_fr.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/logos.png" afterPath="$PROJECT_DIR$/img/logos.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/marker.png" afterPath="$PROJECT_DIR$/img/marker.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/optie_dbe.png" afterPath="$PROJECT_DIR$/img/optie_dbe.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/paper_bg.png" afterPath="$PROJECT_DIR$/img/paper_bg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/pig.png" afterPath="$PROJECT_DIR$/img/pig.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/warmtewisselaar.png" afterPath="$PROJECT_DIR$/img/warmtewisselaar.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/zuinigste_radiator.png" afterPath="$PROJECT_DIR$/img/zuinigste_radiator.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/zuinigste_radiator@2x.png" afterPath="$PROJECT_DIR$/img/zuinigste_radiator@2x.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profit-simulator-fr/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profit-simulator-nl/index.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.codekit" afterPath="$PROJECT_DIR$/config.codekit" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact.php" afterPath="$PROJECT_DIR$/contact.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lang/fr.php" afterPath="$PROJECT_DIR$/lang/fr.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simulateur-de-profit/index.php" afterPath="$PROJECT_DIR$/simulateur-de-profit/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/data/locations.xml" afterPath="$PROJECT_DIR$/js/data/locations.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/min/main-min.js" afterPath="$PROJECT_DIR$/js/min/main-min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/main.scss" afterPath="$PROJECT_DIR$/scss/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lang/nl.php" afterPath="$PROJECT_DIR$/lang/nl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/piksel.js" afterPath="$PROJECT_DIR$/js/piksel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/piksel.scss" afterPath="$PROJECT_DIR$/scss/piksel.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dezuinigsteradiator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,31 +32,19 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="18240">
-              <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="21525">
+              <caret line="6" column="43" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="piksel.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="piksel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/piksel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.84158415" vertical-offset="2795" max-vertical-offset="10815">
-              <caret line="226" column="9" selection-start-line="226" selection-start-column="9" selection-end-line="226" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="8322" max-vertical-offset="12810">
+              <caret line="592" column="23" selection-start-line="592" selection-start-column="23" selection-end-line="592" selection-end-column="23" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.storelocator.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/vendor/jquery.storelocator.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="28500">
-              <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="40" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -100,13 +52,9 @@
       <file leaf-file-name="piksel.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/piksel.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="40410">
-              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-              <folding>
-                <marker date="1426174454000" expanded="true" signature="59868:71453" placeholder="{...}" />
-                <marker date="1426174454000" expanded="true" signature="60263:60380" placeholder="{...}" />
-                <marker date="1426174454000" expanded="true" signature="71030:71231" placeholder="{...}" />
-              </folding>
+            <state vertical-scroll-proportion="-5.0" vertical-offset="555" max-vertical-offset="51180">
+              <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -114,18 +62,18 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/profit-simulator/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="5970">
+            <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="5970">
               <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/simulateur-de-profit/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.5" vertical-offset="105" max-vertical-offset="5970">
-              <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.14788732" vertical-offset="0" max-vertical-offset="5970">
+              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -134,12 +82,9 @@
       <file leaf-file-name="nl.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lang/nl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="6525">
-              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-              <folding>
-                <marker date="1426174451000" expanded="true" signature="24:378" placeholder="..." />
-                <marker date="1426174451000" expanded="true" signature="34161:34163" placeholder="..." />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="7155">
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -147,11 +92,9 @@
       <file leaf-file-name="fr.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lang/fr.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="6495">
-              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-              <folding>
-                <marker date="1426174452000" expanded="true" signature="24:391" placeholder="..." />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="7125">
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -167,14 +110,22 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
+    <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/saving.php" />
+        <option value="$PROJECT_DIR$/email.html" />
+        <option value="$PROJECT_DIR$/scss/partials/_print.scss" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/lang/nl.php" />
+        <option value="$PROJECT_DIR$/lang/fr.php" />
+        <option value="$PROJECT_DIR$/profit-simulator-nl/index.php" />
+        <option value="$PROJECT_DIR$/profit-simulator-fr/index.php" />
         <option value="$PROJECT_DIR$/js/piksel.js" />
+        <option value="$PROJECT_DIR$/scss/piksel.scss" />
+        <option value="$PROJECT_DIR$/profit-simulator/index.php" />
+        <option value="$PROJECT_DIR$/simulateur-de-profit/index.php" />
       </list>
     </option>
-  </component>
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
@@ -301,38 +252,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dezuinigsteradiator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dezuinigsteradiator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dezuinigsteradiator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dezuinigsteradiator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -361,16 +280,15 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
-      <arguments />
-      <pass-parent-envs>true</pass-parent-envs>
+      <pass-parent-env-vars>false</pass-parent-env-vars>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -404,13 +322,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -434,15 +352,19 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/piksel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="8322" max-vertical-offset="12810">
+          <caret line="592" column="23" selection-start-line="592" selection-start-column="23" selection-end-line="592" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scss/piksel.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="51180">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1426174454000" expanded="true" signature="59868:71453" placeholder="{...}" />
-            <marker date="1426174454000" expanded="true" signature="60263:60380" placeholder="{...}" />
-            <marker date="1426174454000" expanded="true" signature="71030:71231" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -450,10 +372,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="7155">
           <caret line="12" column="16" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="16" />
-          <folding>
-            <marker date="1426174451000" expanded="true" signature="24:378" placeholder="..." />
-            <marker date="1426174451000" expanded="true" signature="34161:34163" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -461,9 +380,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="7125">
           <caret line="12" column="16" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="16" />
-          <folding>
-            <marker date="1426174452000" expanded="true" signature="24:391" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -487,11 +404,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="50700">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1426174454000" expanded="true" signature="59868:71453" placeholder="{...}" />
-            <marker date="1426174454000" expanded="true" signature="60263:60380" placeholder="{...}" />
-            <marker date="1426174454000" expanded="true" signature="71030:71231" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -515,11 +428,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="38881" max-vertical-offset="50205">
           <caret line="2634" column="0" selection-start-line="2634" selection-start-column="0" selection-end-line="2634" selection-end-column="0" />
-          <folding>
-            <marker date="1426174454000" expanded="true" signature="59868:71453" placeholder="{...}" />
-            <marker date="1426174454000" expanded="true" signature="60263:60380" placeholder="{...}" />
-            <marker date="1426174454000" expanded="true" signature="71030:71231" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -541,10 +450,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="5410" max-vertical-offset="7140">
           <caret line="364" column="4" selection-start-line="364" selection-start-column="4" selection-end-line="364" selection-end-column="44" />
-          <folding>
-            <marker date="1426174451000" expanded="true" signature="24:378" placeholder="..." />
-            <marker date="1426174451000" expanded="true" signature="34161:34163" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -552,9 +458,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7110">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1426174452000" expanded="true" signature="24:391" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -578,11 +482,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="38881" max-vertical-offset="50205">
           <caret line="2634" column="0" selection-start-line="2634" selection-start-column="0" selection-end-line="2634" selection-end-column="0" />
-          <folding>
-            <marker date="1426174454000" expanded="true" signature="59868:71453" placeholder="{...}" />
-            <marker date="1426174454000" expanded="true" signature="60263:60380" placeholder="{...}" />
-            <marker date="1426174454000" expanded="true" signature="71030:71231" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -604,10 +504,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="5410" max-vertical-offset="7140">
           <caret line="364" column="4" selection-start-line="364" selection-start-column="4" selection-end-line="364" selection-end-column="44" />
-          <folding>
-            <marker date="1426174451000" expanded="true" signature="24:378" placeholder="..." />
-            <marker date="1426174451000" expanded="true" signature="34161:34163" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -615,9 +512,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7110">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1426174452000" expanded="true" signature="24:391" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -641,11 +536,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="47460">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1426174454000" expanded="true" signature="59868:71453" placeholder="{...}" />
-            <marker date="1426174454000" expanded="true" signature="60263:60380" placeholder="{...}" />
-            <marker date="1426174454000" expanded="true" signature="71030:71231" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -653,10 +544,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="5260" max-vertical-offset="7125">
           <caret line="373" column="42" selection-start-line="373" selection-start-column="42" selection-end-line="373" selection-end-column="42" />
-          <folding>
-            <marker date="1426174451000" expanded="true" signature="24:378" placeholder="..." />
-            <marker date="1426174451000" expanded="true" signature="34161:34163" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -664,9 +552,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="5697" max-vertical-offset="7095">
           <caret line="422" column="69" selection-start-line="422" selection-start-column="69" selection-end-line="422" selection-end-column="69" />
-          <folding>
-            <marker date="1426174452000" expanded="true" signature="24:391" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -690,11 +576,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="7965" max-vertical-offset="47430">
           <caret line="531" column="25" selection-start-line="531" selection-start-column="25" selection-end-line="531" selection-end-column="25" />
-          <folding>
-            <marker date="1426174454000" expanded="true" signature="59868:71453" placeholder="{...}" />
-            <marker date="1426174454000" expanded="true" signature="60263:60380" placeholder="{...}" />
-            <marker date="1426174454000" expanded="true" signature="71030:71231" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -702,10 +584,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="5260" max-vertical-offset="7125">
           <caret line="373" column="42" selection-start-line="373" selection-start-column="42" selection-end-line="373" selection-end-column="42" />
-          <folding>
-            <marker date="1426174451000" expanded="true" signature="24:378" placeholder="..." />
-            <marker date="1426174451000" expanded="true" signature="34161:34163" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -713,9 +592,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7095">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1426174452000" expanded="true" signature="24:391" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -739,11 +616,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="7965" max-vertical-offset="47430">
           <caret line="531" column="25" selection-start-line="531" selection-start-column="25" selection-end-line="531" selection-end-column="25" />
-          <folding>
-            <marker date="1426174454000" expanded="true" signature="59868:71453" placeholder="{...}" />
-            <marker date="1426174454000" expanded="true" signature="60263:60380" placeholder="{...}" />
-            <marker date="1426174454000" expanded="true" signature="71030:71231" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -751,10 +624,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="5925" max-vertical-offset="7110">
           <caret line="395" column="46" selection-start-line="395" selection-start-column="46" selection-end-line="395" selection-end-column="46" />
-          <folding>
-            <marker date="1426174451000" expanded="true" signature="24:378" placeholder="..." />
-            <marker date="1426174451000" expanded="true" signature="34161:34163" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -762,9 +632,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="5220" max-vertical-offset="7080">
           <caret line="348" column="33" selection-start-line="348" selection-start-column="33" selection-end-line="348" selection-end-column="33" />
-          <folding>
-            <marker date="1426174452000" expanded="true" signature="24:391" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -828,48 +696,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lang/fr.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="6495">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding>
-            <marker date="1426174452000" expanded="true" signature="24:391" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="7125">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lang/nl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="6525">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding>
-            <marker date="1426174451000" expanded="true" signature="24:378" placeholder="..." />
-            <marker date="1426174451000" expanded="true" signature="34161:34163" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="7155">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="18240">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="21525">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/piksel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="8322" max-vertical-offset="12810">
+          <caret line="592" column="23" selection-start-line="592" selection-start-column="23" selection-end-line="592" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/piksel.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="40410">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding>
-            <marker date="1426174454000" expanded="true" signature="59868:71453" placeholder="{...}" />
-            <marker date="1426174454000" expanded="true" signature="60263:60380" placeholder="{...}" />
-            <marker date="1426174454000" expanded="true" signature="71030:71231" placeholder="{...}" />
-          </folding>
+        <state vertical-scroll-proportion="-5.0" vertical-offset="555" max-vertical-offset="51180">
+          <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/profit-simulator/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="5970">
+        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="5970">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
@@ -877,29 +744,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/simulateur-de-profit/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.5" vertical-offset="105" max-vertical-offset="5970">
-          <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/vendor/jquery.storelocator.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="28500">
-          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="40" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/piksel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84158415" vertical-offset="2795" max-vertical-offset="10815">
-          <caret line="226" column="9" selection-start-line="226" selection-start-column="9" selection-end-line="226" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.14788732" vertical-offset="0" max-vertical-offset="5970">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
   </component>
 </project>
+
