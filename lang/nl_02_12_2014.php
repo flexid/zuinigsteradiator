@@ -60,7 +60,7 @@ $kenmerken = array(
     'subtitle2'     => '9 tot 16% zuiniger dan <br><span>paneelradiatoren</span>',
     'text3'         => 'In het nieuwste onderzoek naar het afgifterendement heeft Kiwa Technology de kwaliteitsverklaring voor de Low-H<span class="h2o">2</span>O warmtewisselaar van Jaga bekend gemaakt. Dit door het Nederlandse ministerie officieel erkende bewijs is uitgereikt na een onafhankelijke test van een Jaga Tempo radiator volgens internationale normen. Het resultaat is verbluffend. De Low-H<span class="h2o">2</span>O radiator presteert beter dan alle andere systemen en heeft het hoogst mogelijke afgifterendement bij lage én hoge watertemperatuur en dit zowel voor nieuwe als bestaande woningen.',
     'text4'         => '',
-    'tableTitle'    => 'Besparing Low-H<span class="h2o">2</span>O t.o.v paneelradiator',
+    'tableTitle'    => 'Besparing Low-H2O t.o.v paneelradiator',
     'table1'        => 'Watertemp. > 50°C',
     'table2'        => 'Watertemp. ≤ 50°C',
     'table3'        => 'Besparing',
@@ -99,10 +99,12 @@ $technolie = array(
 );
 
 $earth = array(
-    'title'         => 'JAGA LOW-H<span class="h2o">2</span>O EN HET AMAZONEWOUD <br><br>',
-    'text'          => 'Op dit beeld van het Amazonewoud, gemaakt door de shuttle Messenger, is de golflengte voor infrarood licht vervangen door blauw. Dit resulteert in een helder beeld dat scherper is dan de originele versie, maar planten kleuren hierdoor rood in plaats van groen. Een ongewenste neveneffect waardoor de foto nog aan betekenis wint, want rood is de kleur voor gevaar! Het Amazonewoud beslaat 50% van de totale oppervlakte aan regenwoud in de wereld. Het absorbeert bijna 20% van de 38 biljoen ton CO<span class="h2o">2</span> die jaarlijks door de mensheid geproduceerd wordt en is daarmee ons belangrijkste wapen tegen de gevolgen van de CO<span class="h2o">2</span>-vervuiling. Desondanks wordt er elk jaar 10 000 km<sup>2</sup>  vernield door ontbossing.<br><br>
-Willen we nog een belangrijke verbetering bereiken in de kringloop van CO<span class="h2o">2</span>-vervuiling en de snelheid en de ernst van de komende klimaatveranderingen, dan is een volledige bescherming van het Amazonewoud en alle bosbestanden en een substantiële vermindering van de CO<span class="h2o">2</span>-uitstoot absoluut noodzakelijk! Jaga LOW-H<span class="h2o">2</span>O radiatoren kunnen het energieverbruik van een gemiddelde woongelegenheid van 140 m<sup>2</sup>  verminderen met 141 m<sup>3</sup> gas/jaar, wat overeenstemt met een CO<span class="h2o">2</span>-uitstoot van maar liefst 293 kg/jaar! Een significante hoeveelheid als je bedenkt dat een gemiddelde auto 2000 km kan rijden voor dezelfde CO<span class="h2o">2</span>-uitstoot!',
-    'button'        => 'Meer'
+    'title'         => 'Waarom kleurt <br>de aarde rood?',
+    'text'          => 'JAGA LOW-H<span class="h2o">2</span>O EN HET AMAZONEWOUD <br><br>
+Op dit beeld van het Amazonewoud, gemaakt door de shuttle Messenger, is de golflengte voor infrarood licht vervangen door blauw. Dit resulteert in een helder beeld dat scherper is dan de originele versie, maar planten kleuren hierdoor rood in plaats van groen. Een ongewenste neveneffect waardoor de foto nog aan betekenis wint, want rood is de kleur voor gevaar! Het Amazonewoud beslaat 50% van de totale oppervlakte aan regenwoud in de wereld. Het absorbeert bijna 20% van de 38 biljoen ton CO<span class="h2o">2</span> die jaarlijks door de mensheid geproduceerd wordt en is daarmee ons belangrijkste wapen tegen de gevolgen van de CO<span class="h2o">2</span>-vervuiling. Desondanks wordt er elk jaar 10 000 km<sup>2</sup>  vernield door ontbossing.<br>
+
+Willen we nog een belangrijke verbetering bereiken in de kringloop van CO<span class="h2o">2</span>-vervuiling en de snelheid en de ernst van de komende klimaatveranderingen, dan is een volledige bescherming van het Amazonewoud en alle bosbestanden en een substantiële vermindering van de CO<span class="h2o">2</span>-uitstoot absoluut noodzakelijk! Jaga LOW-H<span class="h2o">2</span>O radiatoren kunnen het energieverbruik van een gemiddelde woongelegenheid van 140 m<sup>2</sup>  verminderen met 141 m<sup>3</sup> gas/jaar, wat overeenstemt met een CO<span class="h2o">2</span>-uitstoot van maar liefst 293 kg/jaar! Een significante hoeveelheid als je bedenkt dat een gemiddelde auto 2000 km kan rijden voor dezelfde CO<span class="h2o">2</span>-uitstoot.',
+    'button'        => 'Ontdek waarom'
 );
 
 $vergelijking = array(
@@ -384,8 +386,8 @@ $simulator = array(
     'text10'        => 'Totaal',
     'question4'     => 'De beschrijving van de woning is bewust zeer summier gehouden. De uitkomst kan daardoor zowel in negatieve als positieve zin beïnvloed worden door allerlei factoren zoals juiste isolatiewaarde, bewonersgedrag, type installatie, type regeling enz. Maar zij geeft u wel een idee van wat mogelijk is door enkel de radiatoren te vervangen.',
     'question5'     => 'De besparingen die u verkrijgt door een verwachte inflatie in te vullen zijn niet persé de beste indicatie van de reeële koopkracht met dat bedrag. Alles is dan immers duurder geworden. Als u wil weten wat uw besparingen juist waard zijn probeer dan ook eens met de inflatie op 0 te houden.',
-    'question6'     => '30 jaar garantie op de LOW-H2O warmtewisselaar ! Daarmee weet u meteen waarom de Profit Simulator tot 30 jaar in de toekomst rekent. Maar we weten zeker dat uw radiator nog veel langer zal meegaan vermits de warmtewisselaar uit koper, aluminium en messing gemaakt is en dus nooit zal roesten. Net als al zijn voorlopers sinds 1962. Daarom betrachten we ook altijd een aantrekkelijk tijdloos design. Zodat hij niet alleen uw huis blijft verwarmen en energie blijft besparen, maar ook goed blijft uitzien !',
-    'question7'     => 'Over hoeveel CO2 een boom nu precies opneemt bestaan een pak cijfers. Uit verschillende bronnen (o.a. VBV, K.U.Leuven, UGent, …) kunnen wij opmaken dat een volwassen boom in onze klimaatgordel gemiddeld 24 kg CO2 per jaar opneemt. Zo heeft u  een concrete indicatie wat de met LOW-H2O bespaarde CO2 betekent voor het milieu.'
+    'question6'     => '30 jaar garantie op de Low-H<span class="h2o">2</span>O warmtewisselaar ! Daarmee weet u meteen waarom de Profit Simulator tot 30 jaar in de toekomst rekent. Maar we weten zeker dat uw radiator nog veel langer zal meegaan vermits de warmtewisselaar uit koper, aluminium en messing gemaakt is en dus nooit zal roesten. Net als al zijn voorlopers sinds 1962. Daarom betrachten we ook altijd een aantrekkelijk tijdloos design. Zodat hij niet alleen uw huis blijft verwarmen en energie blijft besparen, maar ook goed blijft uitzien !',
+    'question7'     => 'Over hoeveel CO2 een boom nu precies opneemt bestaan een pak cijfers. Uit verschillende bronnen (o.a. VBV, K.U.Leuven, UGent, …) kunnen wij opmaken dat een volwassen boom in onze klimaatgordel gemiddeld 24 kg CO2 per jaar opneemt. Zo heeft u  een concrete indicatie wat de met Low-H<span class="h2o">2</span>O bespaarde CO2 betekent voor het milieu.'
 );
 
 $dealers = array(

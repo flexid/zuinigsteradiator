@@ -3,18 +3,7 @@
 $general = array(
     'title'         => 'JAGA LOW-H2O VERKOZEN TOT ZUINIGSTE RADIATOR',
     'lang'          => 'nl',
-    'of'            => 'of',
-    'anker1'        => 'home',
-    'anker2'        => 'zuinigsteradiator',
-    'anker3'        => 'kenmerken',
-    'anker4'        => 'technologie',
-    'anker5'        => 'collectie',
-    'anker6'        => 'dealers',
-    'anker7'        => 'profit-simulator',
-    'anker8'        => 'downloads',
-    'anker9'        => 'contact',
-    'anker10'       => 'earth',
-    'anker11'       => 'vergelijking'
+    'of'            => 'of'
 );
 
 $menu = array(
@@ -29,7 +18,7 @@ $menu = array(
 );
 
 $zuinigsteRadiator = array(
-    'scroll'        => '',
+    'scroll'        => 'Scroll down',
     'featured'      => 'Jaga Low-H2O verkozen tot zuinigste radiator',
     'button1'       => 'Bereken uw besparing',
     'button2'       => 'Bekijk de radiatoren',
@@ -37,7 +26,7 @@ $zuinigsteRadiator = array(
     'ribbon2'       => 'Optimale E-Peil Reductie',
     'title'         => 'Jaga Low-H<span class="h2o">2</span>O verkozen tot zuinigste radiator',
     'intro'         => 'Na het Belgische WTCB en het Britse BRE heeft nu ook het Nederlandse KIWA instituut de allerhoogste score gegeven aan de Low-H<span class="h2o">2</span>O warmtewisselaar van Jaga.',
-    'text1'         => 'De Low-H<span class="h2o">2</span>O radiator van Jaga is in de loop der jaren uitvoerig getest door verschillende onafhankelijke instanties in diverse landen. Telkens opnieuw haalt de Low-H<span class="h2o">2</span>O radiator het hoogste afgifterendement. Geen wonder dat er van deze radiatoren met hun inventief design wereldwijd al meer 10 miljoen stuks geïnstalleerd zijn.',
+    'text1'         => 'Low-H<span class="h2o">2</span>O radiator van Jaga is in de loop der jaren uitvoerig getest door verschillende onafhankelijke instanties in diverse landen. Telkens opnieuw haalt de Low-H<span class="h2o">2</span>O radiator het hoogste afgifterendement. Geen wonder dat er van deze radiatoren met hun inventief design wereldwijd al meer 10 miljoen stuks geïnstalleerd zijn.',
     'text2'         => 'De Jaga Low-H<span class="h2o">2</span>O radiator is dan ook al lang geen onbekende meer. Neem daarbij ook nog een garantieduur van maar liefst 30 jaar en de Low-H<span class="h2o">2</span>O radiator is met zekerheid de meest betrouwbare oplossing voor energiezuinig en comfortabel verwarmen.',
     'laboText1'     => '“Energy saving certification for Low-H<span class="h2o">2</span>O heat exchanger in a Tempo casing”',
     'laboPlace1'    => 'Apeldoorn, 2014',
@@ -60,7 +49,7 @@ $kenmerken = array(
     'subtitle2'     => '9 tot 16% zuiniger dan <br><span>paneelradiatoren</span>',
     'text3'         => 'In het nieuwste onderzoek naar het afgifterendement heeft Kiwa Technology de kwaliteitsverklaring voor de Low-H<span class="h2o">2</span>O warmtewisselaar van Jaga bekend gemaakt. Dit door het Nederlandse ministerie officieel erkende bewijs is uitgereikt na een onafhankelijke test van een Jaga Tempo radiator volgens internationale normen. Het resultaat is verbluffend. De Low-H<span class="h2o">2</span>O radiator presteert beter dan alle andere systemen en heeft het hoogst mogelijke afgifterendement bij lage én hoge watertemperatuur en dit zowel voor nieuwe als bestaande woningen.',
     'text4'         => '',
-    'tableTitle'    => 'Besparing Low-H<span class="h2o">2</span>O t.o.v paneelradiator',
+    'tableTitle'    => 'Besparing Low-H2O t.o.v paneelradiator',
     'table1'        => 'Watertemp. > 50°C',
     'table2'        => 'Watertemp. ≤ 50°C',
     'table3'        => 'Besparing',
@@ -76,7 +65,7 @@ $kenmerken = array(
     'reason4'       => '<span>Lagere <br>investering</span><p>Doordat Jaga Low-H<span class="h2o">2</span>O radiatoren ook bij hoge watertemperatuur zuinig zijn is het mogelijk om met een compacte, kostengunstige installatie toch een aanvaardbaar energieverbruik te realiseren. Dankzij Jaga Low-H<span class="h2o">2</span>O radiatoren krijgen deze installaties in de Nederlandse wetgeving bijna altijd evenveel EPC-punten dan lage temperatuur installaties met vloerverwarming of paneelradiatoren. Een kleinere investering voor hetzelfde voordeel!</p>',
     'reason5'       => '<span>Hoogste <br>E-peil Reductie</span><p>Het E-peil is een waarde die de energiezuinigheid van je woning aangeeft. Op dit ogenblik mag het E-peil in Vlaanderen maximaal 60 zijn, anders kan je bouwvergunning geweigerd worden of kan je een boete krijgen. Vanaf 2016 mag dit nog slechts 50 zijn. Een hele goede manier om je E-peil te verlagen én je energieverbruik te beperken is kiezen voor de Low-H<span class="h2o">2</span>O radiatoren op lage watertemperatuur. Een kostengunstige maatregel om nu reeds enkele E-peil punten winst te boeken !</p>',
     'reason6'       => '<span>De snelste en best <br>regelbare radiator</span><p>Een kleine massa warmt sneller op dan een grote. Dat is een natuurwet. Low-H<span class="h2o">2</span>O radiatoren van Jaga bevatten tot 90% minder water, en hebben geen zware stalen platen die eerst zichzelf moeten opwarmen. De ultramoderne warmtewisselaar van aluminium en koper is veel sneller opgewarmd en geeft de warmte meteen door aan de kamer. Zo kunt u ‘s morgens uw radiator gerust 20 minuten later aanzetten. Maar de Low-H<span class="h2o">2</span>O radiator is ook veel sneller ingetoomd. Schijnt de zon plots binnen? Staat de oven of vaatwasser aan? Dan stijgt de temperatuur aanzienlijk. Low-H<span class="h2o">2</span>O reageert meteen. Uw installatie blijft dus minder lang nutteloos doorverwarmen. De Low-H<span class="h2o">2</span>O radiator biedt zo meer comfort met minder energie.</p> ',
-    'reason7'       => '<span>Maximale warmte ook bij lage <br>watertemperatuur</span><p>De Jaga Low-H<span class="h2o">2</span>O warmtewisselaar is niet van staal gemaakt, maar van ultrageleidend koper en aluminium, die hun warmte meteen doorgeven aan de kamer. De voordelen van deze materialen worden alleen maar groter naarmate de watertemperatuur daalt. De seriële matrix-bevloeiing met tot 16 koperen buisjes en de optimaal gegolfde vorm van de aluminium lamellen zorgen voor een maximale warmteoverdracht van het CV-water naar de lucht. Van zodra het thermostaatventiel open gaat wordt de warmte snel, egaal en nauwkeurig door de ruimte verspreid.</p> ',
+    'reason7'       => '<span>Maximale warmte ook bij lage <br>watertemperatuur</span><p>De Jaga Low-H2O warmtewisselaar is niet van staal gemaakt, maar van ultrageleidend koper en aluminium, die hun warmte meteen doorgeven aan de kamer. De voordelen van deze materialen worden alleen maar groter naarmate de watertemperatuur daalt. De seriële matrix-bevloeiing met tot 16 koperen buisjes en de optimaal gegolfde vorm van de aluminium lamellen zorgen voor een maximale warmteoverdracht van het CV-water naar de lucht. Van zodra het thermostaatventiel open gaat wordt de warmte snel, egaal en nauwkeurig door de ruimte verspreid.</p> ',
     'reason8'       => '<span>Ecodesign met <br>30 jaar garantie</span> <p>Jaga Low-H<span class="h2o">2</span>O radiatoren verbruiken minder energie. Maar niet alleen tijdens hun levensfase zijn ze beter voor het milieu. Omdat een Jaga Low-H<span class="h2o">2</span>O radiator veel lichter en kleiner is voor éénzelfde vermogen, is er voor de productie ook veel minder grondstof nodig. Bovendien hebben Low-H<span class="h2o">2</span>O radiatoren een langere levensduur, krijgen ze 30 jaar garantie, en worden ze op het einde van hun loopbaan ook nog volledig gerecycled. De LCA-calculatie, die het milieuschadeprofiel van producten meet, toont dan ook een opvallend goede score voor de Low-H<span class="h2o">2</span>O radiator ten opzichte van andere verwarmingssystemen.</p>  '
 );
 
@@ -99,10 +88,12 @@ $technolie = array(
 );
 
 $earth = array(
-    'title'         => 'JAGA LOW-H<span class="h2o">2</span>O EN HET AMAZONEWOUD <br><br>',
-    'text'          => 'Op dit beeld van het Amazonewoud, gemaakt door de shuttle Messenger, is de golflengte voor infrarood licht vervangen door blauw. Dit resulteert in een helder beeld dat scherper is dan de originele versie, maar planten kleuren hierdoor rood in plaats van groen. Een ongewenste neveneffect waardoor de foto nog aan betekenis wint, want rood is de kleur voor gevaar! Het Amazonewoud beslaat 50% van de totale oppervlakte aan regenwoud in de wereld. Het absorbeert bijna 20% van de 38 biljoen ton CO<span class="h2o">2</span> die jaarlijks door de mensheid geproduceerd wordt en is daarmee ons belangrijkste wapen tegen de gevolgen van de CO<span class="h2o">2</span>-vervuiling. Desondanks wordt er elk jaar 10 000 km<sup>2</sup>  vernield door ontbossing.<br><br>
-Willen we nog een belangrijke verbetering bereiken in de kringloop van CO<span class="h2o">2</span>-vervuiling en de snelheid en de ernst van de komende klimaatveranderingen, dan is een volledige bescherming van het Amazonewoud en alle bosbestanden en een substantiële vermindering van de CO<span class="h2o">2</span>-uitstoot absoluut noodzakelijk! Jaga LOW-H<span class="h2o">2</span>O radiatoren kunnen het energieverbruik van een gemiddelde woongelegenheid van 140 m<sup>2</sup>  verminderen met 141 m<sup>3</sup> gas/jaar, wat overeenstemt met een CO<span class="h2o">2</span>-uitstoot van maar liefst 293 kg/jaar! Een significante hoeveelheid als je bedenkt dat een gemiddelde auto 2000 km kan rijden voor dezelfde CO<span class="h2o">2</span>-uitstoot!',
-    'button'        => 'Meer'
+    'title'         => 'Waarom kleurt <br>de aarde rood?',
+    'text'          => 'JAGA LOW-H<span class="h2o">2</span>O EN HET AMAZONEWOUD <br><br>
+Op dit beeld van het Amazonewoud, gemaakt door de shuttle Messenger, is de golflengte voor infrarood licht vervangen door blauw. Dit resulteert in een helder beeld dat scherper is dan de originele versie, maar planten kleuren hierdoor rood in plaats van groen. Een ongewenste neveneffect waardoor de foto nog aan betekenis wint, want rood is de kleur voor gevaar! Het Amazonewoud beslaat 50% van de totale oppervlakte aan regenwoud in de wereld. Het absorbeert bijna 20% van de 38 biljoen ton CO<span class="h2o">2</span> die jaarlijks door de mensheid geproduceerd wordt en is daarmee ons belangrijkste wapen tegen de gevolgen van de CO<span class="h2o">2</span>-vervuiling. Desondanks wordt er elk jaar 10 000 km<sup>2</sup>  vernield door ontbossing.<br>
+
+Willen we nog een belangrijke verbetering bereiken in de kringloop van CO<span class="h2o">2</span>-vervuiling en de snelheid en de ernst van de komende klimaatveranderingen, dan is een volledige bescherming van het Amazonewoud en alle bosbestanden en een substantiële vermindering van de CO<span class="h2o">2</span>-uitstoot absoluut noodzakelijk! Jaga LOW-H<span class="h2o">2</span>O radiatoren kunnen het energieverbruik van een gemiddelde woongelegenheid van 140 m<sup>2</sup>  verminderen met 141 m<sup>3</sup> gas/jaar, wat overeenstemt met een CO<span class="h2o">2</span>-uitstoot van maar liefst 293 kg/jaar! Een significante hoeveelheid als je bedenkt dat een gemiddelde auto 2000 km kan rijden voor dezelfde CO<span class="h2o">2</span>-uitstoot.',
+    'button'        => 'Ontdek waarom'
 );
 
 $vergelijking = array(
@@ -150,8 +141,8 @@ $collectie = array(
             'title'     => 'STRADA',
             'subtitle'  => 'Warme kracht, super strak',
             'image'     => 'img/collectie/strada.jpg',
-            'list1'     => '<ul><li>Robuuste bekleding met vlak voorpaneel </li><li>Strak aluminium designrooster</li><li>Volledig verborgen aansluiting mogelijk</li><li>Veilige, lage aanraaktemperatuur.</li></ul>',
-            'list2'     => '',
+            'list1'     => '<ul><li>H: 20 - 35 - 50 - 65 - 95 cm</li><li>L: 50 tot 280 cm</li><li>B: 8.5 - 11.5 - 16.5 - 21.5 cm</li></ul>',
+            'list2'     => '<ul><li>Watt: van 269 tot 8484</li><li>Watt DBE comfort: van 543 tot 11364</li><li>Standaard in wit en zandstraalgrijs</li></ul>',
             'link1'     => 'http://catalogue.theradiatorfactory.com/be#strada',
             'link2'     => 'http://www.theradiatorfactory.com/catalogue/be/nl/Strada.pdf',
             'more'      => false,
@@ -166,8 +157,8 @@ $collectie = array(
             'title'     => 'LINEA PLUS',
             'subtitle'  => 'Warme kracht, slanke lijn',
             'image'     => 'img/collectie/linea_plus.jpg',
-            'list1'     => '<ul><li>Klassieker met blijvende designwaarde</li><li>Discreet en slank uiterlijk </li><li>Geperforeerde, naar achter gebogen luchtuitlaat.</li><li>Vlak en strak voorpaneel. </li><li>Volledig verborgen aansluiting mogelijk</li><li>Veilige, lage aanraaktemperatuur.</li></ul>',
-            'list2'     => '',
+            'list1'     => '<ul><li>H: 20 - 35 - 50 - 65 - 95 cm</li><li>L: 50 tot 280 cm</li><li>B: 11.5 - 16.5 - 21.5 cm</li></ul>',
+            'list2'     => '<ul><li>Watt: van 284 tot 8414</li><li>Watt DBE comfort: van 491 tot 11294</li><li>Standaard in wit en zandstraalgrijs</li></ul>',
             'link1'     => 'http://catalogue.theradiatorfactory.com/be#linea-plus',
             'link2'     => 'http://www.theradiatorfactory.com/catalogue/be/nl/Linea_Plus.pdf',
             'more'      => false,
@@ -182,8 +173,8 @@ $collectie = array(
             'title'     => 'TEMPO',
             'subtitle'  => 'Warme kracht, basic stijl',
             'image'     => 'img/collectie/tempo.jpg',
-            'list1'     => '<ul><li>De klassieker onder de wandradiatoren.</li><li>Universeel design met horizontaal gelijnd voorpaneel.</li><li>Volledig verborgen aansluiting mogelijk</li><li>Veilige, lage aanraaktemperatuur.</li></ul>',
-            'list2'     => '',
+            'list1'     => '<ul><li>H: 20 - 30 - 40 - 50 - 60 - 70 - 90 cm</li><li>L: 40 tot 300 cm</li><li>B: 11.5 - 16.5 - 21.5 cm</li></ul>',
+            'list2'     => '<ul><li>Watt: van 262 tot 11310</li><li>Watt DBE comfort: van 543 tot 14190</li><li>Standaard in wit</li></ul>',
             'link1'     => 'http://catalogue.theradiatorfactory.com/be#tempo',
             'link2'     => 'http://www.theradiatorfactory.com/catalogue/be/nl/Tempo.pdf',
             'more'      => false,
@@ -198,7 +189,7 @@ $collectie = array(
             'title'     => 'KNOCKONWOOD',
             'subtitle'  => 'Warme kracht, edel hout',
             'image'     => 'img/collectie/knockonwood.jpg',
-            'list1'     => '<ul><li>Edelfineer bekleding in 9 houtsoorten verkrijgbaar</li><li>Veilig afgerond voorpaneel</li><li>Volledig verborgen aansluiting mogelijk</li><li>Veilige, lage aanraaktemperatuur.</li></ul>',
+            'list1'     => '<ul><li>H: 30 - 55 - 80 cm</li><li>L: 60 tot 220 cm</li><li>B: 10.8 - 12.8 - 17.8 cm</li></ul>',
             'list2'     => '<ul><li>Watt: van 416 tot 3898</li><li>Watt DBE comfort: van 551 tot 5818</li><li>Verkrijgbaar in 9 houtsoorten</li></ul>',
             'link1'     => 'http://catalogue.theradiatorfactory.com/be#knockonwood',
             'link2'     => 'http://www.theradiatorfactory.com/catalogue/be/nl/Knockonwood.pdf',
@@ -214,8 +205,8 @@ $collectie = array(
             'title'     => 'MAXI',
             'subtitle'  => 'Warme kracht, extra sterk en veilig',
             'image'     => 'img/collectie/maxi.jpg',
-            'list1'     => '<ul><li>Extreem solide bekleding</li><li>Veilig afgeronde hoeken. </li><li>Volledig verborgen aansluiting mogelijk</li><li>Veilige, lage aanraaktemperatuur</li></ul>',
-            'list2'     => '',
+            'list1'     => '<ul><li>H: 44 - 59 - 74 cm</li><li>L: 63 tot 203 cm</li><li>B: 13 - 18 - 23 cm</li></ul>',
+            'list2'     => '<ul><li>Watt: van 637 tot 6685</li><li>Watt DBE comfort: van 787 tot 8605</li><li>Standaard in wit en zandstraalgrijs</li></ul>',
             'link1'     => 'http://catalogue.theradiatorfactory.com/be#maxi',
             'link2'     => 'http://www.theradiatorfactory.com/catalogue/be/nl/Maxi.pdf',
             'more'      => false,
@@ -230,8 +221,8 @@ $collectie = array(
             'title'     => 'WANDINBOUW',
             'subtitle'  => 'De comfortoplossing voor de minimalistische architectuur',
             'image'     => 'img/collectie/wandinbouw.jpg',
-            'list1'     => '<ul><li>Unieke oplossingen voor elke renovatie</li><li>Laat uw creativiteit de vrije loop</li><li>Makkelijk in te bouwen zónder vermogensverlies.</li><li>Plaatswinst.</li></ul>',
-            'list2'     => '',
+            'list1'     => '<ul><li>H: 20 - 30 - 40 - 50 - 60 cm</li><li>L: 40 tot 300 cm</li><li>B: 11.5 - 16.5 - 21.5 cm</li></ul>',
+            'list2'     => '<ul><li>Watt: van 262 tot 8646</li><li>Watt DBE comfort: van 543 tot 11526</li><li>Kleur: donkergrijs gelakt</li></ul>',
             'link1'     => 'http://catalogue.theradiatorfactory.com/be#wandinbouw',
             'link2'     => 'http://www.theradiatorfactory.com/catalogue/be/nl/Wandinbouw.pdf',
             'more'      => false,
@@ -246,8 +237,8 @@ $collectie = array(
             'title'     => 'MINI WAND',
             'subtitle'  => 'Warme kracht, super strak',
             'image'     => 'img/collectie/mini_wand.jpg',
-            'list1'     => '<ul><li>Voor grote glaspartijen en lage venstertabletten</li><li>Vanaf slechts 8 cm hoog! </li><li>Mooi in combinatie met de vrijstaande Mini voor glas tot op de vloer</li><li>Stabiele volledig voorgemonteerde bekleding</li><li>Veilige, lage aanraaktemperatuur</li></ul>',
-            'list2'     => '',
+            'list1'     => '<ul><li>H: 8 - 13 - 23 - 28 cm</li><li>L: 60 tot 260 cm</li><li>B: 8 - 13 - 18 - 23 cm</li></ul>',
+            'list2'     => '<ul><li>Watt: van 197 tot 4885</li><li>Standaard in wit en zandstraalgrijs</li></ul>',
             'link1'     => 'http://catalogue.theradiatorfactory.com/be#mini-wand',
             'link2'     => 'http://www.theradiatorfactory.com/catalogue/be/nl/Mini.pdf',
             'more'      => false,
@@ -262,8 +253,8 @@ $collectie = array(
             'title'     => 'MINI VRIJSTAAND',
             'subtitle'  => 'Opvallend onopvallend',
             'image'     => 'img/collectie/mini_vrijstaand.jpg',
-            'list1'     => '<ul><li>Voor ruimtes met glas tot op de vloer</li><li>Voor etalages, wintertuinen en onder lage venstertabletten.</li><li>Discrete plaatsing</li><li>Vrij uitzicht naar buiten door kleine hoogte vanaf 8 cm.</li><li>Geen warmteverlies door straling naar het achterliggende glas</li><li>Veilige, lage aanraaktemperatuur</li><li>Stabiele bekleding uit één stuk.</li></ul>',
-            'list2'     => '',
+            'list1'     => '<ul><li>H: 8 - 13 - 23 - 28 cm</li><li>L: 60 tot 260 cm</li><li>B: 8 - 13 - 18 - 23 cm</li></ul>',
+            'list2'     => '<ul><li>Watt: van 197 tot 4885</li><li>Standaard in wit en zandstraalgrijs</li></ul>',
             'link1'     => 'http://catalogue.theradiatorfactory.com/be#mini-vrijstaand',
             'link2'     => 'http://www.theradiatorfactory.com/catalogue/be/nl/Mini_Vrijstaand.pdf',
             'more'      => false,
@@ -278,8 +269,8 @@ $collectie = array(
             'title'     => 'TEMPO VRIJSTAAND',
             'subtitle'  => 'Warme kracht, basic stijl',
             'image'     => 'img/collectie/tempo_vrijstaand.jpg',
-            'list1'     => '<ul><li>Voor ruimtes met glas tot op de vloer. </li><li>Zuinige Low-H<span class="h2o">2</span>O technologie, maar op voeten.</li><li>Geen warmteverlies door straling naar het achterliggende glas.</li><li>Veilige, lage aanraaktemperatuur </li></ul>',
-            'list2'     => '',
+            'list1'     => '<ul><li>H: 20 - 30 - 40 - 50 cm</li><li>L: 40 tot 300 cm</li><li>B: 13 - 18 - 23 cm</li></ul>',
+            'list2'     => '<ul><li>Watt: van 262 tot 7746</li><li>Standaard in wit</li></ul>',
             'link1'     => 'http://catalogue.theradiatorfactory.com/be#tempo-vrijstaand',
             'link2'     => 'http://www.theradiatorfactory.com/catalogue/be/nl/Tempo_Vrijstaand.pdf',
             'more'      => false,
@@ -294,8 +285,8 @@ $collectie = array(
             'title'     => 'LINEA PLUS VRIJSTAAND',
             'subtitle'  => 'Warme kracht, slanke lijn',
             'image'     => 'img/collectie/linea_plus_vrijstaand.jpg',
-            'list1'     => '<ul><li>Strakke vormgeving.</li><li>Voor ruimtes met glas tot op de vloer. </li><li>Zuinige Low-H<span class="h2o">2</span>O technologie, maar op voeten.</li><li>Geen warmteverlies door straling naar het achterliggende glas</li><li>Veilige, lage aanraaktemperatuur</li></ul>',
-            'list2'     => '',
+            'list1'     => '<ul><li>H: 20 - 35 cm</li><li>L: 50 tot 280 cm</li><li>B: 13 - 18 cm</li></ul>',
+            'list2'     => '<ul><li>Watt: van 271 tot 4102</li><li>Standaard in wit en zandstraalgrijs</li></ul>',
             'link1'     => 'http://catalogue.theradiatorfactory.com/be#linea-plus-vrijstaand',
             'link2'     => 'http://www.theradiatorfactory.com/catalogue/be/nl/Linea_Plus_Vrijstaand.pdf',
             'more'      => false,
@@ -310,14 +301,14 @@ $collectie = array(
             'title'     => 'MINI CANAL',
             'subtitle'  => 'Warme kracht, volmaakt geïntegreerd',
             'image'     => 'img/collectie/mini_canal_dbe.jpg',
-            'list1'     => '<ul><li>Inbouwhoogte vanaf slechts 9 cm</li><li>Daardoor ook geschikt voor etages en zwevende vloeren</li><li>Perfect te combineren met vloerverwarming</li><li>Maakt vloerverwarming beter regelbaar en tot 30% zuiniger</li><li>Diverse roosters voor elk interieur</li><li>Gelijkmatige comforttemperatuur</li><li>Kant en klaar geleverd</li></ul>',
+            'list1'     => '<ul><li>H: 9 - 11 - 14 - 19 cm</li><li>L: tot 490 cm uit één stuk</li><li>B: 14 - 18 - 26 - 34 - 42 cm</li><li>Watt: van 152 tot 4184</li></ul>',
             'list2'     => '',
             'link1'     => 'http://catalogue.theradiatorfactory.com/be#mini-canal',
             'link2'     => 'http://www.theradiatorfactory.com/catalogue/be/nl/Mini_Canal.pdf',
-            'more'      => false,
+            'more'      => true,
             'title2'    => 'MINI CANAL DBE',
             'subtitle2' => 'Drie maal meer warmte!',
-            'list3'     => '<ul><li>H: 14 .5 cm -L: 110 tot 310 cm</li><li>B: 26 - 34 - 42 cm</li><li>Watt: van 1085 tot 6857</li></ul>',
+            'list3'     => '<ul><li>H: 14 .5 cm</li><li>L: 110 tot 310 cm</li><li>B: 26 - 34 - 42 cm</li><li>Watt: van 1085 tot 6857</li></ul>',
             'list4'     => '',
             'link3'     => 'http://catalogue.theradiatorfactory.com/be#mini-canal-dbe',
             'link4'     => 'http://www.theradiatorfactory.com/catalogue/be/nl/Mini_Canal_DBE.pdf'
@@ -326,7 +317,7 @@ $collectie = array(
             'title'     => 'CANAL PLUS',
             'subtitle'  => 'Warme kracht, volmaakt geïntegreerd',
             'image'     => 'img/collectie/canal_plus.jpg',
-            'list1'     => '<ul><li>Onzichtbare kanalen vol Low-H<span class="h2o">2</span>O comfort. </li><li>Onderhoudsvriendelijk met optionele flexibele aansluiting</li><li>Waterdicht.</li><li>Efficiënt warme luchtgordijn voor koude ramen.</li><li></li><li>Gelijkmatige comforttemperatuur.</li></ul>',
+            'list1'     => '<ul><li>R: 2.5 3.0 4.0 Watt/m beribd</li><li>H: 68 69 72</li><li>B: 35 37 43 1229</li><li>39 41 47 1848</li><li>51 53 59 2682</li><li>L: tot 600 cm uit één stuk</li></ul>',
             'list2'     => '',
             'link1'     => 'http://catalogue.theradiatorfactory.com/befr#canal-compact-plus',
             'link2'     => 'http://www.theradiatorfactory.com/catalogue/be/nl/Canal_Compact_&_Canal_Plus.pdf',
@@ -384,8 +375,8 @@ $simulator = array(
     'text10'        => 'Totaal',
     'question4'     => 'De beschrijving van de woning is bewust zeer summier gehouden. De uitkomst kan daardoor zowel in negatieve als positieve zin beïnvloed worden door allerlei factoren zoals juiste isolatiewaarde, bewonersgedrag, type installatie, type regeling enz. Maar zij geeft u wel een idee van wat mogelijk is door enkel de radiatoren te vervangen.',
     'question5'     => 'De besparingen die u verkrijgt door een verwachte inflatie in te vullen zijn niet persé de beste indicatie van de reeële koopkracht met dat bedrag. Alles is dan immers duurder geworden. Als u wil weten wat uw besparingen juist waard zijn probeer dan ook eens met de inflatie op 0 te houden.',
-    'question6'     => '30 jaar garantie op de LOW-H2O warmtewisselaar ! Daarmee weet u meteen waarom de Profit Simulator tot 30 jaar in de toekomst rekent. Maar we weten zeker dat uw radiator nog veel langer zal meegaan vermits de warmtewisselaar uit koper, aluminium en messing gemaakt is en dus nooit zal roesten. Net als al zijn voorlopers sinds 1962. Daarom betrachten we ook altijd een aantrekkelijk tijdloos design. Zodat hij niet alleen uw huis blijft verwarmen en energie blijft besparen, maar ook goed blijft uitzien !',
-    'question7'     => 'Over hoeveel CO2 een boom nu precies opneemt bestaan een pak cijfers. Uit verschillende bronnen (o.a. VBV, K.U.Leuven, UGent, …) kunnen wij opmaken dat een volwassen boom in onze klimaatgordel gemiddeld 24 kg CO2 per jaar opneemt. Zo heeft u  een concrete indicatie wat de met LOW-H2O bespaarde CO2 betekent voor het milieu.'
+    'question6'     => '30 jaar garantie op de Low-H2O warmtewisselaar ! Daarmee weet u meteen waarom de Profit Simulator tot 30 jaar in de toekomst rekent. Maar we weten zeker dat uw radiator nog veel langer zal meegaan vermits de warmtewisselaar uit koper, aluminium en messing gemaakt is en dus nooit zal roesten. Net als al zijn voorlopers sinds 1962. Daarom betrachten we ook altijd een aantrekkelijk tijdloos design. Zodat hij niet alleen uw huis blijft verwarmen en energie blijft besparen, maar ook goed blijft uitzien !',
+    'question7'     => 'Over hoeveel CO2 een boom nu precies opneemt bestaan een pak cijfers. Uit verschillende bronnen (o.a. VBV, K.U.Leuven, UGent, …) kunnen wij opmaken dat een volwassen boom in onze klimaatgordel gemiddeld 24 kg CO2 per jaar opneemt. Zo heeft u  een concrete indicatie wat de met Low-H2O bespaarde CO2 betekent voor het milieu.'
 );
 
 $dealers = array(

@@ -1,14 +1,11 @@
 // Init vars simulator
-
-var CONTEST_URL             = 'http://staging-2015.theradiatorfactory.com/batibouw_contest';
-
 var type_woning             = '';
 var type_verwarming         = '';
 var type_brandstof          = '';
 var type_temperatuur        = '';
 var oppervlakte             = '';
 var energieverbruik         = '';
-var energie_coefficient     = '';
+var energie_coefficient     = '';  
 var besparing_jaar          = '';
 var inflatie                = '';
 var rente                   = '';
@@ -54,19 +51,19 @@ $(function(){
           fixed_top: 0, // top distance in pixels assigned to the fixed element on scroll
         }
     });
-
+    
     $('a[href^="#"]').on('click',function (e) {
         e.preventDefault();
 
         hash = this.hash.split('#').join(''),
         target = $("a[name='"+hash+"']");
-
+        
         if (target.length === 0) {
             target = $('#'+hash);
         }
-
+        
         var scroll_top = target.offset().top
-
+        
         if(target == '#earth') {
             $('html, body').stop().animate({
                 'scrollTop': scroll_top - (120)
@@ -91,20 +88,11 @@ $(function(){
             });
         }
     });
-
-    // Batibouw height
-    $batibouw = $('#batibouw');
-    $header = $('#header');
-    $window = $(window);
-
-    if(($batibouw.outerHeight(true) + $header.outerHeight(true)) > $window.height()) {
-        $batibouw.css('min-height', $window.height());
-        $batibouw.find('.actie').addClass('f');
-    }
-
-
-
-
+    
+    
+    
+    
+    
     // Set start values (values entered in HTML)
     type_woning             = $('*[name=type_woning]:checked').val();
     type_verwarming         = $('*[name=type_verwarming]:checked').val();
@@ -114,10 +102,10 @@ $(function(){
     inflatie                = $('*[name=inflatie]').val();
     rente                   = $('*[name=rente]').val();
     stijging_energieprijs   = $('*[name=stijging_energieprijs]').val();
-
+    
     updateEnergieverbruik();
     updateBesparing();
-
+    
     // Check if changes are made
     $('*[name=type_woning]').change(function() {
         type_woning = $('*[name=type_woning]:checked').val();
@@ -186,93 +174,23 @@ $(function(){
         stijging_energieprijs = stijging_energieprijs.replace(',', '.');
         updateBesparing();
     });
-
-    // Print button
-    $(".print-btn").click(function() {
-        $('body').addClass('print-simulator');
-        $('.clone-table').empty();
-        $('.print-container').clone().appendTo('.clone-table');
-        window.print();
-
-
-        // Remove printing class from body
-        setTimeout(function() {
-            $('body').removeClass('print-simulator');
-        }, 2000)
-    });
-
-    // Contest
-
-    $("#participate").click(function(e) {
-        e.preventDefault();
-
-        $('.ajaxloader').show();
-
-        var c_name              = $('#name').val();
-        var c_address           = $('#address').val();
-        var c_postcode          = $('#postcode').val();
-        var c_city              = $('#city').val();
-        var c_email             = $('#email').val();
-        var c_phone             = $('#phone').val();
-        var c_question          = $('#question').val();
-
-        var c_total_savings     = $('.besparing_30_jaar').html();
-        var c_total_co2         = $('.co2_final').html();
-
-        var c_language          = getLang();
-
-        if(c_name == '' || c_address == '' || c_postcode == '' || c_city == '' || c_email == '' || c_phone == '' || c_question == '') {
-
-            if(getLang() == 'fr') {
-                alert('Veuillez remplir tous les champs!')
-            } else {
-                alert('Gelieve alle velden in te vullen!')
-            }
-            $('.ajaxloader').hide();
-
-        } else {
-
-            $.post(CONTEST_URL, {
-
-                contest_entry: {
-                    name:           c_name,
-                    address:        c_address,
-                    postcode:       c_postcode,
-                    city:           c_city,
-                    email:          c_email,
-                    phone:          c_phone,
-                    question:       c_question,
-                    total_savings:  c_total_savings,
-                    total_co2:      c_total_co2,
-                    language:       c_language
-                }
-
-            }, function(){
-
-                $('.contest, .ajaxloader, .grey-button').hide();
-                $('.contest-thanks').fadeIn();
-
-            });
-
-        }
-    });
-
+    
     /*
      * END SIMULATOR
      */
-
+    
     $('.products .product').click(function(e) {
         e.preventDefault();
-
+        
         var $lightbox = $(this).next('.lightbox');
         $lightbox.addClass('active');
         $('body').css('overflow', 'hidden');
-
+        
         $lightbox.find('.close').click(function() {
             $lightbox.removeClass('active');
             $('body').css('overflow', 'visible');
         });
-
+        
         $lightbox.click(function(e) {
             if (e.target !== this) return;
             $lightbox.removeClass('active');
@@ -281,7 +199,7 @@ $(function(){
     });
 
     var isDraggable = $(document).width() > 640 ? true : false;
-
+    
     $('#map-container').storeLocator({
         'infowindowTemplatePath'   : 'js/plugins/storeLocator/templates/infowindow-description.html',
         'listTemplatePath'         : 'js/plugins/storeLocator/templates/location-list-description.html',
@@ -293,6 +211,7 @@ $(function(){
         //'defaultLat': '50.930690',
         //'defaultLng' : '5.332480',
         'distanceAlert' : -1,
+        'storeLimit' : 9999999999,
         'fullMapStart' : true,
         'lengthUnit' : 'km',
         'listColor1' : '#ffffff',
@@ -307,9 +226,9 @@ $(function(){
                 draggable: isDraggable
         }
     });
-
+    
     $('.open-table.close').hide();
-
+    
     $('.open-table').click(function(e) {
         e.preventDefault();
         $('.toggle-table').toggle();
@@ -322,22 +241,22 @@ $(function(){
             $('.same-height').syncHeight({ 'updateOnResize': true});
         }
     });
-
+    
     $('.hamburger-menu').click(function(e) {
         e.preventDefault();
         $('.main-menu').toggle();
     });
-
+    
     $('.earthToggle').click(function() {
-       $('#earth').find('p').slideDown();
+       $('#earth').find('p').slideDown(); 
        $('#earth').find('a.button').fadeOut();
        $('#earth').find('.right').stop().animate({
            'margin-top' : 0
        }, 400);
-       $('#earth').find('a.close').fadeIn().css("display","block");;
-
+       $('#earth').find('a.close').fadeIn().css("display","block");; 
+       
         $('#earth').find('a.close').click(function() {
-            $('#earth').find('p').slideUp();
+            $('#earth').find('p').slideUp(); 
             $('#earth').find('a.close').fadeOut();
             $('#earth').find('.right').stop().animate({
                 'margin-top' : 100
@@ -345,16 +264,16 @@ $(function(){
             $('#earth').find('a.button').fadeIn();
         });
     });
-
+    
     $('.popup.white').tooltipsy({
         offset: [0, -15]
     });
-
+    
     $('.popup.red').tooltipsy({
        offset: [0, -15],
        className: 'tooltipsy2'
     });
-
+    
     $('body').bind('touchmove',function(e){
         $('.popup.white').each(function() {
             $(this).data('tooltipsy').hide();
@@ -372,7 +291,7 @@ $(function(){
             $(this).data('tooltipsy').hide();
         });
     });
-
+    
     $('body').bind('touchstart',function(e){
         $('.popup.white').each(function() {
             $(this).data('tooltipsy').hide();
@@ -381,34 +300,33 @@ $(function(){
             $(this).data('tooltipsy').hide();
         });
     });
-
+    
     $('.reasons li').click(function() {
        $(this).find('p').slideToggle();
        $(this).find('a.close').slideToggle();
     });
-
+    
     $(window).scroll(function() {
         var $st = $(window).scrollTop();
         var windowHeight = $(window).height();
-
+        
         // Parallax body background
-        //$('body').css('background-position-y', $st/1.3);
-
+        $('body').css('background-position-y', $st/1.3);
+        
         // Earth parralax
         /*var $earth = $('#earth');
         var $begin = $earth.offset().top + $earth.height() - windowHeight;
         var $end = $earth.offset().top;
         var $difference = 500 - $earth.height();
         var $step = $difference / (windowHeight - $earth.height()) * ($st - $begin);
-
+        
         if($st >= $begin && $st <= $end) {
             $earth.css('background-position-y', -$step);
         }*/
-
         // Kenmerken animation
         var $kenmerken = $('#kenmerken');
         if(($st + (windowHeight / 3)) > $kenmerken.offset().top) {
-
+            
             $('#kenmerken .reasons ul').find('li').each(function (i) {
                 var reason = $(this);
                 setTimeout(function () {
@@ -416,42 +334,11 @@ $(function(){
                 }, i*250);
             });
         }
-
-        // Batibouw actie fixed to absolute
-        $batibouw = $('#batibouw');
-        $header = $('#header');
-        $window = $(window);
-
-        var batiBouwHeight = $header.height() + 40 + $batibouw.find('img').height() + $batibouw.find('.actie').height();
-
-        //console.log(($st + windowHeight) + " - " + batiBouwHeight + " = " + $header.height() + " - " + $batibouw.find('img').height() + " - " + $batibouw.find('.actie').height());
-
-        if(($st + windowHeight) > (batiBouwHeight)) {
-            $batibouw.find('.actie').removeClass('f');
-            $batibouw.find('.actie').removeClass('a');
-            $batibouw.find('img').css('margin-bottom', 0);
-
-            if((batiBouwHeight - $header.height() - 40) > $window.height()) {
-                $batibouw.css('min-height', $window.height());
-                $batibouw.find('.actie').addClass('a');
-                $batibouw.find('img').css('margin-bottom', $batibouw.find('.actie').height());
-            }
-        } else {
-            $batibouw.find('.actie').removeClass('f');
-            $batibouw.find('.actie').removeClass('a');
-            $batibouw.find('img').css('margin-bottom', 0);
-
-            if((batiBouwHeight - 40) > $window.height()) {
-                $batibouw.css('min-height', $window.height());
-                $batibouw.find('.actie').addClass('f');
-                $batibouw.find('img').css('margin-bottom', $batibouw.find('.actie').height());
-            }
-        }
-
+        
     });
-
+    
     $('#submit').click(function(e) {
-        e.preventDefault();
+        e.preventDefault(); 
 
         var name = $("#name").val();
         var email = $("#email").val();
@@ -459,14 +346,14 @@ $(function(){
         var subject = $("#subject").val();
         var message = $("#message").val();
         var hello = $("#hello").val();
-        $("#returnmessage").empty();
-
+        $("#returnmessage").empty(); 
+        
         if (name == '' || email == '' || subject == '' || message == '') {
             $("#returnmessage").append('Please fill in all fields.');
         } else if(!validateEmail(email)) {
             $("#returnmessage").append('Your e-mail is incorrect.');
         } else {
-
+            
             $.post("contact.php", {
                 name: name,
                 email: email,
@@ -477,18 +364,17 @@ $(function(){
             }, function(data) {
                 if (data == true) {
                     $("#returnmessage").append('Your message has been successfully sent.');
-                    $("#form")[0].reset();
+                    $("#form")[0].reset(); 
                 } else {
                     $("#returnmessage").append('Oops, something went wrong.');
                 }
             });
         }
     });
-
-
+    
+    
 
 });
-
 
 
 $(window).load(function() {
@@ -503,12 +389,12 @@ $(window).load(function() {
     useCSS: false,
     slideshow: false
   });
-
-
+  
+  
   $('.flexslider-next').click(function() {
       $('.slider2').flexslider('next');
   });
-
+  
   var slideComplete = true;
   // profit simulator
   $('.slider').flexslider({
@@ -534,63 +420,137 @@ $(window).load(function() {
         slideComplete = true;
     }
   });
-
+  
   var currentStep = 0;
    if(getLang() == 'fr') {
         var stepName = 'Etape';
     } else {
         var stepName = 'Stap';
     }
-
-    // Simulator prev btn
-    $('.grey-button.prev, #profit-simulator .prev').click(function(e) {
+    
+    $('.grey-button.prev').click(function(e) {
         e.preventDefault();
-
         if(slideComplete) {
             currentStep--;
+            $('.toggle-table').hide();
+            $('.open-table.close').hide();
+            $('.open-table.open').show();
+            $('.steps ul li').each(function(index) {
+                if(index < currentStep) {
+                   $(this).addClass('active2'); 
+                } else if(index === currentStep) {
+                   $(this).addClass('active'); 
+                   $(this).removeClass('active2');
+                } else {
+                    $(this).removeClass('active');
+                    $(this).removeClass('active2');
+                }
+            });
             $('.slider').flexslider('prev');
-            changeStep(currentStep);
+            if(currentStep === 0) {
+                $('.saving .step1').show();
+                $('.saving .step2').hide();
+                $('.saving .step3').hide();
+            } else if(currentStep === 1) {
+                $('.saving .step1').hide();
+                $('.saving .step2').show();
+                $('.saving .step3').hide();
+            } else if(currentStep === 2) {
+                $('.saving .step1').hide();
+                $('.saving .step2').hide();
+                $('.saving .step3').show();
+            }
+            
+            if(currentStep == 0) {
+                $('.button-bar .prev').fadeOut();
+                $('.button-bar .next').html(stepName + ' 2 >').fadeIn();
+            } else if (currentStep == 1) {
+                $('.button-bar .prev').html('< ' + stepName + ' 1').fadeIn();
+                $('.button-bar .next').html(stepName + ' 3 >').fadeIn();
+            } else if (currentStep == 2) {
+                $('.button-bar .prev').html('< ' + stepName + ' 2').fadeIn();
+                $('.button-bar .next').fadeOut();
+            }
+            
+            if($(window).width() < 640){
+                $('.same-height').unSyncHeight();
+            } else {
+                $('.same-height').syncHeight({ 'updateOnResize': true});
+            }
+            
+            $('html, body').stop().animate({
+                'scrollTop': $('#profit-simulator').offset().top - 40
+            }, 900, 'swing', function () {
+                // nothing
+            });
         }
     });
-
-    // Simulator next btn
-    $('.grey-button.next, #profit-simulator .next').click(function(e) {
+    
+    $('.grey-button.next').click(function(e) {
         e.preventDefault();
-
         if(slideComplete) {
             currentStep++;
+            $('.toggle-table').hide();
+            $('.open-table.close').hide();
+            $('.open-table.open').show();
+            $('.steps ul li').each(function(index) {
+                if(index < currentStep) {
+                   $(this).addClass('active2'); 
+                } else if(index === currentStep) {
+                   $(this).addClass('active'); 
+                   $(this).removeClass('active2');
+                } else {
+                    $(this).removeClass('active');
+                    $(this).removeClass('active2');
+                }
+            });
             $('.slider').flexslider('next');
-            changeStep(currentStep);
+            if(currentStep === 0) {
+                $('.saving .step1').show();
+                $('.saving .step2').hide();
+                $('.saving .step3').hide();
+            } else if(currentStep === 1) {
+                $('.saving .step1').hide();
+                $('.saving .step2').show();
+                $('.saving .step3').hide();
+            } else if(currentStep === 2) {
+                $('.saving .step1').hide();
+                $('.saving .step2').hide();
+                $('.saving .step3').show();
+            }
+            
+            if(currentStep == 0) {
+                $('.button-bar .prev').fadeOut();
+                $('.button-bar .next').html(stepName + ' 2 >').fadeIn();
+            } else if (currentStep == 1) {
+                $('.button-bar .prev').html('< ' + stepName + ' 1').fadeIn();
+                $('.button-bar .next').html(stepName + ' 3 >').fadeIn();
+            } else if (currentStep == 2) {
+                $('.button-bar .prev').html('< ' + stepName + ' 2').fadeIn();
+                $('.button-bar .next').fadeOut();
+            }
+            
+            if($(window).width() < 640){
+                $('.same-height').unSyncHeight();
+            } else {
+                $('.same-height').syncHeight({ 'updateOnResize': true});
+            }
+            
+            $('html, body').stop().animate({
+                'scrollTop': $('#profit-simulator').offset().top - 40
+            }, 900, 'swing', function () {
+                // nothing
+            });
         }
     });
-
-    // Simulator step btn
-    $('.steps li').click(function(e) {
-        e.preventDefault();
-
-        index = $(this).index() + 1;
-
-        if(index >= currentStep) {
-            return false;
-        }
-
-        if(slideComplete) {
-            currentStep = index;
-            $('.slider').flexslider(currentStep);
-            changeStep(currentStep);
-        }
-    });
-
-
+  
+  
   // Same height
   if($(window).width() < 640){
         $('.same-height').unSyncHeight();
     } else {
         $('.same-height').syncHeight({ 'updateOnResize': true});
     }
-
-    // Resize on load
-    $(window).resize();
 });
 
 $(window).resize(function() {
@@ -598,111 +558,15 @@ $(window).resize(function() {
     $('.slider2').data('flexslider').vars.itemWidth = $('#vergelijking .table .green').width();
     $('.slider2').data('flexslider').vars.maxItems = getGridSize();
     $('.slider2').data('flexslider').doMath();
-
+    
     // Same height
     if($(window).width() < 640){
         $('.same-height').unSyncHeight();
     } else {
         $('.same-height').syncHeight({ 'updateOnResize': true});
     }
-
-
+    
 });
-
-
-function changeStep(currentStep) {
-
-    // Always hide table when switching slides
-    $('.toggle-table').hide();
-    $('.open-table.close').hide();
-    $('.open-table.open').show();
-
-    // Set step active/inactive
-    $('.steps ul li').each(function(index) {
-        if(index+1 < currentStep) {
-            $(this).removeClass('active');
-        } else if(index+1 === currentStep) {
-            $(this).addClass('active');
-        } else {
-            $(this).removeClass('active');
-        }
-    });
-
-    // Set things visible/not visible on each step
-    if(currentStep === 0) {
-        $('.side .before.step-intro').show();
-        $('.side .before.step-steps').hide();
-        $('.side .before.step-last').fadeOut();
-
-        $('.button-bar .prev').fadeOut();
-        $('.button-bar .next').fadeOut();
-
-        $('.simulator').removeClass('contest-color');
-        $('.button-bar .prev').removeClass('grey-button');
-    } else if(currentStep === 1) {
-        $('.side .before.step-intro').hide();
-        $('.side .before.step-steps').show();
-        $('.side .before.step-last').fadeOut();
-
-        $('.button-bar .prev').fadeIn();
-        $('.button-bar .next').fadeIn();
-
-        $('.simulator').removeClass('contest-color');
-        $('.button-bar .prev').removeClass('grey-button');
-    } else if(currentStep === 2) {
-        $('.side .before.step-intro').hide();
-        $('.side .before.step-steps').show();
-        $('.side .before.step-last').fadeOut();
-
-        $('.button-bar .prev').fadeIn();
-        $('.button-bar .next').fadeIn();
-
-        $('.simulator').removeClass('contest-color');
-        $('.button-bar .prev').removeClass('grey-button');
-    } else if(currentStep === 3) {
-        $('.side .before.step-intro').hide();
-        $('.side .before.step-steps').show();
-        $('.side .before.step-last').fadeOut();
-
-        $('.button-bar .prev').fadeIn();
-        $('.button-bar .next').fadeIn();
-
-        $('.simulator').removeClass('contest-color');
-        $('.button-bar .prev').removeClass('grey-button');
-    } else if(currentStep === 4) {
-        $('.side .before.step-intro').hide();
-        $('.side .before.step-steps').show();
-        $('.side .before.step-last').fadeIn();
-
-        $('.button-bar .prev').fadeIn();
-        $('.button-bar .next').fadeIn();
-
-        $('.simulator').removeClass('contest-color');
-        $('.button-bar .prev').removeClass('grey-button');
-    } else if(currentStep === 5) {
-        $('.side .before.step-intro').hide();
-        $('.side .before.step-steps').show();
-        $('.side .before.step-last').fadeIn();
-
-        $('.button-bar .prev').fadeIn();
-        $('.button-bar .next').fadeOut();
-
-        $('.simulator').addClass('contest-color');
-        $('.button-bar .prev').addClass('grey-button');
-    }
-
-    if($(window).width() < 640){
-        $('.same-height').unSyncHeight();
-    } else {
-        $('.same-height').syncHeight({ 'updateOnResize': true});
-    }
-
-    $('html, body').stop().animate({
-        'scrollTop': $('#profit-simulator').offset().top - 40
-    }, 900, 'swing', function () {
-        // nothing
-    });
-}
 
 function getGridSize() {
     if(window.innerWidth < 640) {
@@ -713,7 +577,7 @@ function getGridSize() {
         return 3;
     }
 }
-
+  
 function updateEnergieverbruik() {
     if(type_woning == 1) {
         if(type_temperatuur == 1) {
@@ -723,7 +587,7 @@ function updateEnergieverbruik() {
                 energie_coefficient = 98;
             } else {
                 energie_coefficient = 102;
-            }
+            } 
         }
     } else if(type_woning == 2) {
         if(type_temperatuur == 1) {
@@ -738,17 +602,17 @@ function updateEnergieverbruik() {
     }
 
     energieverbruik = oppervlakte * energie_coefficient;
-
+    
     if(type_brandstof == 1 || type_brandstof == 2) {
         energieverbruik = energieverbruik / brandstof[type_brandstof].omzetting;
     } else if (type_brandstof == 3) {
         energieverbruik = energieverbruik * brandstof[type_brandstof].omzetting;
     }
-
+    
     energieverbruik = Math.round(energieverbruik);
-
+    
     $('*[name=energieverbruik]').val(energieverbruik);
-
+   
     if(getLang() == 'fr') {
         $('.eenheid').html(brandstof[type_brandstof].eenheid_fr);
     } else {
@@ -777,13 +641,13 @@ function updateBesparing() {
     } else if(type_verwarming == 2) {
         var besparing_percentage = 5;
     }
-
+    
     besparing_jaar = energieverbruik * (besparing_percentage / 100);
     besparing_jaar = Math.round(besparing_jaar);
-
+    
     inflatiesom = (parseFloat(inflatie) + parseFloat(rente) + parseFloat(stijging_energieprijs)) / 100;
     co2_final = '';
-
+    
     $('.table .inner-content').empty();
     jaar = getLang() == 'fr' ? 'An' : 'Jaar';
     for(i=1;i<=30;i++) {
@@ -794,16 +658,16 @@ function updateBesparing() {
         } else {
             besparing[i] = besparing_geld_jaar;
         }
-        $('.table .inner-content').append('<div class="row"><div class="small-3 columns text-center"><span>' + jaar + ' ' + i + '</span></div><div class="small-3 columns"><span>&euro;' + number_format(besparing_geld_jaar, 0, ',', '.') + '</span></div><div class="small-3 columns"><span>&euro;' + number_format(besparing[i], 0, ',', '.') + '</span></div><div class="small-3 columns"><span>' + number_format(co2, 0, ',', '.') + ' kg CO<span class="h2o">2</span></span></div></div>');
-        co2_final = number_format(co2, 0, ',', '.');
+        $('.table .inner-content').append('<div class="row"><div class="small-3 columns text-center"><span>' + jaar + ' ' + i + '</span></div><div class="small-3 columns"><span>&euro;' + besparing_geld_jaar.toFixed() + '</span></div><div class="small-3 columns"><span>&euro;' + besparing[i].toFixed() + '</span></div><div class="small-3 columns"><span>' + co2.toFixed() + ' kg CO<span class="h2o">2</span></span></div></div>');
+        co2_final = number_format(co2, 2, ',', '.');
     }
-
+    
     $('.besparing_percentage').html(besparing_percentage + '%');
     $('.besparing_jaar').html(besparing_jaar);
-    $('.besparing_geld_jaar').html(number_format(besparing[1], 0, ',', '.'));
-    $('.besparing_30_jaar').html(number_format(besparing[30], 0, ',', '.'));
-
-    besparing_30_jaar_split = number_format(besparing[30], 0, ',', '.');
+    $('.besparing_geld_jaar').html(number_format(besparing[1], 2, ',', '.'));
+    $('.besparing_30_jaar').html(number_format(besparing[30], 2, ',', '.'));
+    
+    besparing_30_jaar_split = number_format(besparing[30], 2, ',', '.');
     besparing_30_jaar_split = besparing_30_jaar_split.split(',');
     $('.besparing_30_jaar_first').html(besparing_30_jaar_split[0]);
     $('.besparing_30_jaar_last').html(',' + besparing_30_jaar_split[1]);
@@ -811,7 +675,8 @@ function updateBesparing() {
 }
 
 function number_format(number, decimals, dec_point, thousands_sep) {
-
+  thousands_sep = ''; // Geen punt bij duizendtallen
+  
   number = (number + '')
     .replace(/[^0-9+\-Ee.]/g, '');
   var n = !isFinite(+number) ? 0 : +number,
@@ -843,7 +708,8 @@ function getLang() {
     return $( "body" ).data( "lang" );
 }
 
-function validateEmail(email) {
+function validateEmail(email) { 
     var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
-}
+} 
+

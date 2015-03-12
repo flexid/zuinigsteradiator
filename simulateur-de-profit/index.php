@@ -10,7 +10,7 @@
     require_once('../lang/fr.php');
     $lang = 'fr';
 
-?> 
+?>
 
 <!DOCTYPE html>
 <html>

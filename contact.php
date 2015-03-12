@@ -25,7 +25,7 @@
 
     $sendmessage = wordwrap($template, 70);
 
-    mail("info@jaga.be", $subject, $sendmessage, $headers);
+    mail("mcassano@jaga.be", $subject, $sendmessage, $headers);
     echo true;
     
 ?>

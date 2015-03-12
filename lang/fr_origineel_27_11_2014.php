@@ -3,18 +3,7 @@
 $general = array(
     'title'         => 'ÉLU RADIATEUR LE PLUS ECONOMIQUE',
     'lang'          => 'fr',
-    'of'            => 'ou',
-    'anker1'        => 'home',
-    'anker2'        => 'radiateur-le-plus-economique',
-    'anker3'        => 'caractéristiques',
-    'anker4'        => 'technologie',
-    'anker5'        => 'collection',
-    'anker6'        => 'distribiteurs',
-    'anker7'        => 'simulateur-de-pr',
-    'anker8'        => 'téléchargeables',
-    'anker9'        => 'contact',
-    'anker10'       => 'earth',
-    'anker11'       => 'comparaison'
+    'of'            => 'ou'
 );
 
 $menu = array(
@@ -25,11 +14,11 @@ $menu = array(
     'item5'         => 'TECHNOLOGIE',
     'item6'         => 'COLLECTION',
     'item7'         => 'distributeurs',
-    'item8'         => 'SIMULATEUR DE PROFIT'
+    'item8'         => 'Profit simulator'
 );
 
 $zuinigsteRadiator = array(
-    'scroll'        => '',
+    'scroll'        => 'Faites défiler',
     'featured'      => 'JAGA Low-H2O ELU LE PLUS ECONOMIQUE',
     'button1'       => 'CALCULEZ VOTRE PROFIT',
     'button2'       => 'VOIR RADIATEURS',
@@ -60,9 +49,9 @@ $kenmerken = array(
     'subtitle2'     => '9 À 16 % PLUS ÉCONOMIQUE QUE <br><span>LES RADIATEURS À PANNEAUX</span>',
     'text3'         => 'Dans une étude sur le rendement de l’émission Kiwa Technology a dévoilé la déclaration de qualité pour l’échangeur de chaleur Low-H<span class="h2o">2</span>O de Jaga. Cette déclaration reconnue par le ministère Néerlandais, est basée sur les tests d’un radiateur Jaga Tempo selon les normes internationales. Le résultat est incroyable. Le radiateur Low-H<span class="h2o">2</span>O affiche des prestations meilleures que tous les autres systèmes ainsi que le rendement d’émission le plus élevé à basse et haute température d’eau, tant pour les bâtiments neufs qu’existant.',
     'text4'         => '',
-    'tableTitle'    => 'Comparaison Low-H<span class="h2o">2</span>O / radiateurs à panneaux',
-    'table1'        => 'Temp. de l’eau > 50°C',
-    'table2'        => 'Temp. de l’eau ≤ 50°C',
+    'tableTitle'    => 'Besparing Low-H2O t.o.v paneelradiator',
+    'table1'        => 'Temperature de l’eau > 50°C',
+    'table2'        => 'Temperature de l’eau ≤ 50°C',
     'table3'        => 'Economie',
     'table4'        => 'Economie',
     'table5'        => 'Rénovation',
@@ -93,27 +82,27 @@ $technolie = array(
     'subtitle3'     => 'Qu\'est-ce que Low-H<span class="h2o">2</span>O?',
     'text3'         => 'Consultez la brochure pour en savoir plus sur la technologie Low-H<span class="h2o">2</span>O',
     'link1'         => 'http://issuu.com/jaga-experience/docs/qu_est-ce_que_low-h2o/0',
-    'linkText1'     => 'PREVIEUW EN LIGNE ',
+    'linkText1'     => 'PREVIEW LIGNE',
     'link2'         => 'http://www.jaga.be/catalogue/be/fr/Qu\'est-ce_que_Low-H2O.pdf.zip',
     'linkText2'     => 'TELECHARGER LA DOCUMENTATION'
 );
 
 $earth = array(
-    'title'         => 'JAGA LOW-H2O ET LA FORET AMAZONIENNE',
-    'text'          => 'Sur cette photo de la forêt amazonienne, prise par la navette Messenger, la longueur d’onde pour la lumière infrarouge est remplacée par le bleu. Ceci donne une image plus claire et plus précise que la version originale, mais les plantes ont de ce fait des reflets rouges au lieu de vert. Suite à cette effet secondaire, la photo gagne en pertinence, car le rouge est la couleur du danger ! La forêt amazonienne représente 50 % de la superficie totale des forêts équatoriales. Elle absorbe près de 20% des 38 billions de tonnes de CO<span class="h2o">2</span> produites chaque année par l’humanité et représente ainsi notre arme principale contre les effets de la pollution par les CO<span class="h2o">2</span>. Pourtant, 10.000 km2 de sette superficie sont détruits chaque année par la déforestation. <br> <br> Si nous voulons obtenir une amélioration importante au niveau du cycle de pollution par les CO<span class="h2o">2</span>, de la vitesse et de la gravité des changements climatiques futures, une protection globale de la forêt amazonienne et autres ressources forestières et une baisse substantielle des émissions de CO<span class="h2o">2</span> sont absolument nécessaires! Dans une habitation moyenne de 140 m<sup>2</sup>, avec les radiateurs Low-H<span class="h2o">2</span>O de Jaga on peut économiser 141 m<sup>3</sup> de gaz par an, ce qui represente une diminution des emissions de CO<span class="h2o">2</span> de 293 kg/an. Une quantité significative lorsque l’on sait qu’une voiture moyenne peut rouler 2000 km pour la même emission de CO<span class="h2o">2</span>!',
-    'button'        => 'Découvrez plus'
+    'title'         => 'POURQUOI COULEUR <br>LE TERRE ROUGE?',
+    'text'          => '<strong>JAGA LOW-H<span class="h2o">2</span>O</strong> ET LA FORET AMAZONIENNE<br><br> Sur cette photo de la forêt amazonienne, prise par la navette Messenger, la longueur d’onde pour la lumière infrarouge est remplacée par le bleu. Ceci donne une image plus claire et plus précise que la version originale, mais les plantes ont de ce fait des reflets rouges au lieu de vert. Suite à cette effet secondaire, la photo gagne en pertinence, car le rouge est la couleur du danger ! La forêt amazonienne représente 50 % de la superficie totale des forêts équatoriales. Elle absorbe près de 20% des 38 billions de tonnes de CO<span class="h2o">2</span> produites chaque année par l’humanité et représente ainsi notre arme principale contre les effets de la pollution par les CO<span class="h2o">2</span>. Pourtant, 10.000 km2 de sette superficie sont détruits chaque année par la déforestation. <br> <br> Si nous voulons obtenir une amélioration importante au niveau du cycle de pollution par les CO<span class="h2o">2</span>2, de la vitesse et de la gravité des changements climatiques futures, une protection globale de la forêt amazonienne et autres ressources forestières et une baisse substantielle des émissions de CO<span class="h2o">2</span>2 sont absolument nécessaires! Dans une habitation moyenne de 140 m<sup>2</sup>, avec les radiateurs Low-H<span class="h2o">2</span>O de Jaga on peut économiser 141 m<sup>3</sup> de gaz par an, ce qui represente une diminution des emissions de CO<span class="h2o">2</span>2 de 293 kg/an. Une quantité significative lorsque l’on sait qu’une voiture moyenne peut rouler 2000 km pour la même emission de CO<span class="h2o">2</span>2!',
+    'button'        => 'Découvrez pourquoi'
 );
 
 $vergelijking = array(
     'title'         => 'COMPARAISON ÉNERGIE / EFFICACITÉ DU MATÉRIEL',
     'intro'         => 'Exemple pour une émission de chaleur de 1000 Watts à un régime 45/35/20',
-    'row1'          => '<strong>Dimensions</strong> <br> en cm - Distance au mur incl.',
-    'row2'          => '<strong>Contenu en eau</strong> <br> litre',
-    'row3'          => '<strong>Poids total </strong> <br> kilogramme - Contenu en eau incl.',
-    'row4'          => '<strong>Temps de chauffe</strong> <br>Minutes',
+    'row1'          => '<strong>Dimensions</strong> (en cm) - Distance au mur incl.',
+    'row2'          => '<strong>Contenu</strong> <br>(en eau litre)',
+    'row3'          => '<strong>Poids total kilogramme Contenu</strong> - Contenu en eau incl.',
+    'row4'          => '<strong>Temps de chauffe</strong> <br>(en minutes)',
     'row5'          => '<strong>Energie de démarrage</strong> <br>(en m<sup>3</sup> gaz)',
     'row6'          => '<strong>Energie / chaleur stockées</strong> <br>W<small class="low">h</small>',
-    'row7'          => '<strong>Efficacité du matériel</strong> <br>(Watts/kg)',
+    'row7'          => '<strong>Efficacité du matériel</strong> <br>(Watt/kg)',
     'row8'          => '<strong>Score LCA**</strong>',
     'popup1'        => 'RADIATEUR LOW-H2O CONTIENT BEAUCOUP MOINS D’EAU',
     'popup2'        => 'LE RADIATEUR LOW-H2O CONTIENT BEAUCOUP MOINS D’EAU',
@@ -142,14 +131,14 @@ $collectie = array(
     'zoom'          => 'Vue',
     'headline'      => 'Collection radiateur economique',
     'linkText1'     => 'Télécharger la brochure',
-    'linkText2'     => 'Voir dans le site catalogue',
+    'linkText2'     => 'Voir la rubrique "catalogue" dans le site',
     'products'      => array(
         0 => array(
             'title'     => 'STRADA',
             'subtitle'  => 'Chaleur et design épuré',
             'image'     => 'img/collectie/strada.jpg',
-            'list1'     => '<ul><li>habillage robuste avec panneau frontal plat </li><li>grille design en aluminium lisse </li><li>raccordement totalement invisible selon la vanne choisi</li><li> basse température de contact, sécurisé </li><li>technologie Low-H<span class="h2o">2</span>O pour une faible consommation d’énergie</li></ul>',
-            'list2'     => '',
+            'list1'     => '<ul><li>H: 20 - 35 - 50 - 65 - 95 cm</li><li>L: 50 jusqu’à 280 cm</li><li>B: 8.5 - 11.5 - 16.5 - 21.5 cm</li></ul>',
+            'list2'     => '<ul><li>Watts: de 269 jusqu’à 8484</li><li>Watts DBE confort: de 543 jusqu’à 11364</li><li>Couleur standard blanc ou gris sablé</li></ul>',
             'link1'     => 'http://catalogue.theradiatorfactory.com/befr#strada',
             'link2'     => 'http://www.theradiatorfactory.com/catalogue/be/fr/Strada.pdf',
             'more'      => false,
@@ -164,8 +153,8 @@ $collectie = array(
             'title'     => 'LINEA PLUS',
             'subtitle'  => 'Chaleur et ligne élancée',
             'image'     => 'img/collectie/linea_plus.jpg',
-            'list1'     => '<ul><li>une valeur design discret et intemporelle </li><li>grille d’air perforée et inclinée vers l’arrière </li><li>panneau frontal plat et lisse </li><li>raccordement totalement invisible selon la vanne choisi </li><li>basse température de contact, sécurisé </li><li>technologie Low-H<span class="h2o">2</span>O pour une faible consommation d’énergie</li></ul>',
-            'list2'     => '',
+            'list1'     => '<ul><li>H: 20 - 35 - 50 - 65 - 95 cm</li><li>L: 50 jusqu’à 280 cm</li><li>B: 11.5 - 16.5 - 21.5 cm</li></ul>',
+            'list2'     => '<ul><li>Watts: de 284 jusqu’à 8414</li><li>Watts DBE confort: de 491 jusqu’à 11294</li><li>Couleur standard blanc ou gris sablé</li></ul>',
             'link1'     => 'http://catalogue.theradiatorfactory.com/befr#linea-plus',
             'link2'     => 'http://www.theradiatorfactory.com/catalogue/be/fr/Linea_Plus.pdf',
             'more'      => false,
@@ -180,8 +169,8 @@ $collectie = array(
             'title'     => 'TEMPO',
             'subtitle'  => 'Chaleur et style basic',
             'image'     => 'img/collectie/tempo.jpg',
-            'list1'     => '<ul><li>energy Saver avant la lettre </li><li>design classique souligné par des lignes horizontales </li><li>raccordement totalement invisible selon la vanne choisi </li><li>basse température de contact, sécurisé </li><li>technologie Low-H<span class="h2o">2</span>O pour une faible consommation d’énergie</li></ul>',
-            'list2'     => '',
+            'list1'     => '<ul><li>H: 20 - 30 - 40 - 50 - 60 - 70 - 90 cm</li><li>L: 40 jusqu’à 300 cm</li><li>B: 11.5 - 16.5 - 21.5 cm</li></ul>',
+            'list2'     => '<ul><li>Watts: de 262 jusqu’à 11310</li><li>Watts DBE confort: de 543 jusqu’à 14190</li><li>Couleur standard blanc</li></ul>',
             'link1'     => 'http://catalogue.theradiatorfactory.com/befr#tempo',
             'link2'     => 'http://www.theradiatorfactory.com/catalogue/be/fr/Tempo.pdf',
             'more'      => false,
@@ -196,8 +185,8 @@ $collectie = array(
             'title'     => 'KNOCKONWOOD',
             'subtitle'  => 'Chaleur et noblesse du bois',
             'image'     => 'img/collectie/knockonwood.jpg',
-            'list1'     => '<ul><li>habillage courbé agrémenté d’une finition en bois noble </li><li>9  variétés de bois differents</li><li>raccordement totalement invisible selon la vanne choisi </li><li>basse température de contact, sécurisé </li><li>technologie Low-H<span class="h2o">2</span>O pour une faible consommation d’énergie</li></ul>',
-            'list2'     => '',
+            'list1'     => '<ul><li>H: 30 - 55 - 80 cm</li><li>L: 60 jusqu’à 220 cm</li><li>B: 10.8 - 12.8 - 17.8 cm</li></ul>',
+            'list2'     => '<ul><li>Watts: de 416 jusqu’à 3898</li><li>Watts DBE confort: de 551 jusqu’à 5818</li><li>9 variétes de bois differents</li></ul>',
             'link1'     => 'http://catalogue.theradiatorfactory.com/befr#knockonwood',
             'link2'     => 'http://www.theradiatorfactory.com/catalogue/be/fr/Knockonwood.pdf',
             'more'      => false,
@@ -212,8 +201,8 @@ $collectie = array(
             'title'     => 'MAXI',
             'subtitle'  => 'Chaleur, extra résistante et sécure',
             'image'     => 'img/collectie/maxi.jpg',
-            'list1'     => '<ul><li>habillage extrêmement solide </li><li>côtés latéraux aux angles arrondis </li><li>raccordement totalement invisible selon la vanne choisi </li><li>basse température de contact, sécurisé </li><li>technologie Low-H<span class="h2o">2</span>O pour une faible consommation d’énergie</li></ul>',
-            'list2'     => '',
+            'list1'     => '<ul><li>H: 44 - 59 - 74 cm</li><li>L: 63 jusqu’à 203 cm</li><li>B: 13 - 18 - 23 cm</li></ul>',
+            'list2'     => '<ul><li>Watts: de 637 jusqu’à 6685</li><li>Watts DBE confort: de 787 jusqu’à 8605</li><li>Couleur standard blanc ou gris sablé</li></ul>',
             'link1'     => 'http://catalogue.theradiatorfactory.com/befr#maxi',
             'link2'     => 'http://www.theradiatorfactory.com/catalogue/be/fr/Maxi.pdf',
             'more'      => false,
@@ -228,8 +217,8 @@ $collectie = array(
             'title'     => 'ENCASTREMENT MURAL',
             'subtitle'  => 'La solution confort pour l’architecture minimaliste',
             'image'     => 'img/collectie/wandinbouw.jpg',
-            'list1'     => '<ul><li>Solution unique pour chaque rénovation </li><li>Votre créativité peut s’exprimer </li><li>Facile à intégrer sans perte de puissance</li><li>Gain de place</li><li>Technologie Low-H<span class="h2o">2</span>O pour une faible consommation d’énergie</li><li> Version DBE pour des températures d’eau très basses</li></ul>',
-            'list2'     => '',
+            'list1'     => '<ul><li>H: 20 - 30 - 40 - 50 - 60 cm</li><li>L: 40 jusqu’à 300 cm</li><li>B: 11.5 - 16.5 - 21.5 cm</li></ul>',
+            'list2'     => '<ul><li>Watts: de 262 jusqu’à 8646</li><li>Watts DBE confort: de 543 jusqu’à 11526</li><li>Couleur: gris foncé</li></ul>',
             'link1'     => 'http://catalogue.theradiatorfactory.com/befr#encastrement-mural',
             'link2'     => 'http://www.theradiatorfactory.com/catalogue/be/fr/Encastrement_mural.pdf',
             'more'      => false,
@@ -244,8 +233,8 @@ $collectie = array(
             'title'     => 'MINI MURAL',
             'subtitle'  => 'Remarquablement discret',
             'image'     => 'img/collectie/mini_wand.jpg',
-            'list1'     => '<ul><li>idéal pour les espaces avec d’appuis de fenêtre bas </li><li>A partir d’une hauteur de 8 cm!  </li><li>joli en combinaison avec le Mini sur pieds pour des vitres jusqu’au sol </li><li>habillage stable totalement pré-montée </li><li>basse température de contact, sécurisé</li><li>technologie Low-H<span class="h2o">2</span>O pour une faible consommation d’énergie</li></ul>',
-            'list2'     => '',
+            'list1'     => '<ul><li>H: 8 - 13 - 23 - 28 cm</li><li>L: 60 jusqu’à 260 cm</li><li>B: 8 - 13 - 18 - 23 cm</li></ul>',
+            'list2'     => '<ul><li>Watts: de 197 jusqu’à 4885</li><li>Couleur standard blanc ou gris sablé</li></ul>',
             'link1'     => 'http://catalogue.theradiatorfactory.com/befr#mini-mural',
             'link2'     => 'http://www.theradiatorfactory.com/catalogue/be/fr/Mini.pdf',
             'more'      => false,
@@ -260,8 +249,8 @@ $collectie = array(
             'title'     => 'MINI SUR PIEDS',
             'subtitle'  => 'Remarquablement discret',
             'image'     => 'img/collectie/mini_vrijstaand.jpg',
-            'list1'     => '<ul><li>pour des espaces vitrés jusqu’au sol</li><li>pour jardins d’hiver et en dessous de tablettes de fenêtres très basses</li><li>placement discret </li><li>vision dégagée vers l’extérieur grâce à une petite hauteur à partir de 8 cm </li><li>pas de perte de chaleur dû au rayonnement vers la vitre</li></ul>',
-            'list2'     => '',
+            'list1'     => '<ul><li>H: 8 - 13 - 23 - 28 cm</li><li>L: 60 jusqu’à 260 cm</li><li>B: 8 - 13 - 18 - 23 cm</li></ul>',
+            'list2'     => '<ul><li>Watts: de 197 jusqu’à 4885</li><li>Couleur standard blanc ou gris sablé</li></ul>',
             'link1'     => 'http://catalogue.theradiatorfactory.com/befr#mini-sur-pieds',
             'link2'     => 'http://www.theradiatorfactory.com/catalogue/be/fr/Mini_Sur_pieds.pdf',
             'more'      => false,
@@ -276,8 +265,8 @@ $collectie = array(
             'title'     => 'TEMPO SUR PIEDS',
             'subtitle'  => 'Chaleur et style basic',
             'image'     => 'img/collectie/tempo_vrijstaand.jpg',
-            'list1'     => '<ul><li>pour des espaces vitrés jusqu’au sol</li><li>la technologie Low-H<span class="h2o">2</span>O, mais sur pieds </li><li> pas de perte de chaleur dû au rayonnement vers la vitre </li><li>basse température de contact, sécurisé </li><li>technologie Low-H<span class="h2o">2</span>O pour une faible consommation d’énergie</li></ul>',
-            'list2'     => '',
+            'list1'     => '<ul><li>H: 20 - 35 cm</li><li>L: 50 jusqu’à 280 cm</li><li>B: 13 - 18 cm</li></ul>',
+            'list2'     => '<ul><li>Watts: de 262 jusqu’à 7746</li><li>Couleur standard blanc</li></ul>',
             'link1'     => 'http://catalogue.theradiatorfactory.com/befr#tempo-sur-pieds',
             'link2'     => 'http://www.theradiatorfactory.com/catalogue/be/fr/Tempo_Sur_pieds.pdf',
             'more'      => false,
@@ -288,12 +277,12 @@ $collectie = array(
             'link3'     => '',
             'link4'     => ''
         ),
-       9 => array(
+        9 => array(
             'title'     => 'LINEA PLUS SUR PIEDS',
             'subtitle'  => 'Chaleur et ligne élancée',
             'image'     => 'img/collectie/linea_plus_vrijstaand.jpg',
-            'list1'     => '<ul><li>pour des espaces vitrés jusqu’au sol</li><li>design serré </li><li>la technologie Low-H<span class="h2o">2</span>O, mais sur pieds </li><li>pas de perte de chaleur dû au rayonnement vers la vitre </li><li>basse température de contact, sécurisé</li></ul>',
-            'list2'     => '',
+            'list1'     => '<ul><li>H: 20 - 30 - 40 - 50 cm</li><li>L: 40 jusqu’à 300 cm</li><li>B: 13 - 18 - 23 cm</li></ul>',
+            'list2'     => '<ul><li>Watts: de 271 jusqu’à 4102</li><li>Couleur standard blanc ou gris sablé</li></ul>',
             'link1'     => 'http://catalogue.theradiatorfactory.com/befr#linea-plus-sur-pieds',
             'link2'     => 'http://www.theradiatorfactory.com/catalogue/be/fr/Linea_Plus_Sur_pieds.pdf',
             'more'      => false,
@@ -308,23 +297,23 @@ $collectie = array(
             'title'     => 'MINI CANAL',
             'subtitle'  => 'Une profondeur d’encastrement minimale',
             'image'     => 'img/collectie/mini_canal_dbe.jpg',
-            'list1'     => '<ul><li>hauteur à partir de 9 cm  </li><li>même pour les étages</li><li>compense idéalement l’inertie du chauffage par le sol</li><li>chauffage par le sol 30% plus économique avec Mini Canal</li><li>diverses grilles pour chaque intérieur</li><li>température confortable, diffusion homogène</li></ul>',
+            'list1'     => '<ul><li>H: 9 - 11 - 14 - 19 cm</li><li>jusqu’à 490 cm d’une seule pièce</li><li>B: 14 - 18 - 26 - 34 - 42 cm</li><li>Watts: de 152 jusqu’à 4184</li></ul>',
             'list2'     => '',
             'link1'     => 'http://catalogue.theradiatorfactory.com/befr#mini-canal',
             'link2'     => 'http://www.theradiatorfactory.com/catalogue/be/fr/Mini_Canal.pdf',
-            'more'      => false,
-            'title2'    => '',
-            'subtitle2' => '',
-            'list3'     => '',
+            'more'      => true,
+            'title2'    => 'MINI CANAL DBE',
+            'subtitle2' => 'Trois fois plus de chaleur!',
+            'list3'     => '<ul><li>H: 14 .5 cm</li><li>L: 110 jusqu’à 310 cm</li><li>B: 26 - 34 - 42 cm</li><li>Watts: de 1085 jusqu’à 6857</li></ul>',
             'list4'     => '',
-            'link3'     => '',
-            'link4'     => ''
+            'link3'     => 'http://catalogue.theradiatorfactory.com/befr#mini-canal-dbe',
+            'link4'     => 'http://www.theradiatorfactory.com/catalogue/be/fr/Mini_Canal_DBE.pdf'
         ),
         11 => array(
             'title'     => 'CANAL PLUS',
             'subtitle'  => 'Chaleur et intégration complète',
             'image'     => 'img/collectie/canal_plus.jpg',
-            'list1'     => '<ul><li>caniveaux invisibles qui véhiculent le confort Low-H<span class="h2o">2</span>O </li><li>facile à entretenir avec raccordements flexibles </li><li>étanche </li><li>rideau d’air chaud efficace pour vitres froides </li><li>température confortable, diffusion homogène </li><li>technologie Low-H<span class="h2o">2</span>O pour une faible consommation d’énergie</li><li>version DBE pour des températures d’eau très basses</li></ul>',
+            'list1'     => '<ul><li>R: 2.5 3.0 4.0 Watts/mètre ailetté</li><li>H: 68 69 72</li><li>B: 35 37 43 1229</li><li>39 41 47 1848</li><li>51 53 59 2682</li><li>L: jusqu’à 600 cm d’une seule pièce</li></ul>',
             'list2'     => '',
             'link1'     => 'http://catalogue.theradiatorfactory.com/befr#canal-compact-plus',
             'link2'     => 'http://www.theradiatorfactory.com/catalogue/be/fr/Canal_Compact_&_Canal_Plus.pdf',
@@ -344,22 +333,22 @@ $simulator = array(
     'intro'         => 'Simulez en 3 étapes simples les économies que vous pouvez réaliser avec les radiateurs Low-H<span class="h2o">2</span>O.',
     'text1'         => 'VOTRE ECONOMIE SUR 30 ANS',
     'text2'         => 'Contactez <br>votre revendeur Jaga',
-    'text3'         => 'Allez vers distributeurs JAGA',
+    'text3'         => 'Allez vers Distributeurs JAGA',
     'step'          => 'Etape',
     'subtitle1'     => 'ETAPE 1 : votre habitation ',
     'labelTitle1'   => 'J\'habite dans un(e)',
     'labelChoice1'  => 'Bâtiment neuf',
     'labelChoice2'  => 'Bâtiment renovation',
     'labelTitle2'   => 'Avec une superficie habitable de',
-    'labelTitle3'   => 'Je veux comparer le radiateur Low-H<span class="h2o">2</span>O avec',
+    'labelTitle3'   => 'Je veux comparer le radiateur H<span class="h2o">2</span>O avec',
     'labelChoice3'  => 'Radiateur ordinaire',
     'labelChoice4'  => 'Chauffage par le sol',
     'labelTitle4'   => 'Mon installation de chauffage fonctionne au',
     'labelChoice5'  => 'Gaz naturel',
     'labelChoice6'  => 'Mazout',
-    'labelChoice7'  => 'Pompe de chaleur  ',
+    'labelChoice7'  => 'Pomp de chaleur  ',
     'labelTitle5'   => 'Température d\'eau moyenne',
-    'question1'     => 'La température d’eau moyenne est la moyenne entre la température d’alimentation et la température de retour. Le régime 55/45 ( alimentation 55°C, retour 45 °C ) ou moins  est typique pour les températures d’eau basses et le régime 75/65 pour les températures d’eau élevée. Il ya aussi l’ancien régime 90/70, mais celui-ci ne devrait plus être utilisé vu que cette température d’eau est bien trop élevée pour un fonctionnement correct et économique de la plupart des installations.',
+    'question1'     => 'La température d\'eau moyenne est la moyenne entre la température d\'alimentation et la température de retour. Typique des températures d\'eau basses : le régime 55/45 (alimentation 55°C, retour 45°C ) ou moins et pour une température d\'eau élevée le régime 75/65. Il y a encore, classiquement, le régime 90/70 mais celui-ci ne devrait plus pouvoir être utilisé vu que cette température d\'eau est bien trop élevée pour un fonctionnement correct et économique de la plupart des installations.',
     'labelChoice8'  => '≤ 50 C',
     'labelChoice9'  => '> 50 C',
     'subtitle2'     => 'Etape 2 : votre consommation d\'énergie   ',
@@ -380,10 +369,10 @@ $simulator = array(
     'closeTable'    => 'Fermer la fenêtre',
     'text9'         => 'Par an',
     'text10'        => 'Total',
-    'question4'     => 'La description de l’habitation est délibérément très sommaire. Le résultat peut de ce fait être influencé négativement ou positivement par toutes sortes de facteurs comme la bonne valeur d’isolation, le comportement de l’habitant, le type d’installation, le type de réglage, etc. Mais elle vous donne une idée de ce qui est possible rien qu’en remplaçant les radiateurs.',
+    'question4'     => 'De beschrijving van de woning is bewust zeer summier gehouden. De uitkomst kan daardoor zowel in negatieve als positieve zin beïnvloed worden door allerlei factoren zoals juiste isolatiewaarde, bewonersgedrag, type installatie, type regeling enz. Maar zij geeft u wel een idee van wat mogelijk is door enkel de radiatoren te vervangen.',
     'question5'     => 'Les économies obtenues en fonction d¹une inflation attendue ne constituent pas forcément la meilleure indication du pouvoir d¹achat réel de ce montant. Tout est en effet plus cher. Si vous voulez connaître précisément le montant de vos économies, essayez en maintenant l¹inflation à 0.',
-    'question6'     => '30 ans de garantie sur l¹échangeur de chaleur LOW-H2O! Vous savez ainsi d¹emblée pourquoi le Simulateur de Profit fait le calcul jusqu¹à 30 ans dans le futur. Mais nous sommes certains que votre radiateur vous accompagnera bien plus longtemps encore car l¹échangeur de chaleur est réalisé en cuivre, aluminium et laiton et ne va donc jamais rouiller. Comme tous ses prédécesseurs depuis 1962. C¹est pourquoi nous nous efforçons toujours de développer un design attrayant et intemporel. Ainsi, non seulement il chauffe votre maison et économise l¹énergie, mais reste aussi esthétique!',
-    'question7'     => 'Il existe un tas de chiffres sur la quantité de CO2 absorbée précisément par un arbre. Différentes sources (e.a. VBV, K.U.Leuven, UGent, Š) nous permettent de conclure qu¹un arbre adulte absorbe en moyenne 24 kg de CO2 par an. Vous avez ainsi une indication concrète de ce que représente pour l¹environnement le CO2 épargné avec le LOW-H2O!'
+    'question6'     => '30 ans de garantie sur l¹échangeur de chaleur Low-H2O! Vous savez ainsi d¹emblée pourquoi le Simulateur de Profit fait le calcul jusqu¹à 30 ans dans le futur. Mais nous sommes certains que votre radiateur vous accompagnera bien plus longtemps encore car l¹échangeur de chaleur est réalisé en cuivre, aluminium et laiton et ne va donc jamais rouiller. Comme tous ses prédécesseurs depuis 1962. C¹est pourquoi nous nous efforçons toujours de développer un design attrayant et intemporel. Ainsi, non seulement il chauffe votre maison et économise l¹énergie, mais reste aussi esthétique!',
+    'question7'     => 'Il existe un tas de chiffres sur la quantité de CO2 absorbée précisément par un arbre. Différentes sources (e.a. VBV, K.U.Leuven, UGent, Š) nous permettent de conclure qu¹un arbre adulte absorbe en moyenne 24 kg de CO2 par an. Vous avez ainsi une indication concrète de ce que représente pour l¹environnement le CO2 épargné avec le Low-H2O!'
 );
 
 $dealers = array(
@@ -419,8 +408,8 @@ $contact = array(
     'input6'        => 'Envoyer',
     'contact1'      => 'Écrivez-nous pour bénéficier de nos conseils à',
     'contact2'      => 'Appelez notre centre de conseils au </br>',
-    'contact3'      => 'Like us on',
-    'contact4'      => 'Watch our',
+    'contact3'      => 'Like us',
+    'contact4'      => 'Watch us',
     'subtitle'      => 'Où pouvez-vous nous trouver ?',
     'text'          => 'Jaga S.A. / Centre de conseils Jaga <br>Verbindingslaan s/n <br>B 3590 Diepenbeek <br>',
     'route'         => 'Route'
